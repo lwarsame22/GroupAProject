@@ -1,0 +1,203 @@
+/*@import "templatecolours.css";*/
+
+
+body{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+
+
+
+header{
+    background-color: white;
+}
+main{
+    background-color: white;
+}
+
+/*
+section{
+    background-color: orange;
+}
+aside{
+    background-color: yellow;
+}
+article{
+    background-color: purple;
+}
+
+
+*/
+
+/* NAVIGATION BAR CSS */
+
+nav>ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav>ul>li {
+    float: left;
+}
+
+nav>ul>li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 30px;
+    border-bottom-color: black;
+    border-bottom-width: 10px;
+    text-decoration: none;
+    text-emphasis: deepskyblue;
+
+}
+
+li a:hover {
+    color: #363636;
+
+}
+
+
+/* IMAGE SIZING CSS */
+
+#Sportlogo
+{
+    width:100px;
+
+
+}
+
+#Sportbanner
+{
+    max-width: 960px;
+    background-color: white;
+   -webkit-justify-content: center;
+}
+ #Sportapp
+{
+     width: 300px;
+     float:left;
+     padding-right: 10px;
+     align-items: center;
+}
+
+/* TEXT STYLING CSS */
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+
+}
+
+p, h2, h4, label, input, h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+h3, h4, h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+/* COLOURINGS CSS */
+
+#quicklinks{
+    background-color: #363636;
+    }
+#login{
+    border-top-color: #782A7E;
+    -webkit-justify-content: center;
+    background-color: #363636;
+}
+#register{
+    border:  #782A7E;
+    border-top-color: #782A7E;
+
+}
+
+footer{
+    background-color: #363636;
+}
+
+aside p, h3, h4 {
+    color: white;
+}
+
+
+/* MARGIN FIXES */
+
+aside p, h3, h4{
+    margin: 0;
+}
+
+aside h3{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+aside h4{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+aside p{
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+aside {
+    padding-right: 0px !important;
+    margin-top: -5px !important;
+}
+
+main{
+ padding-right: 0px !important;
+}
+
+
+
+/* FONT SIZES*/
+
+h1{
+    font-size: 22px;
+}
+h2{
+    font-size: 20px;
+}
+h3{
+    font-size: 16px;
+}
+h4{
+    font-size: 14px;
+}
+p{
+    font-size: 13px;
+}
+a{
+    font-size: 13px;
+}
+label{
+    font-size: 16px;
+}
+
+/* FOOTER*/
+
+
+footer>p{
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
