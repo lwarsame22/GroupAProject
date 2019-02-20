@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SportsMatch</title>
+    <title>Welcome</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/unsemantic-grid-responsive-tablet.css">
 
@@ -54,7 +54,7 @@ Nav END-->
         </p>
     </section>
 
-
+<p>Welcome <?php echo $username; ?></p>
 </main>
 </body>
 </html>
