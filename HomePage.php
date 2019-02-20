@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,9 +27,6 @@
         <li><a href="#">Events</a></li>
         <li><a href="#">MyProfile</a></li>
         <li><a href="#">My Teams</a></li>
-        <li><a href="#"><button type="submit">Login</button></a></li>
-        <li><a href="#"><button type="submit">Sign up</button></a></li>
-
 
     </ul>
 </nav>
@@ -68,7 +66,7 @@
                 <label for="psw">Password:</label><br>
                 <input type="password" placeholder="Enter Password" name="psw"><br>
 
-                <button type="submit">Login</button>
+                <button type="submit" value="Login" name="loginButton">Login</button>
                 <label><input type="checkbox" checked="checked" name="remember">Remember Me</label>
             </div>
 
@@ -88,7 +86,7 @@
 
     <!--Section 2 NEW users-->
     <section  class="grid-60">
-        <form id = "register" action="register.php">
+        <form id = "register" action="register.php" method="post">
             <div class="userRegister">
                 <h1>Register</h1>
                 <label for="firstname">First Name:</label>
@@ -99,11 +97,9 @@
                 <Input type="text" placeholder="Enter username" name="username" required><br>
                 <label for="email">Email:</label>
                 <Input type="text" placeholder="Enter email" name="email" required><br>
-                <label for="psw">Password:</label>
-                <input type="password" placeholder="Enter Password" name="psw"><br>
-                <label for="psw2">Confirm Password:</label>
-                <input type="password" placeholder="Confirm Password" name="psw2"><br>
-                <button type="submit">Register</button>
+                <label for="password">Password:</label>
+                <input type="password" placeholder="Enter Password" name="password"><br>
+                <button type="submit" value="Register" name="registerButton">Register</button>
             </div>
 
         </form>
