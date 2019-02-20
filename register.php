@@ -40,9 +40,16 @@ if($_POST['registerButton']){
 ?>
 
 
-/**
- * Created by PhpStorm.
- * User: 1810356
- * Date: 15/02/2019
- * Time: 14:18
- */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SportsMatch</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/unsemantic-grid-responsive-tablet.css">
+
+</head>
+<body>
+<h1>Registration successful</h1>
+</body>
+</html>
