@@ -6,7 +6,7 @@ session_start();
             $username = strip_tags($_POST['username']);
             $password = strip_tags($_POST['password']);
 
-            $sql = "SELECT id,username,password FROM users where username = '$username' LIMIT 1";
+            $sql = "SELECT Name,LastName, UserName, email, password, gender  FROM sports where username = '$username' LIMIT 1";
             $query = mysqli_query($db, $sql);
 
             if ($query) {
@@ -17,8 +17,7 @@ session_start();
             }
             if ($username == $dbUserName && $password == $dbPassword) {
                 $_SESSION['username'] = $username;
-                $_SESSION['id'] = $userId;
-                header('Location: user.php');
+                header('Location: HomePage.php');//NEED TO EDIT THIS LOCATION LATER
             } else {
                 echo "<b><i>Incorrect credentials</i><b>";
             }

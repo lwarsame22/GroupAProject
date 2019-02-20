@@ -99,6 +99,8 @@ Nav END-->
                 <Input type="text" placeholder="Enter email" name="email" required><br>
                 <label for="password">Password:</label>
                 <input type="password" placeholder="Enter Password" name="password"><br>
+                <label for="gender">Gender:</label>
+                <Input type="text" placeholder="Enter gender" name="gender" required><br>
                 <button type="submit" value="Register" name="registerButton">Register</button>
             </div>
 
