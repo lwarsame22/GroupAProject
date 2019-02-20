@@ -17,7 +17,7 @@ session_start();
             }
             if ($username == $dbUserName && $password == $dbPassword) {
                 $_SESSION['username'] = $username;
-                header('Location: HomePage.php');//NEED TO EDIT THIS LOCATION LATER
+                header('Location: user.php');//NEED TO EDIT THIS LOCATION LATER
             } else {
                 echo "<b><i>Incorrect credentials</i><b>";
             }

@@ -26,7 +26,7 @@ if($_POST['registerButton']){
 
         echo "Succesfully registered";
 
-        header('Location: HomePage.php'); //NEED TO EDIT THIS LATER
+        header('Location: user.php'); //NEED TO EDIT THIS LATER
 
     }
 
@@ -39,17 +39,3 @@ if($_POST['registerButton']){
 }
 ?>
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>SportsMatch</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/unsemantic-grid-responsive-tablet.css">
-
-</head>
-<body>
-<h1>Registration successful</h1>
-</body>
-</html>
