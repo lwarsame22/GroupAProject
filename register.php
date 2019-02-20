@@ -17,8 +17,8 @@ if($_POST['registerButton']){
 
     $gender = strip_tags($_POST['gender']);
 
-    $query = "INSERT INTO sport(Name,LastName,UserName, email, password, gender, activated) 
-    VALUES('$firstname' , '$lastname', '$username', '$email', '$password','$gender','1')";
+    $query = "INSERT INTO sport(Name,LastName,UserName, email, password, gender) 
+    VALUES('$firstname' , '$lastname', '$username', '$email', '$password','$gender')";
 
     $result = mysqli_query($db,$query);
 
