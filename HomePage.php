@@ -19,7 +19,7 @@
 
     <div id="quicklinks">
 
-        <!-- Nav START-->
+        <!-- Nav START
 <nav>
     <ul>
         <li><a href="#">Home</a></li>
@@ -30,7 +30,7 @@
 
     </ul>
 </nav>
-<!-- Nav END-->
+Nav END-->
 <img id= "Sportbanner" src="Images/Sports.jpg" alt="Sports App">
 </div>
 </header>
