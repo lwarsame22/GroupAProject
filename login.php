@@ -11,7 +11,7 @@ session_start();
 
             if ($query) {
                 $row = mysqli_fetch_row($query);
-                $userId = $row[0];
+                $firstname = $row[0];
                 $dbUserName = $row[1];
                 $dbPassword = $row[2];
             }
