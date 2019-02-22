@@ -63,8 +63,8 @@ Nav END-->
                 <h1>Login</h1>
                 <label for="username">Username:</label><br>
                 <Input type="text" placeholder="Enter Username" name="username" required><br>
-                <label for="psw">Password:</label><br>
-                <input type="password" placeholder="Enter Password" name="psw"><br>
+                <label for="password">Password:</label><br>
+                <input type="password" placeholder="Enter Password" name="password"><br>
 
                 <button type="submit" value="Login" name="loginButton">Login</button>
                 <label><input type="checkbox" checked="checked" name="remember">Remember Me</label>
