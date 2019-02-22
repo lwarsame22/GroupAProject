@@ -15,26 +15,29 @@ session_start();
 
     $gender = strip_tags($_POST['gender']);
     // $pass= md5($password);
-
-    $query = "INSERT INTO sports(Name,LastName,UserName, email, password, gender) 
-    VALUES('$firstname' , '$lastname', '$username', '$email', '$password','$gender')";
-
-    $result = mysqli_query($conn,$query);
-
-    if($result) {
-
-        echo "Succesfully registered";
-
-        header('Location: user.php'); //NEED TO EDIT THIS LATER
-
+    if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+        $errorEmail='InvalidEmail';
+        echo header('Location HomePage.php?msg=£errorEmail');
     }
-
     else {
 
-        echo "Failed to register";
+        $query = "INSERT INTO sports(Name,LastName,UserName, email, password, gender) 
+    VALUES('$firstname' , '$lastname', '$username', '$email', '$password','$gender')";
 
+        $result = mysqli_query($conn, $query);
+
+        if ($result) {
+
+            echo "Succesfully registered";
+
+            header('Location: user.php'); //NEED TO EDIT THIS LATER
+
+        } else {
+
+            echo "Failed to register";
+
+        }
     }
-
 
 ?>
 
