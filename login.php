@@ -6,21 +6,17 @@ session_start();
             $username = strip_tags($_POST['username']);
             $password = strip_tags($_POST['password']);
 
-            $sql = "SELECT Name,LastName, UserName, email, password, gender  FROM sports where username = '$username' LIMIT 1";
+            $sql = "SELECT *  FROM sports where UserName = '$username' AND password ='$password' LIMIT 1 ";
             $query = mysqli_query($db, $sql);
 
-            if ($query) {
-                $row = mysqli_fetch_row($query);
-                $firstname = $row[0];
-                $dbUserName = $row[1];
-                $dbPassword = $row[2];
-            }
-            if ($username == $dbUserName && $password == $dbPassword) {
+
+            if(mysqli_num_rows($query)==1){
                 $_SESSION['username'] = $username;
                 header('Location: user.php');//NEED TO EDIT THIS LOCATION LATER
             } else {
                 echo "<b><i>Incorrect credentials</i><b>";
             }
-        }
-
+            }
+     
 ?>
+

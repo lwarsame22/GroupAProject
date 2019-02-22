@@ -54,7 +54,7 @@ Nav END-->
         </p>
     </section>
 
-<p>Welcome <?php echo $username; ?></p>
+<p>Welcome <?php echo $_GET['$username']; ?></p>
 </main>
 </body>
 </html>
