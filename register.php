@@ -15,11 +15,8 @@ session_start();
 
     $gender = strip_tags($_POST['gender']);
     // $pass= md5($password);
-    if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-        $errorEmail='InvalidEmail';
-        echo header('Location HomePage.php?msg=$errorEmail');
-    }
-    else {
+   
+
 
         $query = "INSERT INTO sports(Name,LastName,UserName, email, password, gender) 
     VALUES('$firstname' , '$lastname', '$username', '$email', '$password','$gender')";
