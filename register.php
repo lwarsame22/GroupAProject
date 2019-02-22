@@ -24,7 +24,7 @@ session_start();
         if ($result) {
 
             echo "Succesfully registered";
-
+            $_SESSION['username'] = $username;
             header('Location: user.php'); //NEED TO EDIT THIS LATER
 
         } else {
@@ -32,7 +32,7 @@ session_start();
             echo "Failed to register";
 
         }
-    
+
 
 ?>
 
