@@ -1,8 +1,6 @@
 <?php
 session_start();
 
-if($_POST['registerButton']){
-
     include_once('DBConnect.php');
 
     $firstname = strip_tags($_POST['firstname']);
@@ -17,10 +15,10 @@ if($_POST['registerButton']){
 
     $gender = strip_tags($_POST['gender']);
 
-    $query = "INSERT INTO sport(Name,LastName,UserName, email, password, gender) 
+    $query = "INSERT INTO sports(Name,LastName,UserName, email, password, gender) 
     VALUES('$firstname' , '$lastname', '$username', '$email', '$password','$gender')";
 
-    $result = mysqli_query($db,$query);
+    $result = mysqli_query($conn,$query);
 
     if($result) {
 
@@ -36,6 +34,6 @@ if($_POST['registerButton']){
 
     }
 
-}
+
 ?>
 

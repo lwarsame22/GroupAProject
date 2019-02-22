@@ -7,7 +7,7 @@ session_start();
             $password = strip_tags($_POST['password']);
 
             $sql = "SELECT *  FROM sports where UserName = '$username' AND password ='$password' LIMIT 1 ";
-            $query = mysqli_query($db, $sql);
+            $query = mysqli_query($conn, $sql);
 
 
             if(mysqli_num_rows($query)==1){
