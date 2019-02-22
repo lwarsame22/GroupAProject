@@ -15,8 +15,6 @@ session_start();
 
     $gender = strip_tags($_POST['gender']);
     // $pass= md5($password);
-   
-
 
         $query = "INSERT INTO sports(Name,LastName,UserName, email, password, gender) 
     VALUES('$firstname' , '$lastname', '$username', '$email', '$password','$gender')";
@@ -34,7 +32,7 @@ session_start();
             echo "Failed to register";
 
         }
-    }
+    
 
 ?>
 
