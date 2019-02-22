@@ -17,7 +17,7 @@ session_start();
     // $pass= md5($password);
     if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
         $errorEmail='InvalidEmail';
-        echo header('Location HomePage.php?msg=£errorEmail');
+        echo header('Location HomePage.php?msg=$errorEmail');
     }
     else {
 
