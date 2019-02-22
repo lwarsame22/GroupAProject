@@ -33,8 +33,6 @@ if (isset($_SESSION['username'])){
         <li><a href="#">My Teams</a></li>
         <li><a href="#">Welcome <?php echo $username; ?></a></li>
         <li><a href="#"><form action="logout.php"><input type="submit" value="logout" name="logoutButton"></a></li>
-
-         name="logout" value="Logout">
     </ul>
 </nav>
 
