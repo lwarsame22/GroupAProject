@@ -23,7 +23,7 @@ if (isset($_SESSION['username'])){
 
     <div id="quicklinks">
 
-        <!-- Nav START
+
 <nav>
     <ul>
         <li><a href="#">Home</a></li>
@@ -35,7 +35,7 @@ if (isset($_SESSION['username'])){
         <li><a href="#"><button type="submit" value="logout" name="logoutButton">Logout</button></a></li>
     </ul>
 </nav>
-Nav END-->
+
 <img id= "Sportbanner" src="Images/Sports.jpg" alt="Sports App">
 </div>
 </header>
