@@ -6,9 +6,9 @@ session_start();
             $username = strip_tags($_POST['username']);
             $password = strip_tags($_POST['password']);
 
-            $pass= md5($password);
+            // $pass= md5($password);
 
-            $sql = "SELECT *  FROM sports where UserName = '$username' AND password ='$pass' LIMIT 1 ";
+            $sql = "SELECT *  FROM sports where UserName = '$username' AND password ='$password' LIMIT 1 ";
             $query = mysqli_query($conn, $sql);
 
 
