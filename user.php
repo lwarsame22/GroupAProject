@@ -9,11 +9,15 @@
 
 </head>
 <body>
-<!-- HEADER START-->
-<!--liban>
-<!--pams second try changes>
-<!--Ifeoma>
-
+<?php
+session_start();
+if (isset($_SESSION['username'])){
+    $username=$_SESSION['username'];
+} else {
+    header('Location: Homepage.php');
+    die();
+}
+?>
 <header>
     <img id= "Sportlogo" src="Images/SportLOGO.png" alt="Sports Logo">
 
@@ -27,7 +31,8 @@
         <li><a href="#">Events</a></li>
         <li><a href="#">MyProfile</a></li>
         <li><a href="#">My Teams</a></li>
-
+        <li><a href="#">Welcome <?php echo $username; ?></a></li>
+        <li><a href="#"><button type="submit" value="logout" name="logoutButton">Logout</button></a></li>
     </ul>
 </nav>
 Nav END-->
@@ -54,7 +59,6 @@ Nav END-->
         </p>
     </section>
 
-<p>Welcome <?php echo $_GET['$username']; ?></p>
 </main>
 </body>
 </html>
