@@ -47,7 +47,7 @@
             <Input type="text" placeholder="Enter email here" name="email" class="ipt" required><br>
             <label for="password">New Password:</label>
             <input type="password" placeholder="Enter New Password" name="password" class="ipt"><br>
-                <button type="submit" value="Sign Up" name="registerButton"></button>
+                <button type="submit" value="Sign Up" name="registerButton" class="btn"></button>
 
         </form>
     </section>
