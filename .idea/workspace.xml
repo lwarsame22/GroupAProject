@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6649fdf7-a6c3-4010-952b-d07560113076" name="Default" comment="">
       <change beforePath="Q:/.idea/workspace.xml" beforeDir="false" afterPath="Q:/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="Q:/user.php" beforeDir="false" afterPath="Q:/user.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -114,11 +113,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="953" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="952" />
     <option name="y" value="2" />
     <option name="width" value="974" />
-    <option name="height" value="1045" />
+    <option name="height" value="1046" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -172,7 +171,7 @@
       <workItem from="1550674872244" duration="336000" />
       <workItem from="1550675362038" duration="9609000" />
       <workItem from="1550843770705" duration="3376000" />
-      <workItem from="1550847724811" duration="9330000" />
+      <workItem from="1550847724811" duration="9936000" />
     </task>
     <task id="LOCAL-00001" summary="edit">
       <created>1550239326759</created>
@@ -356,15 +355,21 @@
       <option name="project" value="LOCAL" />
       <updated>1550856533683</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="edit">
+      <created>1550859253754</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1550859253754</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28260000" />
+    <option name="totallyTimeSpent" value="28866000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="2" width="974" height="1045" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="7" visible="true" weight="0.3301282" />

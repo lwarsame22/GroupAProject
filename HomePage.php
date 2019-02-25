@@ -89,18 +89,12 @@ Nav END-->
         <form id = "register" action="register.php" method="post">
             <div class="userRegister">
                 <h1>Register</h1>
-                <label for="firstname">First Name:</label>
-                <Input type="text" placeholder="Enter first name" name="firstname" required><br>
-                <label for="lastname">Last Name:</label>
-                <Input type="text" placeholder="Enter last name" name="lastname" required><br>
                 <label for="username">User Name:</label>
                 <Input type="text" placeholder="Enter username" name="username" required><br>
                 <label for="email">Email:</label>
                 <Input type="text" placeholder="Enter email" name="email" required><br>
                 <label for="password">Password:</label>
                 <input type="password" placeholder="Enter Password" name="password"><br>
-                <label for="gender">Gender:</label>
-                <Input type="text" placeholder="Enter gender" name="gender" required><br>
                 <button type="submit" value="Register" name="registerButton">Register</button>
             </div>
 

@@ -3,21 +3,16 @@ session_start();
 
     include_once('DBConnect.php');
 
-    $firstname = strip_tags($_POST['firstname']);
-
-    $lastname = strip_tags($_POST['lastname']);
-
     $username = strip_tags($_POST['username']);
 
     $email = strip_tags($_POST['email']);
 
     $password = strip_tags($_POST['password']);
 
-    $gender = strip_tags($_POST['gender']);
     // $pass= md5($password);
 
-        $query = "INSERT INTO sports(Name,LastName,UserName, email, password, gender) 
-    VALUES('$firstname' , '$lastname', '$username', '$email', '$password','$gender')";
+        $query = "INSERT INTO user_validation(u_mail, username, password) 
+    VALUES('$email', '$username', '$password')";
 
         $result = mysqli_query($conn, $query);
 
