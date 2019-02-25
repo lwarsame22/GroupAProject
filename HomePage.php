@@ -65,7 +65,7 @@ Nav END-->
                 <label for="username">Username:</label><br>
                 <Input type="text" placeholder="Enter Username" name="username" required><br>
                 <label for="password">Password:</label><br>
-                <input type="password" placeholder="Enter Password" name="password"><br>
+                <input type="password" placeholder="Enter Password" name="password" required><br>
 
                 <button type="submit" value="Login" name="loginButton">Login</button>
                 <label><input type="checkbox" checked="checked" name="remember">Remember Me</label>
@@ -95,7 +95,7 @@ Nav END-->
                 <label for="email">Email:</label><br>
                 <Input type="text" placeholder="Enter email" name="email" required><br>
                 <label for="password">Password:</label><br>
-                <input type="password" placeholder="Enter Password" name="password"><br>
+                <input type="password" placeholder="Enter Password" name="password" required><br>
                 <button type="submit" value="Register" name="registerButton">Register</button>
             </div>
 
