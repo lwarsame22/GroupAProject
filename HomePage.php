@@ -60,3 +60,6 @@
 
 </footer>
 <!-- Footer Ends -->
+
+</body>
+</html>
