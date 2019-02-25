@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Profile</title>
-    <link rel="stylesheet" href="css/homeStyle.css">
+    <link rel="stylesheet" href="css/style.csstyle.css">
 </head>
 <body>
 <form action="#">
