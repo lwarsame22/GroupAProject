@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Sign Up</title>
     <link rel="homeStyle" href="css/homeStyle.css">
+    <link rel="stylesheet" href="css/unsemantic-grid-responsive-tablet.css">
 </head>
 <body>
 
@@ -31,7 +32,8 @@
 <main class="content-control">
     <section class="left">
         <h3>Sport Playmate helps you connect and share with the network of sports lovers in your community</h3>
-        <img src="assets/images/sporty.png">
+        <img src="images/homesport.png" alt="Sports Home">
+        
     </section>
     <section class="right">
         <h1>Sign Up</h1>

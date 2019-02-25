@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6649fdf7-a6c3-4010-952b-d07560113076" name="Default" comment="">
-      <change beforePath="Q:/css/homeStyle.css" beforeDir="false" afterPath="Q:/css/homeStyle.css" afterDir="false" />
+      <change beforePath="Q:/HomePage.php" beforeDir="false" afterPath="Q:/HomePage.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +16,8 @@
       <file leaf-file-name="HomePage.html" pinned="false" current-in-tab="false">
         <entry file="file://Q:/HomePage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="69" selection-end-column="99" />
+            <state relative-caret-position="408">
+              <caret line="33" column="6" selection-start-line="33" selection-end-line="33" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -70,8 +70,8 @@
       <file leaf-file-name="HomePage.php" pinned="false" current-in-tab="true">
         <entry file="file://Q:/HomePage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="755">
-              <caret line="130" column="10" selection-start-line="130" selection-start-column="10" selection-end-line="130" selection-end-column="10" />
+            <state relative-caret-position="595">
+              <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -116,8 +116,8 @@
         <option value="Q:/register.php" />
         <option value="Q:/login.php" />
         <option value="Q:/HomePage.html" />
-        <option value="Q:/HomePage.php" />
         <option value="Q:/css/homeStyle.css" />
+        <option value="Q:/HomePage.php" />
       </list>
     </option>
   </component>
@@ -205,7 +205,7 @@
       <workItem from="1550675362038" duration="9609000" />
       <workItem from="1550843770705" duration="3376000" />
       <workItem from="1550847724811" duration="9936000" />
-      <workItem from="1551098122562" duration="2839000" />
+      <workItem from="1551098122562" duration="3139000" />
     </task>
     <task id="LOCAL-00001" summary="edit">
       <created>1550239326759</created>
@@ -424,11 +424,25 @@
       <option name="project" value="LOCAL" />
       <updated>1551100941699</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="edit">
+      <created>1551101051102</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1551101051102</updated>
+    </task>
+    <task id="LOCAL-00033" summary="edit">
+      <created>1551101085021</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1551101085021</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31705000" />
+    <option name="totallyTimeSpent" value="32005000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1933" height="1053" extended-state="6" />
@@ -664,13 +678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://Q:/HomePage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="69" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://Q:/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -685,10 +692,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://Q:/HomePage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="33" column="6" selection-start-line="33" selection-end-line="33" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://Q:/HomePage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="755">
-          <caret line="130" column="10" selection-start-line="130" selection-start-column="10" selection-end-line="130" selection-end-column="10" />
+        <state relative-caret-position="595">
+          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
         </state>
       </provider>
     </entry>
