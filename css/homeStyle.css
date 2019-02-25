@@ -1,0 +1,89 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.control{
+    background-color: brown;
+    width: 100%;
+}
+
+.control-align {
+    width: 90px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2{
+    width: 280px;
+    height: 60px;
+    font-family: Ebrima;
+    color: #ecf1f4;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    padding-left: 20px;
+}
+.login{
+    float: right;
+    font-family: Arial;
+    font-size: 13px;
+    color: white;
+    margin-top: 20px;
+}
+.inputtxt{
+    width: 150px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.btn{
+    background-color: burlywood;
+    color: ghostwhite;
+    font-family: "Arial Nova Light";
+    padding: 05px; 
+    border: none;
+    border-radius: 03px;
+    margin-left: 05px;
+}
+.login a{
+    color: ghostwhite;
+    text-decoration: none;
+    float: right;
+}
+.content-control{
+    width: 980px;
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.left{
+    float: left;
+    margin-top: 20px;
+    width: 400px;
+    font-family: Arial;
+    color: chocolate;
+}
+
+.left h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.right{
+    float: right;
+    font-family: Arial;
+    margin-top: 20px;
+
+}
+.ipt{
+    width: 380px;
+    height: 35px;
+    border-radius: 03px;
+    padding-left: 20px;
+    font-size: 20px;
+    border: none;
+    border: 1px solid #95a5a6;
+    margin-left: 05px;
+    margin-top: 10px;
+    float: right;
+}

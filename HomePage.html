@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +11,7 @@
 <body>
 <!-- HEADER START-->
 <!--liban>
-<!--pams second try changes db conncttor>
+<!--pams second try changes>
 <!--Ifeoma>
 
 <header>
@@ -18,25 +19,22 @@
 
     <div id="quicklinks">
 
-        <!-- Nav START-->
-        <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sports</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">MyProfile</a></li>
-            <li><a href="#">My Teams</a></li>
-            <li><a href="#"><button type="submit">Login!</button></a></li>
-            <li><a href="#"><button type="submit">Sign up</button></a></li>
+        <!-- Nav START
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">MyProfile</a></li>
+        <li><a href="#">My Teams</a></li>
 
-
-        </ul>
-        </nav>
-        <!-- Nav END-->
-        <img id= "Sportbanner" src="Images/Sports.jpg" alt="Sports App">
-    </div>
-    </header>
-    <!-- HEADER END -->
+    </ul>
+</nav>
+Nav END-->
+<img id= "Sportbanner" src="Images/Sports.jpg" alt="Sports App">
+</div>
+</header>
+<!-- HEADER END -->
 
 <main class="grid-container">
 
@@ -58,53 +56,46 @@
 
 
     <!--Section 1 FOR users-->
-<!-- l
-     <section class="grid-60">
+
+    <section class="grid-60">
         <form id = "login"  method="post" action="login.php">
             <div class="userLogin">
                 <h1>Login</h1>
                 <label for="username">Username:</label><br>
-            <Input type="text" placeholder="Enter Username" name="username" required><br>
-                <label for="psw">Password:</label><br>
-            <input type="password" placeholder="Enter Password" name="psw"><br>
+                <Input type="text" placeholder="Enter Username" name="username" required><br>
+                <label for="password">Password:</label><br>
+                <input type="password" placeholder="Enter Password" name="password"><br>
 
-                <button type="submit">Login</button>
+                <button type="submit" value="Login" name="loginButton">Login</button>
                 <label><input type="checkbox" checked="checked" name="remember">Remember Me</label>
             </div>
 
             <div id="forgotten details">
                 <nav>
-                <ul>
-                    <li><a href="#">Forgotten username ?</a></li>
-                    <li><a href="#">Forgotten password ?</a></li>
-                </ul>
+                    <ul>
+                        <li><a href="#">Forgotten username ?</a></li>
+                        <li><a href="#">Forgotten password ?</a></li>
+                    </ul>
                 </nav>
             </div>
         </form>
 
     </section>
-    -->
     <!-- End of Section 1 USERS-->
 
 
     <!--Section 2 NEW users-->
     <section  class="grid-60">
-        <form id = "register" action="create.php">
+        <form id = "register" action="register.php" method="post">
             <div class="userRegister">
                 <h1>Register</h1>
-                <label for="firstname">First Name:</label>
-                <Input type="text" placeholder="Enter first name" name="firstname" required><br>
-                <label for="lastname">Last Name:</label>
-                <Input type="text" placeholder="Enter last name" name="lastname" required><br>
-                <label for="username">User Name:</label>
+                <label for="username">User Name:</label><br>
                 <Input type="text" placeholder="Enter username" name="username" required><br>
-                <label for="email">Email:</label>
+                <label for="email">Email:</label><br>
                 <Input type="text" placeholder="Enter email" name="email" required><br>
-                <label for="psw">Password:</label>
-                <input type="password" placeholder="Enter Password" name="psw"><br>
-                <label for="psw2">Confirm Password:</label>
-                <input type="password" placeholder="Confirm Password" name="psw2"><br>
-                <button type="submit">Register</button>
+                <label for="password">Password:</label><br>
+                <input type="password" placeholder="Enter Password" name="password"><br>
+                <button type="submit" value="Register" name="registerButton">Register</button>
             </div>
 
         </form>
