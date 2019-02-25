@@ -89,11 +89,11 @@ Nav END-->
         <form id = "register" action="register.php" method="post">
             <div class="userRegister">
                 <h1>Register</h1>
-                <label for="username">User Name:</label>
+                <label for="username">User Name:</label><br>
                 <Input type="text" placeholder="Enter username" name="username" required><br>
-                <label for="email">Email:</label>
+                <label for="email">Email:</label><br>
                 <Input type="text" placeholder="Enter email" name="email" required><br>
-                <label for="password">Password:</label>
+                <label for="password">Password:</label><br>
                 <input type="password" placeholder="Enter Password" name="password"><br>
                 <button type="submit" value="Register" name="registerButton">Register</button>
             </div>
