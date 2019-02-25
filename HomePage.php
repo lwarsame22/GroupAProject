@@ -16,7 +16,7 @@
 
                 <input type="email" placeholder="Email" name="username" class="inputtxt">
                 <input type="password" placeholder="Password" name = "password" class="inputtxt">
-                <input type="button" value="Login" name="loginButton" class="btn">
+                <button type="submit" value="Login" name="loginButton" class="btn">
 
                 <p><input type="checkbox">Keep me logged in</p>
                 <p><a href="#">Forgotten Password</a></p>
@@ -33,7 +33,7 @@
     <section class="left">
         <h3>Sport Playmate helps you connect and share with the network of sports lovers in your community</h3>
         <img src="images/homesport.png" alt="Sports Home">
-        
+
     </section>
     <section class="right">
         <h1>Sign Up</h1>

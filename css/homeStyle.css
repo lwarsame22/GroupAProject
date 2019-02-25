@@ -1,13 +1,13 @@
 *{
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
-.control{
+control{
     background-color: brown;
     width: 100%;
 }
 
-.control-align {
+control-align {
     width: 90px;
     height: 90px;
     margin-left: auto;
@@ -23,20 +23,20 @@ h2{
     float: left;
     padding-left: 20px;
 }
-.login{
+login{
     float: right;
     font-family: Arial;
     font-size: 13px;
     color: white;
     margin-top: 20px;
 }
-.inputtxt{
+inputtxt{
     width: 150px;
     height: 20px;
     margin-left: 10px;
 }
 
-.btn{
+btn{
     background-color: burlywood;
     color: ghostwhite;
     font-family: "Arial Nova Light";
@@ -45,18 +45,18 @@ h2{
     border-radius: 03px;
     margin-left: 05px;
 }
-.login a{
+login a{
     color: ghostwhite;
     text-decoration: none;
     float: right;
 }
-.content-control{
+content-control{
     width: 980px;
     height: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
-.left{
+left{
     float: left;
     margin-top: 20px;
     width: 400px;
@@ -64,12 +64,12 @@ h2{
     color: chocolate;
 }
 
-.left h3{
+left h3{
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.right{
+right{
     float: right;
     font-family: Arial;
     margin-top: 20px;
