@@ -11,7 +11,7 @@ session_start();
 
     // $pass= md5($password);
 
-        $query = "INSERT INTO user_validation(u_mail, username, password) 
+        $query = "INSERT INTO user_validation(v_mail, username, password) 
     VALUES('$email', '$username', '$password')";
 
         $result = mysqli_query($conn, $query);
