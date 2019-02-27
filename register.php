@@ -3,6 +3,10 @@ session_start();
 
     include_once('DBConnect.php');
 
+ 
+
+
+
     $username = strip_tags($_POST['username']);
 
     $email = strip_tags($_POST['email']);
@@ -13,14 +17,14 @@ session_start();
 
         $query = "INSERT INTO user_validation(v_mail, username, password) 
           VALUES('$email', '$username', '$password')";
-        //$userID= last_insert_id();
-       // "INSERT INTO user_profile(u_mail) WHERE user_profile.u_ID=$userID";
+        $userID= last_insert_id();
+        "INSERT INTO user_profile(u_mail) WHERE user_profile.u_ID=$userID";
 
         $result = mysqli_query($conn, $query);
 
         if ($result) {
 
-            echo " egfkr v+ " ;
+            echo " egfkr v+ " +$userID;
             $_SESSION['username'] = $username;
            // header('Location: user.php'); //NEED TO EDIT THIS LATER
         } else {
