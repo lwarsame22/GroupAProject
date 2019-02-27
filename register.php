@@ -18,8 +18,10 @@ session_start();
 
         $query = "INSERT INTO user_validation(v_mail, username, password) 
           VALUES('$email', '$username', '$password')";
-        $query .="INSERT INTO user_profile(u_mail) VALUES ('$email')";
-        $result = mysqli_multi_query($conn, $query);
+
+        $result = mysqli_query($conn, $query);
+        $query2 ="INSERT INTO user_profile(u_mail) VALUES ('$email')";
+        $result2= mysqli_query($conn, $query2);
 
         if ($result) {
             $userID = mysqli_insert_id($conn);
