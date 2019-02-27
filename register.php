@@ -23,8 +23,8 @@ session_start();
         $result = mysqli_query($conn, $query);
 
         if ($result) {
-
-            echo " egfkr v+ ";
+            $last_id = $conn->insert_id;
+            echo " last nserted id ". $last_id;
             $_SESSION['username'] = $username;
            // header('Location: user.php'); //NEED TO EDIT THIS LATER
         } else {

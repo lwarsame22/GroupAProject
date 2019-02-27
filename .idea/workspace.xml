@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6649fdf7-a6c3-4010-952b-d07560113076" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DBConnect.php" beforeDir="false" afterPath="$PROJECT_DIR$/DBConnect.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBConnect.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DBConnect.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DBConnect.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+            <state relative-caret-position="374">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -58,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            <state relative-caret-position="442">
+              <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -131,6 +132,7 @@
         <option value="$PROJECT_DIR$/css/pstyle.css" />
         <option value="$PROJECT_DIR$/3.html" />
         <option value="$PROJECT_DIR$/register.php" />
+        <option value="$PROJECT_DIR$/DBConnect.php" />
       </list>
     </option>
   </component>
@@ -147,8 +149,8 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="562" />
-    <option name="width" value="1365" />
+    <option name="x" value="953" />
+    <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -215,28 +217,7 @@
       <workItem from="1551105519255" duration="103000" />
       <workItem from="1551105741085" duration="440000" />
       <workItem from="1551159721335" duration="37912000" />
-      <workItem from="1551278422978" duration="4216000" />
-    </task>
-    <task id="LOCAL-00007" summary="edit">
-      <created>1550685290964</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1550685290964</updated>
-    </task>
-    <task id="LOCAL-00008" summary="edit">
-      <created>1550685422978</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1550685422978</updated>
-    </task>
-    <task id="LOCAL-00009" summary="edit">
-      <created>1550685506427</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1550685506427</updated>
+      <workItem from="1551278422978" duration="4729000" />
     </task>
     <task id="LOCAL-00010" summary="edit">
       <created>1550685663548</created>
@@ -560,14 +541,35 @@
       <option name="project" value="LOCAL" />
       <updated>1551282153556</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="edit">
+      <created>1551282701704</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1551282701704</updated>
+    </task>
+    <task id="LOCAL-00057" summary="edit">
+      <created>1551282847066</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1551282847066</updated>
+    </task>
+    <task id="LOCAL-00058" summary="edit">
+      <created>1551282977346</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1551282977346</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81045000" />
+    <option name="totallyTimeSpent" value="81558000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="562" y="0" width="1365" height="1047" extended-state="0" />
+    <frame x="997" y="0" width="1365" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -902,17 +904,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DBConnect.php">
+    <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+        <state relative-caret-position="442">
+          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/register.php">
+    <entry file="file://$PROJECT_DIR$/DBConnect.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        <state relative-caret-position="374">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
