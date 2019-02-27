@@ -17,16 +17,15 @@ session_start();
 
         $query = "INSERT INTO user_validation(v_mail, username, password) 
           VALUES('$email', '$username', '$password')";
-        $last_id = mysqli_insert_id($conn);
-        $query .= "INSERT INTO user_profile(u_name, u_lastname, u_mail, gender, address, city, country, datebirth, mobilenum, active, u_ID) 
-         VALUES ('NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', '$last_id')";
 
-        $result = mysqli_multi_query($conn, $query);
+
+        $result = mysqli_query($conn, $query);
 
         if ($result) {
-            //$last_id = mysqli_insert_id($conn);
-            //$query .= "INSERT INTO user_profile(u_name, u_lastname, u_mail, gender, address, city, country, datebirth, mobilenum, active, u_ID)
-            //VALUES ('NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', $last_id)";
+            $last_id = mysqli_insert_id($conn);
+            $query_2= "INSERT INTO user_profile(u_name, u_lastname, u_mail, gender, address, city, country, datebirth, mobilenum, active, u_ID)
+            VALUES ('NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', '$last_id')";
+            $result_2 = mysqli_query($conn, $query_2);
             echo " last nserted id ". $last_id;
 
             $_SESSION['username'] = $username;
