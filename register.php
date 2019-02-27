@@ -18,12 +18,9 @@ session_start();
         $result = mysqli_query($conn, $query);
 
         if ($result) {
-            $userID= mysqli_insert_id();
-
-            $IDrequest= mysqli_query($conn, $userID);
-            $query_2 = "INSERT INTO user_profile(u_ID) VALUES('$userID')";
+            $query_2 = "INSERT INTO user_profile(u_ID) VALUES(mysqli_insert_id())";
             $result_2= mysqli_query($conn, $query_2);
-         
+
 
             echo "Succesfully registered";
             $_SESSION['username'] = $username;
