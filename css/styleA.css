@@ -1,0 +1,43 @@
+body{
+    height: 100%;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background: #95a5a6;
+}
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+h1{
+    font-size: 3em;
+    margin: 0;
+    padding: 20px;
+    color: white;
+}
+h2{
+    text-align: center;
+}
+
+#login{
+    margin: 150px auto;
+    text-align: center;
+    width: 250px;
+}
+#wrap{
+    background: "img src: images/sports.jpg";
+    min-height: 450px;
+    background-position: center;
+}
+.container{
+    position: absolute;
+    right: 5px;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background: #fff;
+    border-radius: 10px;
+}

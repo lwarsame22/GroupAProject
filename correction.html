@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/homeStyle.css">
+</head>
+<body>
+
+<!-- Header Start -->
+<header class="control">
+
+    <section class="left">
+        <h2>Sport Playmate</h2>
+    </section>
+
+        <section class="right">
+            <form class="login">
+                <input type="email" placeholder="Email" class="inputtxt">
+                <input type="password" placeholder="Password" class="inputtxt">
+                <input type="button" value="Login" class="btn"><br>
+                <input type="checkbox">Keep me logged in
+                <a href="#">Forgotten Password</a>
+            </form>
+        </section>
+    </>
+</header>
+<!-- Header Ends -->
+
+<!-- Main Starts -->
+
+<main class="content-control">
+    <section class="left">
+        <h3>Sport Playmate helps you connect and share with the network of sports lovers in your community</h3>
+        <img src="images/homesport.png" alt="Sports Home">
+
+    </section>
+    <section id="form" class="right">
+        <h1 id="right1">Sign Up</h1>
+        <h3 id="right1">Cost-Free! Anyone can join</h3><br><br>
+
+        <form class="ipt">
+            <form id="register" action="register.php" method="post">
+
+                <div>
+                 <label for="username">Username:</label>
+                <input type="text" name="username" required >
+                </div>
+
+               <div>
+                   <label for="email">Your Email:</label>
+                   <input type="text" name="email" required>
+               </div>
+
+                <div>
+                    <label for="password">New Password:</label>
+                    <input type="password"  name="password">
+                </div>
+
+                <div id="smt">
+                    <input type="submit" value="Sign Up" name="registerButton">
+                </div>
+
+            </form>
+    </section>
+
+
+</main>
+<!-- Main Ends -->
+
+<!-- Footer Starts -->
+<footer>
+
+
+</footer>
+<!-- Footer Ends -->
+
+</body>

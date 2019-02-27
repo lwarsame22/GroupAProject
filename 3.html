@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>log In</title>
+    <link rel="stylesheet" type="text/css" href="css/styleA.css">
+</head>
+<body>
+<!--Section 1 FOR users-->
+<h1>Sport Playmate</h1>
+<section id="wrap" class="grid-60">
+    <img src="images/sports.jpg" width="50%">
+    <div class="container">
+    <form id = "login"  method="post" action="login.php">
+        <div class="userLogin">
+            <h2>Login</h2>
+            <label for="username">Username:</label><br>
+            <Input type="text" placeholder="Enter Username" name="username" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" placeholder="Enter Password" name="password" required><br>
+
+            <button type="submit" value="Login" name="loginButton">Login</button>
+            <label><input type="checkbox" checked="checked" name="remember">Remember Me</label>
+        </div>
+
+        <div id="forgotten details">
+            <nav>
+                <ul>
+                    <li><a href="#">Remember username ?</a></li>
+                    <li><a href="#">Forgot password ?</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h3>Health is Wealth</h3>
+    </form>
+    </div>
+</section>
+<!-- End of Section 1 USERS-->
+</body>
+</html>
