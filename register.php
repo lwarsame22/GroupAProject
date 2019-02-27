@@ -18,7 +18,8 @@ session_start();
         $query = "INSERT INTO user_validation(v_mail, username, password) 
           VALUES('$email', '$username', '$password')";
         $last_id = mysqli_insert_id($conn);
-        $query .= "INSERT INTO user_profile(u_ID) VALUES ('$last_id)";
+        $query .= "INSERT INTO user_profile(u_name, u_lastname, u_mail, gender, address, city, country, datebirth, mobilenum, active, u_ID) 
+VALUES ('NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', $last_id)";
 
         $result = mysqli_multi_query($conn, $query);
 
