@@ -18,7 +18,7 @@ session_start();
         $result = mysqli_query($conn, $query);
 
         if ($result) {
-            $query_2 = "INSERT INTO user_profile(u_ID) VALUES(mysqli_insert_id())";
+            $query_2 = "INSERT INTO user_profile(u_ID) VALUES(user_validation.mysqli_insert_id())";
             $result_2= mysqli_query($conn, $query_2);
 
 
