@@ -19,7 +19,7 @@ session_start();
 
         if ($result) {
 
-            echo $userID ;
+            echo " egfkr v+ $userID " ;
             $_SESSION['username'] = $username;
            // header('Location: user.php'); //NEED TO EDIT THIS LATER
         } else {
