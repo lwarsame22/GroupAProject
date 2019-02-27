@@ -23,7 +23,7 @@ session_start();
         $result = mysqli_query($conn, $query);
 
         if ($result) {
-            $last_id = $conn->insert_id;
+            $last_id = mysqli_insert_id($conn);
             echo " last nserted id ". $last_id;
             $query_2="INSERT INTO user_profile(u_ID) VALUES ('$last_id)";
             $result_2 = mysqli_query($conn, $query_2);
