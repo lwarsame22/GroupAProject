@@ -27,7 +27,7 @@ session_start();
             $query2= "INSERT INTO user_profile(u_name, u_lastname, u_mail, gender, address, city, country, datebirth, mobilenum, active, u_ID, p_ID)
             VALUES ('NULL', 'NULL', '$email', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', '$id')";
             $result2 = mysqli_query($conn, $query2);
-            echo " last nserted id ". $last_id;
+            echo " last nserted id ". $id;
 
             $_SESSION['username'] = $username;
            // header('Location: user.php'); //NEED TO EDIT THIS LATER
