@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6649fdf7-a6c3-4010-952b-d07560113076" name="Default" comment="edit">
+    <list default="true" id="6649fdf7-a6c3-4010-952b-d07560113076" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
     </list>
@@ -62,8 +62,8 @@
       <file leaf-file-name="register.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="20" column="58" lean-forward="true" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+            <state relative-caret-position="335">
+              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -217,21 +217,7 @@
       <workItem from="1551105519255" duration="103000" />
       <workItem from="1551105741085" duration="440000" />
       <workItem from="1551159721335" duration="37912000" />
-      <workItem from="1551278422978" duration="12434000" />
-    </task>
-    <task id="LOCAL-00021" summary="edit">
-      <created>1550855618322</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1550855618322</updated>
-    </task>
-    <task id="LOCAL-00022" summary="edit">
-      <created>1550856215972</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1550856215972</updated>
+      <workItem from="1551278422978" duration="13085000" />
     </task>
     <task id="LOCAL-00023" summary="edit">
       <created>1550856322051</created>
@@ -562,11 +548,25 @@
       <option name="project" value="LOCAL" />
       <updated>1551290789791</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="edit">
+      <created>1551291067150</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1551291067150</updated>
+    </task>
+    <task id="LOCAL-00071" summary="edit">
+      <created>1551291258666</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1551291258666</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89263000" />
+    <option name="totallyTimeSpent" value="89914000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="977" y="0" width="950" height="1047" extended-state="0" />
@@ -913,8 +913,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="20" column="58" lean-forward="true" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+        <state relative-caret-position="335">
+          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
         </state>
       </provider>
     </entry>

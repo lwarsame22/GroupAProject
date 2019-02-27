@@ -20,16 +20,19 @@ session_start();
           VALUES('$email', '$username', '$password')";
 
         $result = mysqli_query($conn, $query);
-        $query2 ="INSERT INTO user_profile(u_mail) VALUES ('$email')";
-        $result2= mysqli_query($conn, $query2);
+        // $query2 ="INSERT INTO user_profile(u_mail) VALUES ('$email')";
+        // $result2= mysqli_query($conn, $query2);
 
         if ($result) {
             $userID = mysqli_insert_id($conn);
+            $SeLECT = "SELECT * FROM user_validation";
+            $result3=mysqli_query($conn, $SeLECT);
+
             // $query2= "INSERT INTO user_profile(u_name, u_lastname, u_mail, gender, address, city, country, datebirth, mobilenum, active, u_ID, p_ID)
             // VALUES ('NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', '$userID', 'NULL')";
             // $result2 = mysqli_query($conn, $query2);
 
-            echo " last nserted id ". $userID;
+            echo " last nserted id ". $userID . Sresult3;
 
             $_SESSION['username'] = $username;
            // header('Location: user.php'); //NEED TO EDIT THIS LATER
