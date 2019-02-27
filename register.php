@@ -19,12 +19,14 @@ session_start();
           VALUES('$email', '$username', '$password')";
         $last_id = mysqli_insert_id($conn);
         $query .= "INSERT INTO user_profile(u_name, u_lastname, u_mail, gender, address, city, country, datebirth, mobilenum, active, u_ID) 
-VALUES ('NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', $last_id)";
+         VALUES ('NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', '$last_id')";
 
         $result = mysqli_multi_query($conn, $query);
 
         if ($result) {
-
+            //$last_id = mysqli_insert_id($conn);
+            //$query .= "INSERT INTO user_profile(u_name, u_lastname, u_mail, gender, address, city, country, datebirth, mobilenum, active, u_ID)
+            //VALUES ('NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', $last_id)";
             echo " last nserted id ". $last_id;
 
             $_SESSION['username'] = $username;
