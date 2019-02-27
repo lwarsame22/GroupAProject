@@ -13,7 +13,8 @@ session_start();
 
         $query = "INSERT INTO user_validation(v_mail, username, password) 
           VALUES('$email', '$username', '$password')";
-        $userID=user_validation.mysqli_insert_id();
+        $userID= last_insert_id();
+       // "INSERT INTO user_profile(u_mail) WHERE user_profile.u_ID=$userID";
 
         $result = mysqli_query($conn, $query);
 
