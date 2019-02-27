@@ -28,10 +28,10 @@ session_start();
             $SeLECT = "SELECT * FROM user_validation";
             $result3=mysqli_query($conn, $SeLECT);
 
-            // $query2= "INSERT INTO user_profile(u_name, u_lastname, u_mail, gender, address, city, country, datebirth, mobilenum, active, u_ID, p_ID)
-            // VALUES ('NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', '$userID', 'NULL')";
-            // $result2 = mysqli_query($conn, $query2);
-
+            $query2= "INSERT INTO user_profile(u_name, u_lastname, u_mail, gender, address, city, country, datebirth, mobilenum, active, u_ID)
+             VALUES ('NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', 'NULL', '$userID')";
+            $result2 = mysqli_query($conn, $query2);
+                echo $result2;
             echo " last nserted id ". $userID . Sresult3;
 
             $_SESSION['username'] = $username;
