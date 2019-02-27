@@ -13,7 +13,7 @@ session_start();
 
         $query = "INSERT INTO user_validation(v_mail, username, password) 
           VALUES('$email', '$username', '$password')";
-        $userID=mysqli_insert_id();
+        $userID=user_validation.mysqli_insert_id();
 
         $result = mysqli_query($conn, $query);
 
