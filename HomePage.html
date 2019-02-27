@@ -9,23 +9,21 @@
 
 <!-- Header Start -->
 <header class="control">
+
     <section class="left">
-    <h2>Sport Playmate</h2>
+        <h2>Sport Playmate</h2>
     </section>
-    <div class="control-align">
-        <section class="right">
+
+    <section class="right">
         <form class="login">
             <input type="email" placeholder="Email" class="inputtxt">
             <input type="password" placeholder="Password" class="inputtxt">
-            <input type="button" value="Login" class="btn">
-           <input type="checkbox">Keep me logged in
+            <input type="button" value="Login" class="btn"><br>
+            <input type="checkbox">Keep me logged in
             <a href="#">Forgotten Password</a>
-
-
-
         </form>
-        </section>
-    </div>
+    </section>
+</>
 </header>
 <!-- Header Ends -->
 
@@ -37,19 +35,31 @@
         <img src="images/homesport.png" alt="Sports Home">
 
     </section>
-    <section class="right">
-        <h1>Sign Up</h1>
-        <h3>Cost-Free! Anyone can join</h3>
+    <section id="form" class="right">
+        <h1 id="right1">Sign Up</h1>
+        <h3 id="right1">Cost-Free! Anyone can join</h3><br><br>
 
         <form class="ipt">
             <form id="register" action="register.php" method="post">
 
-                <input type="text" placeholder="Enter user name" name="username" class="ipt" required ><br>
-                <label for="email">Your Email:</label>
-                <input type="text" placeholder="Enter email here" name="email" class="ipt" required><br>
-                <label for="password">New Password:</label>
-                <input type="password" placeholder="Enter New Password" name="password" class="ipt"><br>
-                <input type="submit" value="Sign Up" name="registerButton">
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" required >
+                </div>
+
+                <div>
+                    <label for="email">Your Email:</label>
+                    <input type="text" name="email" required>
+                </div>
+
+                <div>
+                    <label for="password">New Password:</label>
+                    <input type="password"  name="password">
+                </div>
+
+                <div id="smt">
+                    <input type="submit" value="Sign Up" name="registerButton">
+                </div>
 
             </form>
     </section>
