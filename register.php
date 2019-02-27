@@ -3,7 +3,7 @@ session_start();
 
     include_once('DBConnect.php');
 
- 
+
 
 
 
@@ -18,7 +18,7 @@ session_start();
         $query = "INSERT INTO user_validation(v_mail, username, password) 
           VALUES('$email', '$username', '$password')";
         $userID= last_insert_id();
-        "INSERT INTO user_profile(u_mail) WHERE user_profile.u_ID=$userID";
+       // "INSERT INTO user_profile(u_mail) WHERE user_profile.u_ID=$userID";
 
         $result = mysqli_query($conn, $query);
 
