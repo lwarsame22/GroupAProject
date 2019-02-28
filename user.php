@@ -29,7 +29,7 @@ if (isset($_SESSION['username'])){
         <li><a href="#">Home</a></li>
         <li><a href="#">Sports</a></li>
         <li><a href="#">Events</a></li>
-        <li><a href="#">MyProfile</a></li>
+        <li><a href="Profile.php">MyProfile</a></li>
         <li><a href="#">My Teams</a></li>
         <li><a href="#">Welcome <?php echo $username; ?></a></li>
         <li><a href="#"><form action="logout.php"><input type="submit" value="logout" name="logoutButton"></a></li>

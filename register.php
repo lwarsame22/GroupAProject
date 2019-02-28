@@ -4,9 +4,6 @@ session_start();
     include_once('DBConnect.php');
 
 
-
-
-
     $username = strip_tags($_POST['username']);
 
     $email = strip_tags($_POST['email']);
@@ -29,8 +26,6 @@ session_start();
             $query2= "INSERT INTO user_profile(u_mail)
              VALUES ('$email')";
             $result2 = mysqli_query($conn, $query2);
-                
-
 
             $_SESSION['username'] = $username;
            header('Location: user.php');

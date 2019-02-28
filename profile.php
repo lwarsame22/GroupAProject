@@ -9,9 +9,9 @@
 <body>
 <form action="#">
     <label for="firstname">First name:</label><br>
-    <Input type="text" placeholder="Enter First name" name="firstname" required><br>
+    <Input type="text" placeholder="Enter First name" name="uname" required><br>
     <label for="lastname">Last name:</label><br>
-    <input type="text" placeholder="Enter Last name" name="last name" required><br>
+    <input type="text" placeholder="Enter Last name" name="ulname" required><br>
     <input type="radio">gender:
     <label for="address">Address:</label><br>
     <Input type="text" placeholder="Enter Address" name="address" required><br>
@@ -22,9 +22,12 @@
     <label for="datebirth">Date Of Birth:</label><br>
     <input type="date" placeholder="Enter Date Of Birth" name="datebirth"><br>
     <label for="mobile">Mobile Number:</label><br>
-    <Input type="tel" placeholder="Enter Mobile Number" name="mobile" required><br>
+    <Input type="tel" placeholder="Enter Mobile Number" name="mobilenumber" required><br>
 
     <br><br>
+
+
+
 
     <input type="submit">
 </form>
