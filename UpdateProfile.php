@@ -44,19 +44,14 @@ $query = "UPDATE  user_profile
 
 
 $result = mysqli_query($conn, $query);
-// $query2 ="INSERT INTO user_profile(u_mail) VALUES ('$email')";
-// $result2= mysqli_query($conn, $query2);
 
 if ($result) {
 
 
-    $result2 = mysqli_query($conn, $query2);
-
-    $_SESSION['username'] = $username;
-    header('Location: user.php');
+    header('Location: user.php'); // need to EDIT THIS LOCATION TO THE PROFILE VIEW PAGE
 } else {
 
-    echo "Failed to register";
+    echo "Failed to update";
 
 }
 
