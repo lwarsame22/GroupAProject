@@ -13,25 +13,6 @@ if (isset($_SESSION['username'])){
     $username=$_SESSION['username'];
 
 echo $username;
-
-    <div id="quicklinks">
-
-
-<nav>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Sports</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="Profile.php">MyProfile</a></li>
-        <li><a href="#">My Teams</a></li>
-        <li><a href="#">Welcome echo $username;</a></li>
-<li><a href="#"><form action="logout.php"><input type="submit" value="logout" name="logoutButton"></a></li>
-</ul>
-</nav>
-
-<img id= "Sportbanner" src="Images/Sports.jpg" alt="Sports App">
-</div>
-
 } else {
 
 <header class="control">
