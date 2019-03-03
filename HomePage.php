@@ -26,24 +26,15 @@ require "Header.php";
 
         <form class="ipt">
             <form id="register" action="register.php" method="post">
-
-                <div>
-                    <label for="username">Username:</label>
-                    <input type="text" name="username" required >
-                </div>
-
-                <div>
-                    <label for="email">Your Email:</label>
-                    <input type="text" name="email" required>
-                </div>
-
-                <div>
-                    <label for="password">New Password:</label>
-                    <input type="password"  name="password">
-                </div>
-
-                <div id="smt">
-                    <button type="submit" value="Sign Up" name="registerButton">
+                <div class="userRegister">
+                    <h1>Register</h1>
+                <label for="username">User Name:</label><br>
+                <Input type="text" placeholder="Enter username" name="username" required><br>
+                <label for="email">Email:</label><br>
+                <Input type="text" placeholder="Enter email" name="email" required><br>
+                <label for="password">Password:</label><br>
+                <input type="password" placeholder="Enter Password" name="password" required><br>
+                <button type="submit" value="Register" name="registerButton">Register</button>
                 </div>
 
             </form>
