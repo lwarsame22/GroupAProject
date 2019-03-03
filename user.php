@@ -9,23 +9,7 @@
 
 </head>
 <body>
-<?php
-session_start();
-if (isset($_SESSION['username'])){
-    $username=$_SESSION['username'];
 
-
-} else {
-    header('Location: HomePage.php');
-    die();
-}
-?>
-<header>
-    <img id= "Sportlogo" src="Images/SportLOGO.png" alt="Sports Logo">
-
-
-</header>
-<!-- HEADER END -->
 
 
 <?php
