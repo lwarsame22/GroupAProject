@@ -13,6 +13,8 @@
 session_start();
 if (isset($_SESSION['username'])){
     $username=$_SESSION['username'];
+
+
 } else {
     header('Location: HomePage.php');
     die();
@@ -21,25 +23,14 @@ if (isset($_SESSION['username'])){
 <header>
     <img id= "Sportlogo" src="Images/SportLOGO.png" alt="Sports Logo">
 
-    <div id="quicklinks">
 
-
-<nav>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Sports</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="Profile.php">MyProfile</a></li>
-        <li><a href="#">My Teams</a></li>
-        <li><a href="#">Welcome <?php echo $username; ?></a></li>
-        <li><a href="#"><form action="logout.php"><input type="submit" value="logout" name="logoutButton"></a></li>
-    </ul>
-</nav>
-
-<img id= "Sportbanner" src="Images/Sports.jpg" alt="Sports App">
-</div>
 </header>
 <!-- HEADER END -->
+
+
+<?php
+require "Header.php";
+?>
 
 <main class="grid-container">
 
