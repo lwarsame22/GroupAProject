@@ -23,14 +23,15 @@ require "Header.php";
 
     </section>
 
-    
-        <h1 id="right1">Sign Up</h1>
-        <h3 id="right1">Cost-Free! Anyone can join</h3><br><br>
+
 
 
             <form id="register" method="post" action="register.php" >
+
+
                 <div class="userRegister">
-                    <h1>Register</h1>
+                    <h1 id="right1">Sign Up</h1>
+                    <h3 id="right1">Cost-Free! Anyone can join</h3><br><br>
                     <label for="username">User Name:</label><br>
                     <Input type="text" placeholder="Enter username" name="username" required><br>
                     <label for="email">Email:</label><br>
