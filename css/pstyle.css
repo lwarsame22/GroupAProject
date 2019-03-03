@@ -18,8 +18,8 @@
 }
 
 .content-control {
-    width: 980px;
-    height: 1000px;
+    width: 600px;
+    height: 800px;
 
 }
 .left{
@@ -39,7 +39,7 @@
     float: right;
     font-family: Arial;
     margin-top: 20px;
-    width: 450px;
+    width: 500px;
 
 }
 h1 {

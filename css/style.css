@@ -73,10 +73,12 @@ li a:hover {
 
 #Sportbanner
 {
-    max-width: 960px;
-    background-color: white;
-   -webkit-justify-content: center;
+
+    -webkit-justify-content: center;
+
 }
+
+
  #Sportapp
 {
      width: 300px;
