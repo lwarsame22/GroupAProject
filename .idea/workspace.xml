@@ -163,10 +163,10 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="533" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="532" />
     <option name="width" value="1394" />
-    <option name="height" value="1047" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
