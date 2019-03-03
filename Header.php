@@ -16,9 +16,9 @@
     </section>
 
     <section class="right">
-        <form class="login">
-            <input type="email" placeholder="Email" class="inputtxt">
-            <input type="password" placeholder="Password" class="inputtxt">
+        <form id = "login"  method="post" action="login.php">
+            <input type="text" placeholder="username" name="username" class="inputtxt" required>
+            <input type="password" placeholder="password" name="password" class="inputtxt" required>
             <input type="button" value="Login" class="btn"><br>
             <input type="checkbox">Keep me logged in
             <a href="#">Forgotten Password</a>
