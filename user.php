@@ -9,10 +9,9 @@
 
 </head>
 <body>
-
-
-
 <?php
+$_SESSION['username'] = $username;
+
 require "Header.php";
 ?>
 
