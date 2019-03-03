@@ -27,7 +27,7 @@ require "Header.php";
         <h3 id="right1">Cost-Free! Anyone can join</h3><br><br>
 
         <form class="ipt">
-            <form id="register" action="register.php" method="post">
+            <form id="register" method="post" action="register.php" >
                 <div class="userRegister">
                     <h1>Register</h1>
                     <label for="username">User Name:</label><br>

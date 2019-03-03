@@ -14,7 +14,7 @@ session_start();
 if (isset($_SESSION['username'])){
     $username=$_SESSION['username'];
 } else {
-    header('Location: Homepage.php');
+    header('Location: HomePage.php');
     die();
 }
 ?>
