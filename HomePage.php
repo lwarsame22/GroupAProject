@@ -22,11 +22,12 @@ require "Header.php";
         <img id="Sportbanner" src="images/sports.jpg" alt="Sports Home">
 
     </section>
-    <section id="form" class="right">
+
+    
         <h1 id="right1">Sign Up</h1>
         <h3 id="right1">Cost-Free! Anyone can join</h3><br><br>
 
-        <form class="ipt">
+
             <form id="register" method="post" action="register.php" >
                 <div class="userRegister">
                     <h1>Register</h1>
@@ -34,7 +35,7 @@ require "Header.php";
                     <Input type="text" placeholder="Enter username" name="username" required><br>
                     <label for="email">Email:</label><br>
                     <Input type="text" placeholder="Enter email" name="email" required><br>
-                    <label for="password">Password:</label><br>
+                    <label for="password">Pass/word:</label><br>
                     <input type="password" placeholder="Enter Password" name="password" required><br>
                     <button type="submit" value="Register" name="registerButton">Register</button>
                 </div>
