@@ -4,13 +4,11 @@
 <body>
 
 <!-- Header Start -->
-<header class="control">
+<footer class="control">
 
-    <section class="left">
-        <h2>Sport Playmate</h2>
-    </section>
+    <p> (c) 2016 Mike Crabb</p>
 
 
-</header>
+</footer>
 
 </html>

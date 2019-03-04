@@ -9,11 +9,11 @@
 
 $servername = "CSDM-WEBDEV";
 $dbname="db1810356_qvan";
-$username = "1810356";
-$password = "1810356";
+$userdb = "1810356";
+$passdb = "1810356";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $userdb, $passdb, $dbname);
 
 // Check connection
 if (!$conn) {

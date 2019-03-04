@@ -14,6 +14,7 @@ session_start();
 
             if(mysqli_num_rows($query)==1){
                 $_SESSION['username'] = $username;
+
                 header('Location: user.php');//NEED TO EDIT THIS LOCATION LATER
             } else {
                 echo "<b><i>Incorrect credentials</i><b>";
