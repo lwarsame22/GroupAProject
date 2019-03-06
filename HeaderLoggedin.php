@@ -39,10 +39,6 @@ $username=$_SESSION['username'];
     </section>
 </header>
 <!-- Header Ends -->
-<!-- Footer Begins -->
-     <?php
-    reguire "Footer.php"
-    ?>
-<!-- Footer Ends -->
+
 </body>
 </html>

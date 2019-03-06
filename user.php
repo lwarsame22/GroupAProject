@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome</title>
-    <!--link rel="stylesheet" href="css/style.css"-->
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/unsemantic-grid-responsive-tablet.css">
 
 </head>
@@ -87,7 +87,7 @@ else {
 
 <!-- Begin Footer -->
     <?php
-    require "Footer.php
+    require "Footer.php";
     ?>
 <!-- Footer Ends -->
 
