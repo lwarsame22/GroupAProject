@@ -18,8 +18,8 @@
         <form id = "login"  method="post" action="login.php">
             
             <form class="login">
-            <input type="email" placeholder="Email" class="inputtxt">
-            <input type="password" placeholder="Password" class="inputtxt">
+            <input type="text" placeholder="Username" name="username" class="inputtxt">
+            <input type="password" placeholder="Password" name ="password" class="inputtxt">
             <button type="submit" value="Login" name="loginButton" class="btn"><br>
             <input type="checkbox">Keep me logged in
             <a href="#">Forgotten Password</a>
