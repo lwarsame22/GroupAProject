@@ -20,7 +20,7 @@
             <form class="login">
             <input type="email" placeholder="Email" class="inputtxt">
             <input type="password" placeholder="Password" class="inputtxt">
-            <input type="button" value="Login" name="loginButton" class="btn"><br>
+            <button type="submit" value="Login" name="loginButton" class="btn"><br>
             <input type="checkbox">Keep me logged in
             <a href="#">Forgotten Password</a>
 
