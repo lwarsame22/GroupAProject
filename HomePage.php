@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="css/homeStyle.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/unsemantic-grid-responsive-tablet.css">
 </head>
 
@@ -16,31 +16,38 @@ require "Header.php";
 <!-- Main Starts -->
 
 <main class="content-control">
-
+ <img id="Sportbanner" src="images/sports.jpg" alt="Sports Home">
     <section class="boxregister">
-
-        <img id="Sportbanner" src="images/sports.jpg" alt="Sports Home">
-
+<!--Section 1 DESCRIPTION-->
+    <section id="AppDescription" class="grid-100">
+       <h2> Making it easier to find people around you to organize and play your sport </h2>
+        <p> QUICK PLAYs
+            Smart way to find members willing to play a sport and arrange activities with each other
+            TEAM MANAGEMENT
+            Join one or more teams and schedule your matches in order to no overlap. Feed you app with the amount of minutes you played in the match or if you score some points
+            EVENTS AND COMPETITIONS
+            Create a quick event of event run for a competition, leagues or tournaments.
+            Organize one-off or recurring activities, event or training sessions
+            Accept new entries
+        </p> </section><br><br>
     </section>
-
-
-
-
             <form id="register" method="post" action="register.php" >
 
-
+<section  class="grid-60">
                 <div class="userRegister">
-                    <h1 id="right1">Sign Up</h1>
-                    <h3 id="right1">Cost-Free! Anyone can join</h3><br><br>
-                    <label for="username">User Name:</label><br>
+                    <h2>Sign Up</h2>
+                    <h2>Cost-Free! Anyone can join</h2><br><br>
+                    <label for="username">User Name:</label>
                     <Input type="text" placeholder="Enter username" name="username" required><br>
-                    <label for="email">Email:</label><br>
+                    <label for="email">Email:</label>
                     <Input type="text" placeholder="Enter email" name="email" required><br>
-                    <label for="password">Pass/word:</label><br>
+                    <label for="password">Pass/word:</label>
                     <input type="password" placeholder="Enter Password" name="password" required><br>
+                        
+                    <div id="submit">
                     <button type="submit" value="Register" name="registerButton">Register</button>
                 </div>
-
+              </div>
             </form>
 
     </section>
