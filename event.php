@@ -28,17 +28,7 @@ else {
     <input type="text" placeholder="Enter Description" name="description"><br>
     <label for="location">Location: </label><br>
     <input type="text" placeholder="Enter location" name="location"><br>
-    <select name="sportname">
-        <?php
-            $query="SELECT s_name FROM sports";
-            $result=mysqli_query($conn,$query);
-            $row=mysqli_fetch_assoc($result);
-            while($row){
-                $sport_name=$row('s_name');
-                echo  "<option value='$sport_name'>$sport_name</option>";
-            }
-        ?>
-    </select>
+    
     <button type="submit" value="CreateEvent" name="eventButton" class="btn">Create Event</button><br>
 </form>
 </body>
