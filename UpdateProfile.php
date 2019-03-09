@@ -3,12 +3,13 @@ session_start();
 
 include_once('DBConnect.php');
 
+$username=$_SESSION['username'];
 
 $uname = strip_tags($_POST['uname']);
 
 $ulname = strip_tags($_POST['ulname']);
 
-$username=$_SESSION['username'];
+
 
 $gender = strip_tags($_POST['gender']); //Radio BOx
 
