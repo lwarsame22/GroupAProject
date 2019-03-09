@@ -32,7 +32,7 @@ else {
     <label for="location">Location <?php echo $row ?>: </label><br>
     <input type="text" placeholder="Enter location" name="location"><br>
 
-    <button type="submit" value="createEvent" name="eventButton" class="btn">Create Event</button><br>
+    <button type="submit" value="createEvent" name="eventButton" >Create Event</button><br>
 </form>
 </body>
 </html>
