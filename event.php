@@ -23,7 +23,7 @@ else {
     <label for="title">Event Title:</label><br>
     <Input type="text" placeholder="Enter Event Title" name="title"><br>
     <label for="date">Event date:</label><br>
-    <input type="date" placeholder="Enter Event date="name="date" required><br>
+    <input type="date" placeholder="Enter Event date="name="date"><br>
     <label for="description">Description: </label><br>
     <input type="text" placeholder="Enter Description" name="description"><br>
     <label for="location">Location: </label><br>
