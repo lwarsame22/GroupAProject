@@ -18,7 +18,7 @@ if ($_POST['eventButton']) {
 
 // $pass= md5($password);
     $query = "INSERT INTO events(e_username, e_title, e_description, e_location)
-          VALUES ('$username','b','b','b')";
+          VALUES ('$username','$title','$description','$location')";
 
 
     $result = mysqli_query($conn, $query);
