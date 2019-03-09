@@ -29,7 +29,7 @@ else {
     <label for="location">Location: </label><br>
     <input type="text" placeholder="Enter location" name="location"><br>
 
-    <button type="submit" value="CreateEvent" name="eventButton" class="btn">Create Event</button><br>
+    <button type="submit" value="createEvent" name="eventButton" class="btn">Create Event</button><br>
 </form>
 </body>
 </html>
