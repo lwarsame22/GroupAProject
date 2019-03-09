@@ -34,7 +34,7 @@ $query = "UPDATE  user_profile
           city ='$city',
           country ='$country'
 
-          WHERE `u_username` = '$username'";
+          WHERE u_username = '$username'";
 
 
 $result = mysqli_query($conn, $query);
