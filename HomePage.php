@@ -43,7 +43,7 @@ require "Header.php";
                     <Input type="text" placeholder="Enter email" name="email" required><br>
                     <label for="password">Pass/word:</label>
                     <input type="password" placeholder="Enter Password" name="password" required><br>
-                        
+
                     <div id="submit">
                     <button type="submit" value="Register" name="registerButton">Register</button>
                 </div>

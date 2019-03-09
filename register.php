@@ -13,7 +13,7 @@ session_start();
     // $pass= md5($password);
 
 
-        $query = "INSERT INTO user_validation(u_mail, username, password) 
+        $query = "INSERT INTO user_profile(u_mail, u_username, password) 
           VALUES('$email', '$username', '$password')";
 
         $result = mysqli_query($conn, $query);
@@ -21,11 +21,6 @@ session_start();
         // $result2= mysqli_query($conn, $query2);
 
         if ($result) {
-
-
-            $query2= "INSERT INTO user_profile(u_mail)
-             VALUES ('$email')";
-            $result2 = mysqli_query($conn, $query2);
 
             $_SESSION['username'] = $username;
            header('Location: user.php');

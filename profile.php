@@ -7,12 +7,25 @@
     <link rel="stylesheet" href="css/style.csstyle.css">
 </head>
 <body>
+<?php
+session_start();
+if ( isset($_SESSION['username'] )){
+    $username=$_SESSION['username'];
+
+    require "HeaderLoggedin.php";
+}
+else {
+    header('Location: HomePage.php');
+}
+
+?>
 <form name="updateprofile" method="post" action="UpdateProfile.php">
     <label for="firstname">First name:</label><br>
     <Input type="text" placeholder="Enter First name" name="uname" required><br>
     <label for="lastname">Last name:</label><br>
     <input type="text" placeholder="Enter Last name" name="ulname" required><br>
-    <input type="text">gender: </label><br>
+    <label for="gender">gender: </label><br>
+    <input type="text" placeholder="Enter f or m" name="gender">gender: </label><br>
     <label for="address">Address:</label><br>
     <Input type="text" placeholder="Enter Address" name="address" required><br>
     <label for="city">City:</label><br>

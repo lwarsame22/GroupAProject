@@ -8,7 +8,7 @@ $uname = strip_tags($_POST['uname']);
 
 $ulname = strip_tags($_POST['ulname']);
 
-$email = strip_tags($_POST['email']);
+$email = $_SESSION['email'];
 
 $gender = strip_tags($_POST['gender']); //Radio BOx
 
@@ -22,12 +22,9 @@ $datebirth = strip_tags($_POST['datebirth']);
 
 $mobilenumber = strip_tags($_POST['mobilenumber']);
 
-$active = strip_tags($_POST['active']); //Boolean
+$active = '1'; //Boolean
 
 // $pass= md5($password);
-
-
-$userID = mysqli_insert_id($conn);
 
 $query = "UPDATE  user_profile 
           SET u_name= $uname, 
@@ -39,7 +36,7 @@ $query = "UPDATE  user_profile
           datebirth =$datebirth, 
           mobilenum =$mobilenumber, 
           active=$active
-          WHERE p_ID = $userID";
+          WHERE email = $email";
 
 
 

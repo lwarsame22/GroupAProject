@@ -8,7 +8,7 @@ session_start();
 
             // $pass= md5($password);
 
-            $sql = "SELECT *  FROM user_validation where username = '$username' AND password ='$password' LIMIT 1 ";
+            $sql = "SELECT *  FROM user_profile where u_username = '$username' AND password ='$password' LIMIT 1 ";
             $query = mysqli_query($conn, $sql);
 
 
