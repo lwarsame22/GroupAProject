@@ -25,8 +25,17 @@ $mobilenumber = strip_tags($_POST['mobilenumber']);
 $active = '1'; //Boolean
 
 // $pass= md5($password);
-    $query = "INSERT INTO user_profile(u_name, u_lastname) 
-          VALUES('$uname', '$ulname') WHERE u_username='$username'";
+$query = "UPDATE  `user_profile`
+          SET `u_name`= '$uname',
+          `u_lastname` ='$ulname',
+          `gender` ='$gender',
+          `address` ='$address',
+          `city` ='$city',
+          `country` ='$country',
+          `datebirth`` ='$datebirth',
+          `mobilenum`` ='$mobilenumber',
+
+          WHERE `u_username` = '$username'";
 
 
 $result = mysqli_query($conn, $query);
@@ -44,14 +53,4 @@ if ($result) {
 
 ?>
 
-<!-- $query = "UPDATE  user_profile
-          SET u_name= '$uname',
-          u_lastname ='$ulname',
-          gender ='$gender',
-          address ='$address',
-          city ='$city',
-          country ='$country',
-          datebirth ='$datebirth',
-          mobilenum ='$mobilenumber',
-
-          WHERE u_username = '$username'"; -->
+<!--  -->
