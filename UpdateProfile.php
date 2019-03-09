@@ -32,9 +32,9 @@ $query = "UPDATE  user_profile
           gender ='$gender',
           address ='$address',
           city ='$city',
-          country ='$country'
-          datebirth=$datebirth
-          mobilenum=$mobilenumber
+          country ='$country',
+          datebirth='$datebirth',
+          mobilenum='$mobilenumber'
           WHERE u_username = '$username'";
 
 
