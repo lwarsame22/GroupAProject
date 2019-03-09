@@ -2,7 +2,7 @@
 session_start();
 
 include_once('DBConnect.php');
-if ($_POST['createButton']) {
+if ($_POST['eventButton']) {
     $username=$_SESSION['username'];
 
     $title = strip_tags($_POST['title']);

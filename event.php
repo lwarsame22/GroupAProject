@@ -37,7 +37,7 @@ else {
             }
         ?>
     </select>
-    <button type="submit" value="updateProfile" name="profileButton" class="btn"><br>
+    <button type="submit" value="CreateEvent" name="eventButton" class="btn"><br>
 </form>
 </body>
 </html>
