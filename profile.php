@@ -25,7 +25,7 @@ else {
     <label for="lastname">Last name:</label><br>
     <input type="text" placeholder="Enter Last name" name="ulname" required><br>
     <label for="gender">gender: </label><br>
-    <input type="text" placeholder="Enter f or m" name="gender">gender: </label><br>
+    <input type="text" placeholder="Enter f or m" name="gender"><br>
     <label for="address">Address:</label><br>
     <Input type="text" placeholder="Enter Address" name="address"><br>
     <label for="city">City:</label><br>
