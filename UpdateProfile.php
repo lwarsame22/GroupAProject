@@ -23,7 +23,7 @@ $datebirth = strip_tags($_POST['datebirth']);
 
 $mobilenumber = strip_tags($_POST['mobilenumber']);
 
-$active = '1'; //Boolean
+
 
 // $pass= md5($password);
 $query = "UPDATE  user_profile
@@ -34,7 +34,8 @@ $query = "UPDATE  user_profile
           city ='$city',
           country ='$country',
           datebirth='$datebirth',
-          mobilenum='$mobilenumber'
+          mobilenum='$mobilenumber',
+          active='1'
           WHERE u_username = '$username'";
 
 
