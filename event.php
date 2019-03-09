@@ -14,7 +14,7 @@ if ( isset($_SESSION['username'] )){
 
     $query2 = "SELECT e_sportname FROM sports";
     $result=mysqli_query($conn, $query2);
-    $row=mysqli_fetch_assoc($result);
+    $row=mysqli_fetch_array($result);
     require "HeaderLoggedin.php";
 }
 else {
@@ -29,9 +29,12 @@ else {
     <input type="date" placeholder="Enter Event date="name="date"><br>
     <label for="description">Description: </label><br>
     <input type="text" placeholder="Enter Description" name="description"><br>
-    <label for="location">Location <?php echo $row ?>: </label><br>
+    <label for="location">Location : </label><br>
     <input type="text" placeholder="Enter location" name="location"><br>
-
+    <?php echo "<select name = e_sportname>";
+    while($row){
+        echo "<option value='".$row['e_sportname']."'>".$row['e_sportname']."</option>";
+    } echo "</select>"; ?>
     <button type="submit" value="createEvent" name="eventButton" >Create Event</button><br>
 </form>
 </body>
