@@ -31,11 +31,9 @@ $query = "UPDATE  `user_profile`
           `gender` ='".$gender."',
           `address` ='".$address."',
           `city` ='".$city."',
-          `country` ='".$country."',
-          `datebirth` =$datebirth,
-          `mobilenum` =$mobilenumber
+          `country` ='".$country."'
 
-          WHERE `u_username` = '$username'";
+          WHERE `u_username` = $username";
 
 
 $result = mysqli_query($conn, $query);
