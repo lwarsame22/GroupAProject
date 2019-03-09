@@ -33,8 +33,11 @@ else {
     <input type="text" placeholder="Enter location" name="location"><br>
     <?php echo "<select name = 'e_sportname'>";
     while($row){
-        echo "<option value='".$row['e_sportname']."'>".$row['e_sportname']."</option>";
-    } echo "</select>"; ?>
+        $rows[]=$row;
+        }
+        foreach ($rows as $row){
+        print "<option value='".$row['e_sportname']."'>".$row['e_sportname']."</option>";
+    } ?>
     <button type="submit" value="createEvent" name="eventButton" >Create Event</button><br>
 </form>
 </body>
