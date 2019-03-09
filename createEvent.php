@@ -16,7 +16,7 @@ if ($_POST['eventButton']) {
     $sportName = strip_tags($_POST['sportName']);
 
 
-// $pass= md5($password);
+// $pass= md5($password)esto sss;
     $query = "INSERT INTO events(e_username, e_title, e_description, e_location)
           VALUES ('$username','$title','$description','$location')";
 
