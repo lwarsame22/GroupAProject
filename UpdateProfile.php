@@ -27,16 +27,16 @@ $active = '1'; //Boolean
 // $pass= md5($password);
 
 $query = "UPDATE  user_profile 
-          SET u_name= $uname, 
-          u_lastname =$ulname, 
-          gender =$gender, 
-          address =$address, 
-          city =$city, 
-          country =$country, 
-          datebirth =$datebirth, 
-          mobilenum =$mobilenumber, 
+          SET u_name= '$uname', 
+          u_lastname ='$ulname', 
+          gender ='$gender', 
+          address ='$address', 
+          city ='$city', 
+          country ='$country', 
+          datebirth ='$datebirth', 
+          mobilenum ='$mobilenumber', 
           
-          WHERE u_username = $username";
+          WHERE u_username = '$username'";
 
 
 
