@@ -33,7 +33,7 @@ $query = "UPDATE  `user_profile`
           `city` ='$city',
           `country` ='$country',
           `datebirth`` ='$datebirth',
-          `mobilenum`` ='$mobilenumber',
+          `mobilenum`` ='$mobilenumber'
 
           WHERE `u_username` = '$username'";
 
