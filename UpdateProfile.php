@@ -2,7 +2,7 @@
 session_start();
 
 include_once('DBConnect.php');
-
+if ($_POST['profileButton']) {
 $username=$_SESSION['username'];
 
 $uname = strip_tags($_POST['uname']);
@@ -46,7 +46,7 @@ if ($result) {
 } else {
 
     echo "Failed to update";
-
+}
 }
 
 

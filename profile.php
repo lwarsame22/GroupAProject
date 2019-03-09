@@ -42,7 +42,7 @@ else {
 
 
 
-    <input type="submit">
+    <button type="submit" value="updateProfile" name="profileButton" class="btn"><br>
 </form>
 </body>
 </html>
