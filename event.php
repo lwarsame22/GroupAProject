@@ -31,7 +31,7 @@ else {
     <input type="text" placeholder="Enter Description" name="description"><br>
     <label for="location">Location : </label><br>
     <input type="text" placeholder="Enter location" name="location"><br>
-    <?php echo "<select name = e_sportname>";
+    <?php echo "<select name = 'e_sportname'>";
     while($row){
         echo "<option value='".$row['e_sportname']."'>".$row['e_sportname']."</option>";
     } echo "</select>"; ?>
