@@ -19,7 +19,7 @@ else {
 }
 
 ?>
-<form name="updateprofile" method="post" action="UpdateProfile.php">
+<form name="createEvent" method="post" action="createEvent.php">
     <label for="eventTitle">Event Title:</label><br>
     <Input type="text" placeholder="Enter Event Title" name="title"><br>
     <label for="eventDate">Event date:</label><br>
