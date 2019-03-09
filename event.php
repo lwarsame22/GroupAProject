@@ -23,10 +23,12 @@ else {
     <label for="eventTitle">Event Title:</label><br>
     <Input type="text" placeholder="Enter Event Title" name="title"><br>
     <label for="eventDate">Event date:</label><br>
-    <input type="date" placeholder="Enter Event date="date" required><br>
+    <input type="date" placeholder="Enter Event date="name="date" required><br>
+    <label for="description">Description: </label><br>
+    <input type="text" placeholder="Enter Description" name="description"><br>
     <label for="location">Location: </label><br>
     <input type="text" placeholder="Enter location" name="location"><br>
-    <select name="sports">
+    <select name="sportname">
         <?php
             $query="SELECT s_name FROM sports";
             $result=mysqli_query($conn,$query);
