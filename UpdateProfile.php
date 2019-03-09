@@ -26,15 +26,15 @@ $mobilenumber = strip_tags($_POST['mobilenumber']);
 $active = '1'; //Boolean
 
 // $pass= md5($password);
-$query = "UPDATE  `user_profile`
-          SET `u_name`= '$uname',
-          `u_lastname` ='$ulname',
-          `gender` ='$gender',
-          `address` ='$address',
-          `city` ='$city',
-          `country` ='$country'
+$query = "UPDATE  user_profile
+          SET u_name= '$uname',
+          u_lastname ='$ulname',
+          gender ='$gender',
+          address ='$address',
+          city ='$city',
+          country ='$country'
 
-          WHERE `u_username` = $username";
+          WHERE `u_username` = '$username'";
 
 
 $result = mysqli_query($conn, $query);
