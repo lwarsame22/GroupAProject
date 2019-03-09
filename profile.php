@@ -27,15 +27,15 @@ else {
     <label for="gender">gender: </label><br>
     <input type="text" placeholder="Enter f or m" name="gender">gender: </label><br>
     <label for="address">Address:</label><br>
-    <Input type="text" placeholder="Enter Address" name="address" required><br>
+    <Input type="text" placeholder="Enter Address" name="address"><br>
     <label for="city">City:</label><br>
     <input type="text" placeholder="Enter City" name="city"><br>
     <label for="country">Country</label><br>
-    <Input type="text" placeholder="Enter Country" name="country" required><br>
+    <Input type="text" placeholder="Enter Country" name="country"><br>
     <label for="datebirth">Date Of Birth:</label><br>
     <input type="date" placeholder="Enter Date Of Birth" name="datebirth"><br>
     <label for="mobile">Mobile Number:</label><br>
-    <Input type="tel" placeholder="Enter Mobile Number" name="mobilenumber" required><br>
+    <Input type="tel" placeholder="Enter Mobile Number" name="mobilenumber"><br>
 
     <br><br>
 
