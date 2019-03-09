@@ -17,8 +17,8 @@ if ($_POST['eventButton']) {
 
 
 // $pass= md5($password);
-    $query = "Insert into  events(e_username, e_title, e_description, e_location, e_date, e_sportID)
-          VALUES ('$username','$title','$dateevent','$decription','$location','$sportName')";
+    $query = "Insert into  events(e_username, e_title, e_description, e_location, e_date)
+          VALUES ('$username','$title','$dateevent','$decription','$location')";
 
 
     $result = mysqli_query($conn, $query);
@@ -26,7 +26,7 @@ if ($_POST['eventButton']) {
     if ($result) {
 
 
-        header('Location: event.php'); // need to EDIT THIS LOCATION TO THE PROFILE VIEW PAGE
+        header('Location: user.php'); // need to EDIT THIS LOCATION TO THE PROFILE VIEW PAGE
     } else {
 
         echo "Failed to update";
