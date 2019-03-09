@@ -35,7 +35,7 @@ $query = "UPDATE  user_profile
           country =$country, 
           datebirth =$datebirth, 
           mobilenum =$mobilenumber, 
-          active=$active
+          
           WHERE u_username = $username";
 
 
