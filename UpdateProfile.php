@@ -8,7 +8,7 @@ $uname = strip_tags($_POST['uname']);
 
 $ulname = strip_tags($_POST['ulname']);
 
-$email = $_SESSION['email'];
+$username=$_SESSION['username'];
 
 $gender = strip_tags($_POST['gender']); //Radio BOx
 
@@ -36,7 +36,7 @@ $query = "UPDATE  user_profile
           datebirth =$datebirth, 
           mobilenum =$mobilenumber, 
           active=$active
-          WHERE email = $email";
+          WHERE u_username = $username";
 
 
 
