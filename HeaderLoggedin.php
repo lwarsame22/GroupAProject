@@ -15,26 +15,14 @@ $username=$_SESSION['username'];
     
 <body>
  <header class="control">
-     <h1>Playmate</h1>
+     <h1>Sport Playmate</h1>
     <section >
             <nav class="grid-container">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Profile</a></li>
-                        <ul>
-                            <li><a href="viewProfile.php">View Profile</a></li>
-                            <li><a href="profile.php">Edit Profile</a></li>
-                        </ul>
+                    <li><a href="viewProfile.php">View Profile</a></li>
+                    <li><a href="profile.php">Edit Profile</a></li>
                     <li><a href="event.php">Events</a></li>
-                        <ul>
-                            <li><a href="event.php">Create an Event</a></li>
-                            <li><a href="#">Edit my Events</a></li>
-                        </ul>
-                    <li><a href="viewProfile.php">Contact Us</a></li>
-                        <ul>
-                            <li><a href="#">Our Team</a></li>
-                            <li><a href="#">News</a></li>
-                        </ul>
                 </ul>
             </nav>
     </section>
