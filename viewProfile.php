@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Profile</title>
-    <link rel="stylesheet" href="css/style.csstyle.css">
+
 </head>
 <body>
 <?php
@@ -25,17 +25,33 @@ $query2 = "SELECT * FROM user_profile WHERE u_username='$username'";
 $result=mysqli_query($conn, $query2);
 if(mysqli_num_rows($result)==1){
     while ($row= mysqli_fetch_assoc($result)){
-        echo "Hello ".$row['u_username'];
-        echo $row['u_name'] ." ".$row['u_lastname'] ." " .$row['u_mail'] ." " . $row['gender'] ." " .$row['address'] ." " .$row['city'] ." " .$row['country'] ." " .$row['datebirth'] ." " .$row['mobilenum'];
+
+        $username=$row['u_username'];
+        $firstname=$row['u_name'];
+        $lastname=$row['u_lastname'];
+        $email=$row['u_mail'];
+        $gender=$row['gender'];
+        $address=$row['address'];
+        $city=$row['city'];
+        $country=$row['country'];
+        $birth=$row['datebirth'];
+        $mobile=$row['mobilenum'];
     }
 }
 ?>
+
+<table>
+    <tr><td>username:</td><td><?php echo $username; ?></td></tr>
+    <tr><td>Firstname:</td><td><?php echo $firstname; ?></td></tr>
+    <tr><td>Lastname:</td><td><?php echo $lastname; ?></td></tr>
+    <tr><td>Email:</td><td><?php echo $email; ?></td></tr>
+    <tr><td>Gender:</td><td><?php echo $gender; ?></td></tr>
+    <tr><td>Address:</td><td><?php echo $address; ?></td></tr>
+    <tr><td>City:</td><td><?php echo $city; ?></td></tr>
+    <tr><td>Country:</td><td><?php echo $country; ?></td></tr>
+    <tr><td>Birth:</td><td><?php echo $birth; ?></td></tr>
+    <tr><td>Mobile:</td><td><?php echo $mobile; ?></td></tr>
+</table>
 </body>
 </html>
 
-/**
- * Created by PhpStorm.
- * User: 1812315
- * Date: 10/03/2019
- * Time: 16:14
- */
