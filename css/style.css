@@ -398,3 +398,14 @@ footer>p{
     margin: auto;
     color: white;
 }
+
+.cat_links {
+    display: block;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #782A7E;
+    margin-bottom: 5px;
+    background-color: #95a5a6;
+    color: #000000;
+}

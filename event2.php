@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Profile</title>
-    <!--link rel="stylesheet" href="css/style.csstyle.css"-->
+    <link rel="stylesheet" href="css/style.csstyle.css">
 </head>
 <body>
 <?php
@@ -33,7 +33,7 @@ else {
             $id = $row['id'];
             $title = $row['category_title'];
             $description = $row['category_description'];
-            $categories .="<a href='#' class = 'cat_links'>".$title." - <font size='-1'>".$description."</font></a>";
+            $categories .="<a href='#' class = 'cat_links'>".$title." - <font size='-1'>".$description."</font></a><br>";
         }
         echo $categories;
     } else {
