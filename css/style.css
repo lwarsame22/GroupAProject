@@ -194,6 +194,97 @@ label{
     font-size: 16px;
 }
 
+/* Styling for User Page/HomePage  */
+
+}
+.wrap{
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    background: black;
+    padding: 20px 50px;
+}
+@keyframes slider {
+    0% {left: 0;}
+    20% {left: 0;}
+    25% {left: -100%;}
+    45% {left: -100%;}
+    50% {left: -200%;}
+    70% {left: -200%;}
+    75% {left: -300%;}
+    95% {left: -300%;}
+    100% {left: -400%;}
+}
+
+/* For Chrome*/
+@-webkit-keyframes slider {
+    0% {left: 0;}
+    20% {left: 0;}
+    25% {left: -100%;}
+    45% {left: -100%;}
+    50% {left: -200%;}
+    70% {left: -200%;}
+    75% {left: -300%;}
+    95% {left: -300%;}
+    100% {left: -400%;}
+}
+
+/* For Firefox */
+@-moz-keyframes slider {
+    0% {left: 0;}
+    20% {left: 0;}
+    25% {left: -100%;}
+    45% {left: -100%;}
+    50% {left: -200%;}
+    70% {left: -200%;}
+    75% {left: -300%;}
+    95% {left: -300%;}
+    100% {left: -400%;}
+}
+
+.image-slider{
+    overflow: hidden;
+}
+
+.image-slider figure{
+    position: relative;
+    width: 900%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+    -webkit-animation: 20s slider infinite;
+    -moz-animation: 20s slider infinite;
+}
+
+.image-slider figure img{
+    width: 20%;
+    float: left;
+}
+.fourcolumn{
+    position: absolute;
+    top: 80%;
+    float: left;
+    /*transform: translate(-50%,-50%);*/
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.fourcolumn img{
+    margin-right: 10px;
+    margin-bottom: 5px;
+    flex-wrap: nowrap;
+}
+
+h2{
+    background: black;
+    text-align: center;
+    color: white;
+}
+
+
 /* FOOTER*/
 
 
