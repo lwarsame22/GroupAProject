@@ -31,11 +31,11 @@ else {
     <input type="text" placeholder="Enter location" name="location"><br>
     <select class="sportdropdown" name="sportName">
         <?php 
-        $query2 = "SELECT s_name FROM sports";
+        $query2 = "SELECT s_ID FROM sports";
         $result=mysqli_query($conn, $query2);
         for($x=0; $x<mysqli_num_rows($result); $x++){
             while ($row= mysqli_fetch_assoc($result)){
-               echo "<option value=".$row['s_name'].">" . $row['s_name'] . "</option>";
+               echo "<option value=".$row['s_ID'].">" . $row['s_ID'] . "</option>";
         }
       }
         ?>
