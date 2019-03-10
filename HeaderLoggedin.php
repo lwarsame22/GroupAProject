@@ -12,9 +12,9 @@ $username=$_SESSION['username'];
     <title>Sign Up</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-    
+    //class="control"
 <body>
- <header class="control">
+ <header >
      <h1>Playmate</h1>
     <section id="menu">
             <nav class="grid-container">
