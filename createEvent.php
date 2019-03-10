@@ -3,34 +3,38 @@ session_start();
 
 include_once('DBConnect.php');
 if ($_POST['eventButton']) {
-    $username=$_SESSION['username'];
 
-    $title = strip_tags($_POST['title']);
+    echo $sportName;
 
-    $dateevent = strip_tags($_POST['date']);
 
-    $decription = strip_tags($_POST['description']);
+  //  $username=$_SESSION['username'];
 
-    $location = strip_tags($_POST['location']);
+    //  $title = strip_tags($_POST['title']);
 
-    $sportName = $_POST['sportName'];
+    //  $dateevent = strip_tags($_POST['date']);
+
+    //  $decription = strip_tags($_POST['description']);
+
+    //  $location = strip_tags($_POST['location']);
+
+    //   $sportName = $_POST['sportName'];
 
 
 // $pass= md5($password)esto sss;
-    $query = "INSERT INTO events(e_username, e_title, e_description, e_location, e_sportname)
-          VALUES ('$username','$title','$description','$location',$sportName)";
+    //   $query = "INSERT INTO events(e_username, e_title, e_description, e_location, e_sportname)
+    //    VALUES ('$username','$title','$description','$location',$sportName)";
 
 
-    $result = mysqli_query($conn, $query);
+    //   $result = mysqli_query($conn, $query);
 
-    if ($result) {
+    //  if ($result) {
 
 
-        header('Location: user.php'); // need to EDIT THIS LOCATION TO THE PROFILE VIEW PAGE
-    } else {
+    //  header('Location: user.php'); // need to EDIT THIS LOCATION TO THE PROFILE VIEW PAGE
+    //  } else {
 
-        echo "Failed to update";
-    }
+    //      echo "Failed to update";
+    //   }
 }
 
 
