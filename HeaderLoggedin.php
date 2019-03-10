@@ -16,11 +16,11 @@ $username=$_SESSION['username'];
 <body>
  <header class="control">
      <h1>Playmate</h1>
-    <section >
+    <section id="menu">
             <nav class="grid-container">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="viewProfile.php">View Profile</a>
+                    <li><a href="viewProfile.php">Profile</a>
                         <ul>
                             <li><a href="viewProfile.php">View Profile</a></li>
                             <li><a href="profile.php">Edit Profile</a></li>

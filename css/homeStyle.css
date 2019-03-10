@@ -10,6 +10,13 @@
     margin-right: auto;
 }
 
+#menu{
+    background-color: #363636;
+    width: 100%;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 h2{
     width: 280px;
@@ -26,6 +33,8 @@ h2{
     float: left;
     padding-left: 20px;
 }
+
+
 .login{
     float: right;
     font-family: Arial;
