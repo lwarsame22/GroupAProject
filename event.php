@@ -20,6 +20,7 @@ else {
     header('Location: HomePage.php');
 }
 ?>
+    <main class="evntbakground">
     <div class="eventform">
     <h2>Create An Event</h2>
 <form name="createEvent" method="post" action="createEvent.php">
