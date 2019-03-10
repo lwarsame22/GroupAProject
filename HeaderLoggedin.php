@@ -16,7 +16,7 @@ $username=$_SESSION['username'];
 <body>
  <header >
      <h1>Playmate</h1>
-    <section id="menu">
+    <section >
             <nav class="grid-container">
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -32,12 +32,7 @@ $username=$_SESSION['username'];
                             <li><a href="event.php">Create an event</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Contact Us</a>
-                        <ul>
-                            <li><a href="#">The Team</a></li>
-                            <li><a href="#">News</a></li>
-                        </ul>
-                    </li>
+
                 </ul>
             </nav>
     </section>
