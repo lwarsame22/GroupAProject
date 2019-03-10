@@ -8,6 +8,7 @@
 </head>
 <body>
 <?php
+/*
 session_start();
 if ( isset($_SESSION['username'] )){
     $username=$_SESSION['username'];
@@ -18,7 +19,7 @@ if ( isset($_SESSION['username'] )){
 else {
     header('Location: HomePage.php');
 }
-
+*/
 ?>
 <form name="createEvent" method="post" action="createEvent.php">
     <label for="title">Event Title:</label><br>
@@ -42,7 +43,7 @@ else {
                     array_push($list,$name);
                 }
                 foreach ($list as $x){
-                    echo '<option>%s</option>',$x;
+                   printf( '<option>%s</option>',$x);
                 }
             }
 
