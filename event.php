@@ -29,7 +29,7 @@ else {
     <input type="text" placeholder="Enter Description" name="description"><br>
     <label for="location">Location : </label><br>
     <input type="text" placeholder="Enter location" name="location"><br>
-    <select class="sportdropdown" name="sportsList">
+    <select class="sportdropdown" name="sportName">
         <?php 
         $query2 = "SELECT s_name FROM sports";
         $result=mysqli_query($conn, $query2);
