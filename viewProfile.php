@@ -55,9 +55,3 @@ if(mysqli_num_rows($result)==1){
 </body>
 </html>
 
-/**
- * Created by PhpStorm.
- * User: 1812315
- * Date: 10/03/2019
- * Time: 16:14
- */
