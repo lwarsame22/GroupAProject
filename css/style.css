@@ -278,19 +278,25 @@ label{
     flex-wrap: nowrap;
 }
 
-h2{
+.fourcolumn h2{
     background: black;
     text-align: center;
     color: white;
 }
+.fourcolumn p{
+    color: white;
+}
+
 
 
 /* FOOTER*/
-
+.footercontrol{
+    margin-bottom: 0;
+    position: static;
+}
 
 footer>p{
     width: 150px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     color: white;
 }

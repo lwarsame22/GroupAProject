@@ -7,10 +7,19 @@
 </head>
 <body>
 <?php
+include_once('DBconnect.php');
 session_start();
+if ( isset($_SESSION['username'] )){
+    $username=$_SESSION['username'];
 
-include_once('DBConnect.php');
-$username=$_SESSION['username'];
+
+    require "HeaderLoggedin.php";
+}
+else {
+    header('Location: HomePage.php');
+}
+?>
+<?php
 
 $query2 = "SELECT * FROM user_profile WHERE u_username='$username'";
 $result=mysqli_query($conn, $query2);

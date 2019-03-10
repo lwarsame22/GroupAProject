@@ -2,9 +2,10 @@
 <html lang="en">
 
 <body>
+        </body>
 
 <!-- Header Start -->
-<footer class="control">
+<footer class="footercontrol">
         <footer class="control">
 
         <h4>Connect and share with a network of sports lovers in your community</h4>
