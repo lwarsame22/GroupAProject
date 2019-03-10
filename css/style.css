@@ -288,6 +288,10 @@ label{
 }
 
 /* Styling for Profile.php */
+.profilebakground{
+            background: #95a5a6;
+        }
+
         .profileform h2{
             color: white;
         }
@@ -335,10 +339,10 @@ label{
 
 
 /* FOOTER*/
-.footercontrol{
+/*.footercontrol{
     margin-bottom: 0;
     position: static;
-}
+}*/
 
 footer>p{
     width: 150px;
