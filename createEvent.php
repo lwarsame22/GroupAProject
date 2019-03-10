@@ -3,8 +3,8 @@ session_start();
 
 include_once('DBConnect.php');
 if ($_POST['eventButton']) {
-
-    echo "do this".$row;
+$sportname=strip_tags($_POST['sportname']);
+    echo "do this" .$sportname;
 
 
   //  $username=$_SESSION['username'];
