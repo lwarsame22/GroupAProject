@@ -20,7 +20,7 @@ $username=$_SESSION['username'];
             <nav class="grid-container">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Games</a></li>
+                    <li><a href="viewProfile.php">Games</a></li>
                     <li><a href="profile.php">My Profile</a></li>
                     <li><a href="event.php">Events</a></li>
                 </ul>
