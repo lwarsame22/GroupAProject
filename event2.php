@@ -37,7 +37,7 @@ else {
         }
         echo $categories;
     } else {
-        echo "<p>There are no categories available yet.</p>";
+        echo "<p>There are no categories available yet...</p>";
     }
 
 
