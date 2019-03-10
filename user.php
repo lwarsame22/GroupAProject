@@ -76,10 +76,7 @@ else {
     </section>
     <!-- End of Main -->
 
-<!-- Begin Footer -->
-   <!-- <?php
-    require "Footer.php";
-    ?> -->
+
     <footer class="control">
 
 <h4>Connect and share with a network of sports lovers in your community</h4>
@@ -99,4 +96,9 @@ else {
 <!-- Footer Ends -->
 
 </body>
+
+<!-- Begin Footer -->
+<!-- <?php
+require "Footer.php";
+?> -->
 </html>
