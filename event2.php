@@ -33,7 +33,7 @@ else {
             $id = $row['id'];
             $title = $row['category_title'];
             $description = $row['category_description'];
-            $categories .="<a href='#' class = 'cat_links'>".$title." - <font size='-1'>".$description."</font></a><br>";
+            $categories .="<a href='#' class = 'cat_links'>".$title." - <font size='-1'>".$description."</font></a>";
         }
         echo $categories;
     } else {
