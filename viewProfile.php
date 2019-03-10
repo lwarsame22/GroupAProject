@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Profile</title>
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <?php
@@ -39,7 +39,7 @@ if(mysqli_num_rows($result)==1){
     }
 }
 ?>
-
+<div class="viewProfileTable">
 <table>
     <tr><td>username:</td><td><?php echo $username; ?></td></tr>
     <tr><td>Firstname:</td><td><?php echo $firstname; ?></td></tr>
@@ -52,6 +52,8 @@ if(mysqli_num_rows($result)==1){
     <tr><td>Birth:</td><td><?php echo $birth; ?></td></tr>
     <tr><td>Mobile:</td><td><?php echo $mobile; ?></td></tr>
 </table>
+</div>
+
 </body>
 </html>
 
