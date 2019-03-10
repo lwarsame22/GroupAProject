@@ -278,11 +278,15 @@ label{
     flex-wrap: nowrap;
 }
 
-h2{
+.fourcolumn h2{
     background: black;
     text-align: center;
     color: white;
 }
+.fourcolumn p{
+    color: white;
+}
+
 
 
 /* FOOTER*/
