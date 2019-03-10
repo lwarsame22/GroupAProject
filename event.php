@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php
-/*
+include_once('DBconnect.php');
 session_start();
 if ( isset($_SESSION['username'] )){
     $username=$_SESSION['username'];
@@ -19,7 +19,6 @@ if ( isset($_SESSION['username'] )){
 else {
     header('Location: HomePage.php');
 }
-*/
 ?>
 <form name="createEvent" method="post" action="createEvent.php">
     <label for="title">Event Title:</label><br>
