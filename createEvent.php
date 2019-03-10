@@ -13,7 +13,7 @@ if ($_POST['eventButton']) {
 
     $location = strip_tags($_POST['location']);
 
-    $sportName = strip_tags($_POST['sportName']);
+    $sportName = $_POST['sportName'];
 
 
 // $pass= md5($password)esto sss;
