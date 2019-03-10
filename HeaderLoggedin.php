@@ -28,7 +28,7 @@ $username=$_SESSION['username'];
                     </li>
                     <li><a href="event.php">Events</a>
                         <ul>
-                            <li><a href="event.php">My events</a></li>
+                            <li><a href="event2.php.php">My events</a></li>
                             <li><a href="event.php">Create an event</a></li>
                         </ul>
                     </li>
