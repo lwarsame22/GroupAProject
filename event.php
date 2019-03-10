@@ -24,13 +24,13 @@ else {
     <h2>Create An Event</h2>
 <form name="createEvent" method="post" action="createEvent.php">
     <label for="title">Event Title:</label><br>
-    <Input type="text" placeholder="Enter Event Title" name="title" class="inputbox"><><br>
+    <Input type="text" placeholder="Enter Event Title" name="title" class="inputbox"><br>
     <label for="date">Event date:</label><br>
-    <input type="date" placeholder="Enter Event date="name="date" class="inputbox"><><br>
+    <input type="date" placeholder="Enter Event date="name="date" class="inputbox"><br>
     <label for="description">Description: </label><br>
-    <input type="text" placeholder="Enter Description" name="description" class="inputbox"><><br>
+    <input type="text" placeholder="Enter Description" name="description" class="inputbox"><br>
     <label for="location">Location : </label><br>
-    <input type="text" placeholder="Enter location" name="location" class="inputbox"><><br>
+    <input type="text" placeholder="Enter location" name="location" class="inputbox"><br>
     <select class="sportdropdown" name="sportName">
         <?php 
         $query2 = "SELECT * FROM sports";
