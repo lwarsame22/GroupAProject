@@ -2,6 +2,7 @@
 <html lang="en">
 
 <body>
+        </body>
 
 <!-- Header Start -->
 <footer class="control">
