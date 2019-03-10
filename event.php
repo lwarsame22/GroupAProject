@@ -33,11 +33,25 @@ else {
         <?php 
         $query2 = "SELECT s_name FROM sports";
         $result=mysqli_query($conn, $query2);
-        $row=mysqli_fetch_array($result);
-        $menu="";
-        while($row) {
-        $menu.="<option value=".$row['s_name'].">" . $row['s_name'] . "</option>";
-        } echo $menu; 
+        $check= mysqli_num_rows($result);
+        if ($check>=0){
+            while ($row= mysqli_fetch_assoc($result)){
+                $name= $row['s_name'];
+                $list= array();
+                if (!empty($name)){
+                    array_push($list,$name);
+                }
+                foreach ($list as $x){
+                    echo '<option>%s</option>',$x;
+                }
+            }
+
+        }
+       // $row=mysqli_fetch_array($result);
+     //   $menu="";
+       // while($row) {
+        //$menu.="<option value=".$row['s_name'].">" . $row['s_name'] . "</option>";
+     //   } echo $menu;
         ?>
         </select>
     <button type="submit" value="createEvent" name="eventButton" >Create Event</button><br>
