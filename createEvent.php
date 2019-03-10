@@ -4,7 +4,7 @@ session_start();
 include_once('DBConnect.php');
 if ($_POST['eventButton']) {
 
-    echo "do this";
+    echo "do this".$row;
 
 
   //  $username=$_SESSION['username'];
