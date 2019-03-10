@@ -35,13 +35,18 @@ article{
 
 nav>ul{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     overflow: hidden;
 }
 
 nav>ul>li {
     float: left;
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    opacity: .8;
+    line-height: 40px;
 }
 
 nav>ul>li a {
@@ -56,8 +61,8 @@ nav>ul>li a {
 
 }
 
-li a:hover {
-    color: #363636;
+ul li a:hover {
+   background-color: dodgerblue;
 
 }
 
