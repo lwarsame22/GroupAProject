@@ -287,6 +287,51 @@ label{
     color: white;
 }
 
+/* Styling for Profile.php */
+        .profileform h2{
+            color: white;
+        }
+        .profileform{
+            border: 2px solid white;
+            width: 600px;
+            text-align: center;
+            margin: 150px auto; /* 150px below, auto aligns form to the center */
+            background-color: rgba(0,0,0,0.5);
+            border-radius: 10px;
+            box-shadow: 0 0 15px turquoise;
+        }
+        .profileinputbox{
+            text-align: center;
+            font-size: 18px;
+            border: none; /*removes box border*/
+            outline: none; /* removes outline */
+            height: 35px;
+            background: transparent; /* removes color from the box */
+            color: white;
+            border-bottom: 3px solid turquoise;
+            border-radius: 10px;
+            width: 400px;
+        }
+        .profileinputbox:focus{
+            border-bottom: 3px solid whitesmoke;
+        }
+        ::placeholder{
+            color: white;
+        }
+        .profilebtn{
+            background: turquoise;
+            color: white;
+            border: none;
+            margin: 15px; /* separates btn box from box above*/
+            font-size: 20px;
+            padding: 8px 35px; /* This will provide padding/space around the btn. Top & btm 8px, 35px left & right sides */
+            border-radius: 50px;
+        }
+        .profilebtn:hover{
+            background-color: #4d444d;
+            box-shadow: 0 0 15px turquoise;
+        }
+
 
 
 /* FOOTER*/
