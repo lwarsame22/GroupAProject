@@ -335,10 +335,10 @@ label{
 
 
 /* FOOTER*/
-.footercontrol{
+/*.footercontrol{
     margin-bottom: 0;
     position: static;
-}
+}*/
 
 footer>p{
     width: 150px;
