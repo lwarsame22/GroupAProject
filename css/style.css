@@ -290,11 +290,13 @@ label{
 
 
 /* FOOTER*/
-
+.footercontrol{
+    margin-bottom: 0;
+    position: static;
+}
 
 footer>p{
     width: 150px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     color: white;
 }
