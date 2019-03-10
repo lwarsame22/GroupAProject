@@ -22,7 +22,7 @@ $username=$_SESSION['username'];
                     <li><a href="#">Home</a></li>
                     <li><a href="viewProfile.php">View Profile</a></li>
                     <li><a href="profile.php">Edit Profile</a></li>
-                    <li><a href="event.php">Events</a></li>
+                    <li><a href="event2.php">Events</a></li>
                 </ul>
             </nav>
     </section>
