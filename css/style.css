@@ -385,6 +385,91 @@ label{
             background-color: #4d444d;
             box-shadow: 0 0 15px turquoise;
         }
+/* Styling for Sign Up Page */
+.control{
+    background-color: #363636;
+    width: 100%;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    width: 280px;
+    height: 60px;
+    font-family: Ebrima;
+    color: #ecf1f4;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    padding-left: 20px;
+}
+.login{
+    float: right;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: white;
+    margin-top: 20px;
+    margin-right: 10px;
+    padding-right: 20px;
+}
+.right{
+    float: right;
+    font-family: Arial, sans-serif;
+
+}
+.left h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.grid-60{
+    margin-left: 10px;
+    margin-top: -0px;
+    background-color: dimgray;
+    width: 10px;
+    position: relative;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: #782A7E;
+
+
+}
+
+.grid-60 h2{
+    color: white;
+    text-align: center;
+}
+/* Style for 111.html form label*/
+label{
+    float: left;
+    width: 150px;
+    text-align: right;
+    padding-right: 12px;
+    margin-top: 14px;
+    clear: left;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* Styling for 111 <input>*/
+.grid-60 input{
+    margin-top: 12px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    height: 35px;
+    border-radius: 20px;
+
+}
+/* Styling the submit button in 111*/
+#submit{
+    margin-left: 150px;
+    padding: 15px;
+}
 
 
 /* FOOTER*/
@@ -397,4 +482,15 @@ footer>p{
     width: 150px;
     margin: auto;
     color: white;
+}
+
+.cat_links {
+    display: block;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #782A7E;
+    margin-bottom: 5px;
+    background-color: #95a5a6;
+    color: #000000;
 }

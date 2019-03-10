@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Profile</title>
-    <!--link rel="stylesheet" href="css/style.csstyle.css"-->
+    <link rel="stylesheet" href="css/style.csstyle.css">
 </head>
 <body>
 <?php
@@ -37,7 +37,7 @@ else {
         }
         echo $categories;
     } else {
-        echo "<p>There are no categories available yet...</p>";
+        echo "<p>There are no event available yet...</p>";
     }
 
 
