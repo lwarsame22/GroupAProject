@@ -35,7 +35,6 @@ $username=$_SESSION['username'];
         }
 
         .dropdown .dropbtn {
-            font-family: Arial;
             font-size: 16px;
             border: none;
             outline: none;
@@ -110,11 +109,12 @@ $username=$_SESSION['username'];
                     <i class="fa fa-caret-down"></i>
                 </button>
                         <div class="dropdown-content">
-                        <li><a href="viewProfile.php">View</a></li>
-                        <li><a href="profile.php">Edit</a></li>
+                            <li><a href="viewProfile.php">View</a></li>
+                            <li><a href="profile.php">Edit</a></li>
                         </div>
-
                 </div>
+
+                <div class="dropdown">
                 <button class="dropbtn">Event
                     <i class="fa fa-caret-down"></i>
                 </button>
@@ -122,7 +122,12 @@ $username=$_SESSION['username'];
                             <li><a href="event2.php">MyEvents</a></li>
                             <li><a href="event.php">Create</a></li>
                         </div>
-                    <li><a  href="event2.php">Create an event</a> </li>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Create
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                </div>
 
 
                 </ul>
