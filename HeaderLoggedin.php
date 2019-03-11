@@ -43,7 +43,7 @@ $username=$_SESSION['username'];
             color: white;
             padding: 14px 16px;
             background-color: inherit;
-            font-family: inherit;
+            /*font-family: inherit;*/
             margin: 0;
         }
 
@@ -62,7 +62,7 @@ $username=$_SESSION['username'];
 
         .playmatetitle{
             background-color: black;
-            font-size: 30px;
+            font-size: 60px;
             font-family: 'Roboto', sans-serif;
 
         }
@@ -70,7 +70,7 @@ $username=$_SESSION['username'];
             float: none;
             font-family: 'Roboto', sans-serif;
             color: black;
-            padding: 12px 16px;
+            padding: 18px 22px;
             text-decoration: none;
             display: block;
             text-align: left;
@@ -84,16 +84,7 @@ $username=$_SESSION['username'];
             display: block;
         }
 
-/*
-        .menu-area {
-            color: #ffffff;
-            line-height: 30px;
-            padding: 10px 15px;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-*/
+
         h4{
             color: turquoise;
         }
