@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>My Events</title>
-    <link rel="stylesheet" href="css/style.csstyle.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <?php
@@ -23,7 +23,7 @@ else {
 
 
 
-<div class="cat_links"
+<div
         id=content>
     <?php
     $sql = "SELECT * FROM categories ORDER BY category_title ASC";
