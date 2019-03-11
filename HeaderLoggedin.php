@@ -99,8 +99,9 @@ $username=$_SESSION['username'];
 </head>
     <!--class="control"    <nav class="grid-container"> -->
 <body>
+<h1>Playmate</h1>
  <header >
-     <h1>Playmate</h1>
+
      <div class = "navbar">
 
             <nav class="grid-container">
