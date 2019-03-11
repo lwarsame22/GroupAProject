@@ -15,6 +15,66 @@ $username=$_SESSION['username'];
         body{
             background: black;
         }
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: gray;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
 
         .menu-area {
             color: #ffffff;
@@ -24,6 +84,7 @@ $username=$_SESSION['username'];
             text-transform: uppercase;
             font-weight: bold;
         }
+
         h4{
             color: turquoise;
         }
@@ -38,54 +99,38 @@ $username=$_SESSION['username'];
 <body>
  <header >
      <h1>Playmate</h1>
-    <section >
+     <div class = "navbar">
+
             <nav class="grid-container">
                 <ul>
-                <li><a class="active" href="HomePage.php">Home</a> </li>
-
-                    <div class="dropdown">
-
-                <li><a class="dropbtn">Profile</a>
-                    <ul>
+                <li><a href="HomePage.php">Home</a> </li>
+                <div class="dropdown">
+                <button class="dropbtn">Profile
+                    <i class="fa fa-caret-down"></i>
+                </button>
                         <div class="dropdown-content">
                         <li><a href="viewProfile.php">View Profile</a></li>
                         <li><a href="profile.php">Edit Profile</a></li>
                         </div>
-                    </ul>
-                </li>
-                    </div>
 
-
-                    <li><a class="active" href="event.php">Event</a>
+                </div>
+                    <li><a href="event.php">Event</a>
                     <ul>
                         <li><a href="event2.php">My events</a></li>
                         <li><a href="event.php">Create an event</a></li>
                     </ul>
                      </li>
-                <li><a class="active" href="event2.php">Create an event</a> </li>
+                    <li><a  href="event2.php">Create an event</a> </li>
 
-
-                    <!--
-
-                             <div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-</div>
-
-<section class="menu-area">
-
-
-                            -->
-                        </ul>
-                    </li>
 
                 </ul>
+
             </nav>
-    </section>
+
+     </div>
+
+
+
    <!-- Main Section Begins -->
      <section class="echo"> <!-- This class name will enable the styling of output after logging in -->
          <h4>Welcome <?php echo $username ?></h4>
