@@ -5,6 +5,18 @@
     <meta charset="UTF-8">
     <title>Profile</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url("images/profile.jpg");
+            background-color: black;
+            background-attachment: scroll;
+        }
+        .profilebakground h2{
+            color: white;
+        }
+    </style>
 </head>
 <body>
 <?php
@@ -23,21 +35,21 @@ else {
  <div class="profileform">
 <form name="updateprofile" method="post" action="UpdateProfile.php">
     <label for="firstname">First name:</label><br>
-    <Input type="text" placeholder="Enter First name" name="uname" class="profileinputbox" required><br>
+    <Input type="text" placeholder="Enter First name" name="uname" class="inputbox" required><br>
     <label for="lastname">Last name:</label><br>
-    <input type="text" placeholder="Enter Last name" name="ulname" class="profileinputbox" required><br>
+    <input type="text" placeholder="Enter Last name" name="ulname" class="inputbox" required><br>
     <label for="gender">gender: </label><br>
-    <input type="text" placeholder="Enter f or m" name="gender" class="profileinputbox"><br>
+    <input type="text" placeholder="Enter f or m" name="gender" class="inputbox"><br>
     <label for="address">Address:</label><br>
-    <Input type="text" placeholder="Enter Address" name="address" class="profileinputbox" ><br>
+    <Input type="text" placeholder="Enter Address" name="address" class="inputbox" ><br>
     <label for="city">City:</label><br>
-    <input type="text" placeholder="Enter City" name="city" class="profileinputbox" ><br>
+    <input type="text" placeholder="Enter City" name="city" class="inputbox" ><br>
     <label for="country">Country</label><br>
-    <Input type="text" placeholder="Enter Country" name="country" class="profileinputbox"><br>
+    <Input type="text" placeholder="Enter Country" name="country" class="inputbox"><br>
     <label for="datebirth">Date Of Birth:</label><br>
-    <input type="date" placeholder="Enter Date Of Birth" name="datebirth" class="profileinputbox"><br>
+    <input type="date" placeholder="Enter Date Of Birth" name="datebirth" class="inputbox"><br>
     <label for="mobile">Mobile Number:</label><br>
-    <Input type="tel" placeholder="Enter Mobile Number" name="mobilenumber" class="profileinputbox"><br>
+    <Input type="tel" placeholder="Enter Mobile Number" name="mobilenumber" class="inputbox"><br>
 
     <br><br>
 
