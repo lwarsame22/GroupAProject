@@ -38,14 +38,14 @@ $username=$_SESSION['username'];
 <body>
  <header >
      <h1>Playmate</h1>
-    <section class="menu-area">
+    <section >
             <nav class="grid-container">
                 <ul>
                 <li><a class="active" href="HomePage.php">Home</a> </li>
 
                     <div class="dropdown">
 
-                <li><a button class="dropbtn"  >Profile</a> </button>
+                <li><a class="dropbtn">Profile</a> 
                     <ul>
                         <div class="dropdown-content">
                         <li><a href="viewProfile.php">View Profile</a></li>
@@ -65,17 +65,7 @@ $username=$_SESSION['username'];
                 <li><a class="active" href="event2.php">Create an event</a> </li>
 
 
-                    <!--<li><a href="HomePage.php">Home</a></li>
-                    <li><a href="viewProfile.php">Profile</a>
-                        <ul>
-                            <li><a href="viewProfile.php">View Profile</a></li>
-                            <li><a href="profile.php">Edit Profile</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="event2.php">Events</a>
-                        <ul>
-                            <li><a href="event2.php.php">My events</a></li>
-                            <li><a href="event.php">Create an event</a></li>
+                    <!--
 
                              <div class="dropdown">
   <button class="dropbtn">Dropdown</button>
@@ -86,7 +76,7 @@ $username=$_SESSION['username'];
   </div>
 </div>
 
-
+<section class="menu-area">
 
 
                             -->
