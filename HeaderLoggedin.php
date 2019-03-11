@@ -18,6 +18,7 @@ $username=$_SESSION['username'];
         .navbar {
             overflow: hidden;
             background-color: #333;
+            width: 100%;
         }
 
         .navbar a {
@@ -59,6 +60,12 @@ $username=$_SESSION['username'];
             z-index: 1;
         }
 
+        .playmatetitle{
+            background-color: black;
+            font-size: 30px;
+            font-family: 'Roboto', sans-serif;
+
+        }
         .dropdown-content a {
             float: none;
             font-family: 'Roboto', sans-serif;
@@ -99,13 +106,15 @@ $username=$_SESSION['username'];
 </head>
     <!--class="control"    <nav class="grid-container"> -->
 <body>
-<h1>Playmate</h1>
+
  <header >
+     <div class="playmatetitle">
+         <h1>Playmate</h1>
+     </div>
 
      <div class = "navbar">
 
-            <nav class="grid-container">
-
+            <nav>
 
                 <a href="HomePage.php">Home</a>
                 <div class="dropdown">
