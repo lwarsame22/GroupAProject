@@ -18,7 +18,7 @@ $username=$_SESSION['username'];
 
         .menu-area {
             color: #ffffff;
-            line-height: 40px;
+            line-height: 30px;
             padding: 10px 15px;
             text-decoration: none;
             text-transform: uppercase;
@@ -42,20 +42,20 @@ $username=$_SESSION['username'];
             <nav class="grid-container">
                 <ul>
                 <li><a class="active" href="HomePage.php">Home</a> </li>
-                <li><a class="active" href="viewProfile.php"> Profile</a>
+                <li><a class="active" href="viewProfile.php">Profile</a>
                     <ul>
                         <li><a href="viewProfile.php">View Profile</a></li>
                         <li><a href="profile.php">Edit Profile</a></li>
                     </ul>
                 </li>
-                <li><a class="active" href="event.php">Create an Event</a>
-                    ul>
-                    <li><a href="event2.php.php">My events</a></li>
-                    <li><a href="event.php">Create an event</a></li> -->
-                </ul>
+                <li><a class="active" href="event.php">Event</a>
+                    <ul>
+                        <li><a href="event2.php.php">My events</a></li>
+                        <li><a href="event.php">Create an event</a></li>
+                    </ul>
                 </li>
-                <li><a class="active" href="event2.php">My Event</a> </li>
-                <li><a class="active" href="profile.php">Edit Profile</a> </li>
+                <li><a class="active" href="event2.php">Contact</a> </li>
+
 
                     <!--<li><a href="HomePage.php">Home</a></li>
                     <li><a href="viewProfile.php">Profile</a>
