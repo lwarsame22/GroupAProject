@@ -36,6 +36,7 @@ $username=$_SESSION['username'];
 
         .dropdown .dropbtn {
             font-size: 16px;
+            font-family: 'Roboto', sans-serif;
             border: none;
             outline: none;
             color: white;
@@ -60,6 +61,7 @@ $username=$_SESSION['username'];
 
         .dropdown-content a {
             float: none;
+            font-family: 'Roboto', sans-serif;
             color: black;
             padding: 12px 16px;
             text-decoration: none;
@@ -105,7 +107,8 @@ $username=$_SESSION['username'];
                 <ul>
                 <li><a href="HomePage.php">Home</a> </li>
                 <div class="dropdown">
-                <button class="dropbtn">Profile
+                <button class="dropbtn">
+                    <a href="viewProfile.php">Profile</a>
                     <i class="fa fa-caret-down"></i>
                 </button>
                         <div class="dropdown-content">
