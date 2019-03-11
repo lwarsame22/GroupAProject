@@ -14,9 +14,7 @@
             background-color: black;
             background-attachment: scroll;
         }
-        .footer-control{
-            background-color: darkslategray;
-        }
+        
         .userRegister h2{
             color: white;
         }
