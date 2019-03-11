@@ -62,7 +62,7 @@ $username=$_SESSION['username'];
 
         .playmatetitle{
             background-color: black;
-            font-size: 30px;
+            font-size: 20px;
             font-family: 'Roboto', sans-serif;
 
         }
@@ -70,7 +70,7 @@ $username=$_SESSION['username'];
             float: none;
             font-family: 'Roboto', sans-serif;
             color: black;
-            padding: 12px 16px;
+            padding: 18px 22px;
             text-decoration: none;
             display: block;
             text-align: left;
@@ -84,16 +84,7 @@ $username=$_SESSION['username'];
             display: block;
         }
 
-/*
-        .menu-area {
-            color: #ffffff;
-            line-height: 30px;
-            padding: 10px 15px;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-*/
+
         h4{
             color: turquoise;
         }
@@ -114,9 +105,11 @@ $username=$_SESSION['username'];
 
      <div class = "navbar">
 
-            <nav>
 
+                <div class="dropdown">
                 <a href="HomePage.php">Home</a>
+                </div>
+
                 <div class="dropdown">
                 <button class="dropbtn">
                     <a href="viewProfile.php">Profile</a>
@@ -147,23 +140,19 @@ $username=$_SESSION['username'];
 
 
 
-            </nav>
-
+     <section class="right">
+         <form id = "logout"  method="post" action="logout.php">
+             <button type="submit" value="Logout" name="logOutButton" class="btn"> Log out <br>
+         </form>
+     </section>
      </div>
-
-
-
    <!-- Main Section Begins -->
      <section class="echo"> <!-- This class name will enable the styling of output after logging in -->
          <h4>Welcome <?php echo $username ?></h4>
      </section>
      <img src="images/updateprofile.jpg">
      
-    <section class="right">
-        <form id = "logout"  method="post" action="logout.php">
-            <button type="submit" value="Logout" name="logOutButton" class="btn"> Log out <br>
-        </form>
-    </section>
+
 </header>
 <!-- Header Ends -->
 

@@ -11,7 +11,7 @@
 <header class="control"> <!-- class="control " provides the class name for styling the header and footer themes of the webpages, giving the pages a uniform look --> 
 
     <section class="left"> <!--<section class="left" aligns setion content to the left side of the header -->
-        <h2>Sport Playmate</h2>
+        <h2>Playmate</h2>
     </section>
 
     <section class="right"> <!-- <section class="right" aligns setion content to the right side of the header -->
