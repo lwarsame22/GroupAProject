@@ -23,8 +23,8 @@ else {
 <hr />
 <div id=content>
     <?php
-    $cid = $_GET['cid'];
-    if (isset($_SESSION['uid'])) {
+    $cid = $_GET['id'];
+    if (isset($_SESSION['id'])) {
         $logged = " | <a href='create_topic.php?cid=".$cid."'>Click Here to create an Event</a>";
     } else  {
         $logged = " | Please log in to create events.";
