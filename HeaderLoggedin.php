@@ -42,19 +42,27 @@ $username=$_SESSION['username'];
             <nav class="grid-container">
                 <ul>
                 <li><a class="active" href="HomePage.php">Home</a> </li>
-                <li><a class="active" href="viewProfile.php">Profile</a>
+
+                    <div class="dropdown"> // add
+
+                <li><a button class="dropbtn" class="active" >Profile</a> </button>
                     <ul>
+                        <div class="dropdown-content">
                         <li><a href="viewProfile.php">View Profile</a></li>
                         <li><a href="profile.php">Edit Profile</a></li>
+                        </div>
                     </ul>
                 </li>
-                <li><a class="active" href="event.php">Event</a>
+                    </div>
+
+
+                    <li><a class="active" href="event.php">Event</a>
                     <ul>
-                        <li><a href="event2.php.php">My events</a></li>
+                        <li><a href="event2.php">My events</a></li>
                         <li><a href="event.php">Create an event</a></li>
                     </ul>
-                </li>
-                <li><a class="active" href="event2.php">Contact</a> </li>
+                     </li>
+                <li><a class="active" href="event2.php">Create an event</a> </li>
 
 
                     <!--<li><a href="HomePage.php">Home</a></li>
@@ -67,7 +75,21 @@ $username=$_SESSION['username'];
                     <li><a href="event2.php">Events</a>
                         <ul>
                             <li><a href="event2.php.php">My events</a></li>
-                            <li><a href="event.php">Create an event</a></li> -->
+                            <li><a href="event.php">Create an event</a></li>
+
+                             <div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
+
+
+
+                            -->
                         </ul>
                     </li>
 
