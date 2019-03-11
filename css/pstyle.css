@@ -121,15 +121,12 @@ ul li a {
     text-emphasis: deepskyblue;
 
 }
-
+/*
 ul li a:hover {
     background-color: dodgerblue;
 
 }
-ul li ul li{
-    display: none;
-
-}
+*/
 .menu-area {
             color: #ffffff;
             line-height: 40px;
