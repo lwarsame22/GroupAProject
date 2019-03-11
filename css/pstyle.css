@@ -89,3 +89,53 @@ label{
     color: whitesmoke;
     width: 400px;
 }
+
+/*Styling for headerloggedIn */
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+ul li {
+    float: left;
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    opacity: .8;
+    line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+}
+
+ul li a {
+    text-decoration: none;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 30px;
+    border-bottom-color: black;
+    border-bottom-width: 10px;
+
+    text-emphasis: deepskyblue;
+
+}
+
+ul li a:hover {
+    background-color: dodgerblue;
+
+}
+ul li ul li{
+    display: none;
+
+}
+.menu-area {
+            color: #ffffff;
+            line-height: 40px;
+            padding: 10px 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
