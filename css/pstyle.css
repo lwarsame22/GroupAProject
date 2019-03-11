@@ -108,7 +108,7 @@ ul li {
     text-align: center;
     font-size: 15px;
 }
-
+/*
 ul li a {
     text-decoration: none;
     display: block;
@@ -126,10 +126,7 @@ ul li a:hover {
     background-color: dodgerblue;
 
 }
-ul li ul li{
-    display: none;
 
-}
 .menu-area {
             color: #ffffff;
             line-height: 40px;
@@ -139,3 +136,4 @@ ul li ul li{
             font-weight: bold;
         }
 
+*/

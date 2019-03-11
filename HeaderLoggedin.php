@@ -10,7 +10,7 @@ $username=$_SESSION['username'];
 <head>
     <meta charset="UTF-8">
     <title>Sign Up</title>
-   // <link rel="stylesheet" href="css/pstyle.css">
+    <link rel="stylesheet" href="css/pstyle.css">
     <style>
         body{
             background: black;
@@ -102,7 +102,7 @@ $username=$_SESSION['username'];
      <h1>Playmate</h1>
      <div class = "navbar">
 
-            <nav>
+            <nav class="grid-container">
                 <ul>
                 <li><a href="HomePage.php">Home</a> </li>
                 <div class="dropdown">
@@ -115,12 +115,13 @@ $username=$_SESSION['username'];
                         </div>
 
                 </div>
-                    <li><a href="event.php">Event</a>
-                    <ul>
-                        <li><a href="event2.php">My events</a></li>
-                        <li><a href="event.php">Create an event</a></li>
-                    </ul>
-                     </li>
+                <button class="dropbtn">Event
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                        <div class="dropdown-content">
+                            <li><a href="event2.php">MyEvents</a></li>
+                            <li><a href="event.php">Create</a></li>
+                        </div>
                     <li><a  href="event2.php">Create an event</a> </li>
 
 
