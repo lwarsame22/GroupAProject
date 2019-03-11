@@ -43,9 +43,9 @@ $username=$_SESSION['username'];
                 <ul>
                 <li><a class="active" href="HomePage.php">Home</a> </li>
 
-                    <div class="dropdown"> // add
+                    <div class="dropdown">
 
-                <li><a button class="dropbtn" class="active" >Profile</a> </button>
+                <li><a button class="dropbtn"  >Profile</a> </button>
                     <ul>
                         <div class="dropdown-content">
                         <li><a href="viewProfile.php">View Profile</a></li>
