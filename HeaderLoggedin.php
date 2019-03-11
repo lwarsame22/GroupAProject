@@ -104,7 +104,7 @@ $username=$_SESSION['username'];
      <div class = "navbar">
 
             <nav >
-                <ul>
+               
 
                 <li><a href="HomePage.php">Home</a> </li>
                 <div class="dropdown">
@@ -120,22 +120,22 @@ $username=$_SESSION['username'];
 
                 <div class="dropdown">
                 <button class="dropbtn">
-                    <a href="event2.php">Event</a>
+                    <a href="event.php">Event</a>
                     <i class="fa fa-caret-down"></i>
                 </button>
                         <div class="dropdown-content">
-                            <li><a href="event.php">MyEvents</a></li>
-                            <li><a href="viewCatergory.php.php">Search</a></li>
+                            <a href="event2.php">MyEvents</a>
+                            <a href="event.php">Create Event</a>
                         </div>
                 </div>
                 <div class="dropdown">
-                    <button class="dropbtn">Create
+                    <button class="dropbtn">
+                        <a href="viewCatergory.php">Search</a>
                         <i class="fa fa-caret-down"></i>
                     </button>
                 </div>
 
 
-                </ul>
 
             </nav>
 
