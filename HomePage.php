@@ -30,7 +30,7 @@ require "Header.php";
 <!-- Main Starts -->
 
 <main class="content-control">
- <--<img id="Sportbanner" src="images/sports.jpg" alt="Sports Home">-->
+ <!--<img id="Sportbanner" src="images/sports.jpg" alt="Sports Home">-->
     <section class="boxregister">
 <!--Section 1 DESCRIPTION-->
     <section id="AppDescription" class="grid-100">
