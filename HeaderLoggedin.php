@@ -103,8 +103,9 @@ $username=$_SESSION['username'];
      <h1>Playmate</h1>
      <div class = "navbar">
 
-            <nav class="grid-container">
+            <nav >
                 <ul>
+
                 <li><a href="HomePage.php">Home</a> </li>
                 <div class="dropdown">
                 <button class="dropbtn">
@@ -112,18 +113,19 @@ $username=$_SESSION['username'];
                     <i class="fa fa-caret-down"></i>
                 </button>
                         <div class="dropdown-content">
-                            <li><a href="viewProfile.php">View</a></li>
-                            <li><a href="profile.php">Edit</a></li>
+                            <a href="viewProfile.php">View</a>
+                            <a href="profile.php">Edit</a>
                         </div>
                 </div>
 
                 <div class="dropdown">
-                <button class="dropbtn">Event
+                <button class="dropbtn">
+                    <a href="event2.php">Event</a>
                     <i class="fa fa-caret-down"></i>
                 </button>
                         <div class="dropdown-content">
-                            <li><a href="event2.php">MyEvents</a></li>
-                            <li><a href="event.php">Create</a></li>
+                            <li><a href="event.php">MyEvents</a></li>
+                            <li><a href="viewCatergory.php.php">Search</a></li>
                         </div>
                 </div>
                 <div class="dropdown">
