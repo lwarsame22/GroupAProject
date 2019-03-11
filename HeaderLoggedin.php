@@ -77,7 +77,7 @@ $username=$_SESSION['username'];
             display: block;
         }
 
-
+/*
         .menu-area {
             color: #ffffff;
             line-height: 30px;
@@ -86,7 +86,7 @@ $username=$_SESSION['username'];
             text-transform: uppercase;
             font-weight: bold;
         }
-
+*/
         h4{
             color: turquoise;
         }
