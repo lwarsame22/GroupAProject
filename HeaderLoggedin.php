@@ -114,9 +114,11 @@ $username=$_SESSION['username'];
 
      <div class = "navbar">
 
-            <nav>
 
+                <div class="dropdown">
                 <a href="HomePage.php">Home</a>
+                </div>
+
                 <div class="dropdown">
                 <button class="dropbtn">
                     <a href="viewProfile.php">Profile</a>
@@ -144,10 +146,6 @@ $username=$_SESSION['username'];
                         <i class="fa fa-caret-down"></i>
                     </button>
                 </div>
-
-
-
-            </nav>
 
      </div>
 
