@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Profile</title>
+    <title>My Events</title>
     <link rel="stylesheet" href="css/style.csstyle.css">
 </head>
 <body>
@@ -23,7 +23,8 @@ else {
 
 
 
-<div id=content>
+<div
+        id=content>
     <?php
     $sql = "SELECT * FROM categories ORDER BY category_title ASC";
     $res = mysqli_query($conn, $sql);
@@ -33,7 +34,7 @@ else {
             $id = $row['id'];
             $title = $row['category_title'];
             $description = $row['category_description'];
-            $categories .="<a href='viewCategory.php?cid=".$id."' class = 'cat_links'>".$title." - <font size='-1'>".$description."</font></a>";
+            $categories .="<a href='viewCatergory.php?cid=".$id."' class = 'cat_links'>".$title." - <font size='-1'>".$description."</font></a>";
         }
         echo $categories;
     } else {
