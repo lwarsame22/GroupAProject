@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>View Events</title>
-    <-link rel="stylesheet" href="css/style.csstyle.css">
+    <--link rel="stylesheet" href="css/style.csstyle.css"-->
 </head>
 <body>
 <?php
@@ -19,6 +19,8 @@ else {
     header('Location: HomePage.php');
 }
 ?>
+
+<hr />
 <div id=content>
     <?php
     $cid = $_GET['cid'];
