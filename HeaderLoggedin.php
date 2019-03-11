@@ -10,7 +10,7 @@ $username=$_SESSION['username'];
 <head>
     <meta charset="UTF-8">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="css/pstyle.css">
+   // <link rel="stylesheet" href="css/pstyle.css">
     <style>
         body{
             background: black;
@@ -35,6 +35,7 @@ $username=$_SESSION['username'];
         }
 
         .dropdown .dropbtn {
+            font-family: Arial;
             font-size: 16px;
             border: none;
             outline: none;
@@ -68,7 +69,7 @@ $username=$_SESSION['username'];
         }
 
         .dropdown-content a:hover {
-            background-color: #ddd;
+            background-color: turquoise;
         }
 
         .dropdown:hover .dropdown-content {
@@ -109,8 +110,8 @@ $username=$_SESSION['username'];
                     <i class="fa fa-caret-down"></i>
                 </button>
                         <div class="dropdown-content">
-                        <li><a href="viewProfile.php">View Profile</a></li>
-                        <li><a href="profile.php">Edit Profile</a></li>
+                        <li><a href="viewProfile.php">View</a></li>
+                        <li><a href="profile.php">Edit</a></li>
                         </div>
 
                 </div>
