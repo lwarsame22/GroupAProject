@@ -40,7 +40,7 @@ require "Header.php";
                     <label for="username">User Name:</label>
                     <Input type="text" placeholder="Enter username" name="username" required><br>
                     <label for="email">Email:</label>
-                    <Input type="text" placeholder="Enter email" name="email" required><br>
+                    <Input type="email" placeholder="Enter email" name="email" required><br>
                     <label for="password">Pass/word:</label>
                     <input type="password" placeholder="Enter Password" name="password" required><br>
 
