@@ -73,6 +73,9 @@ require "Header.php";
 <!-- Main Ends -->
 
 
+
+
+</body>
 <!-- Footer Starts -->
 <footer class="footer-control">
     <h3>Sport Playmate helps you connect and share with the network of sports lovers in your community</h3>
@@ -92,5 +95,4 @@ require "Header.php";
 </footer>
 <!-- Footer Ends -->
 
-</body>
 </html>
