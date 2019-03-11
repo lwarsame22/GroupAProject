@@ -42,8 +42,18 @@ $username=$_SESSION['username'];
             <nav class="grid-container">
                 <ul>
                 <li><a class="active" href="HomePage.php">Home</a> </li>
-                <li><a class="active" href="viewProfile.php"> Profile</a> </li>
-                <li><a class="active" href="event.php">Create an Event</a> </li>
+                <li><a class="active" href="viewProfile.php"> Profile</a>
+                    <ul>
+                        <li><a href="viewProfile.php">View Profile</a></li>
+                        <li><a href="profile.php">Edit Profile</a></li>
+                    </ul>
+                </li>
+                <li><a class="active" href="event.php">Create an Event</a>
+                    ul>
+                    <li><a href="event2.php.php">My events</a></li>
+                    <li><a href="event.php">Create an event</a></li> -->
+                </ul>
+                </li>
                 <li><a class="active" href="event2.php">My Event</a> </li>
                 <li><a class="active" href="profile.php">Edit Profile</a> </li>
 
