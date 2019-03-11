@@ -103,10 +103,10 @@ $username=$_SESSION['username'];
      <h1>Playmate</h1>
      <div class = "navbar">
 
-            <nav >
-               
+            <nav class="grid-container">
 
-                <li><a href="HomePage.php">Home</a> </li>
+
+                <a href="HomePage.php">Home</a>
                 <div class="dropdown">
                 <button class="dropbtn">
                     <a href="viewProfile.php">Profile</a>
