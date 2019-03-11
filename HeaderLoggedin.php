@@ -95,13 +95,13 @@ $username=$_SESSION['username'];
 
     </style>
 </head>
-    <!--class="control" -->
+    <!--class="control"    <nav class="grid-container"> -->
 <body>
  <header >
      <h1>Playmate</h1>
      <div class = "navbar">
 
-            <nav class="grid-container">
+            <nav>
                 <ul>
                 <li><a href="HomePage.php">Home</a> </li>
                 <div class="dropdown">
