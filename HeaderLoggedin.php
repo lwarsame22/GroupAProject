@@ -45,7 +45,7 @@ $username=$_SESSION['username'];
 
                     <div class="dropdown">
 
-                <li><a class="dropbtn">Profile</a> 
+                <li><a class="dropbtn">Profile</a>
                     <ul>
                         <div class="dropdown-content">
                         <li><a href="viewProfile.php">View Profile</a></li>
