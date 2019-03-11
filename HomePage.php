@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pstyle.css">
     <link rel="stylesheet" href="css/unsemantic-grid-responsive-tablet.css">
     <style>
         body{
@@ -13,7 +13,12 @@
             background-image: url("images/sports.jpg");
             background-color: black;
             background-attachment: scroll;
-
+        }
+        .footer-control{
+            background-color: darkslategray;
+        }
+        .userRegister h2{
+            color: white;
         }
 
     </style>
