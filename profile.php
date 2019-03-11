@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Profile</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pstyle.css">
     <style>
         body{
             background-size: cover;
