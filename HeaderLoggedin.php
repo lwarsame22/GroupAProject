@@ -43,7 +43,7 @@ $username=$_SESSION['username'];
             color: white;
             padding: 14px 16px;
             background-color: inherit;
-            /*font-family: inherit;*/
+            font-family: inherit;
             margin: 0;
         }
 
@@ -62,7 +62,7 @@ $username=$_SESSION['username'];
 
         .playmatetitle{
             background-color: black;
-            font-size: 60px;
+            font-size: 20px;
             font-family: 'Roboto', sans-serif;
 
         }
@@ -138,21 +138,21 @@ $username=$_SESSION['username'];
                     </button>
                 </div>
 
+
+
+     <section class="right">
+         <form id = "logout"  method="post" action="logout.php">
+             <button type="submit" value="Logout" name="logOutButton" class="btn"> Log out <br>
+         </form>
+     </section>
      </div>
-
-
-
    <!-- Main Section Begins -->
      <section class="echo"> <!-- This class name will enable the styling of output after logging in -->
          <h4>Welcome <?php echo $username ?></h4>
      </section>
      <img src="images/updateprofile.jpg">
      
-    <section class="right">
-        <form id = "logout"  method="post" action="logout.php">
-            <button type="submit" value="Logout" name="logOutButton" class="btn"> Log out <br>
-        </form>
-    </section>
+
 </header>
 <!-- Header Ends -->
 
