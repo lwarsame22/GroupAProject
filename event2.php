@@ -23,7 +23,7 @@ else {
 
 
 
-<div
+<div class="cat_links"
         id=content>
     <?php
     $sql = "SELECT * FROM categories ORDER BY category_title ASC";
