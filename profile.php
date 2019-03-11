@@ -9,7 +9,7 @@
         body{
             background-size: cover;
             background-repeat: no-repeat;
-            background-image: url("images/profile.jpg");
+            background-image: url("Images/profile.jpg");
             background-color: black;
             background-attachment: scroll;
         }
