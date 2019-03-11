@@ -1,103 +1,91 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-
-}/*
-*{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}*/
-.control{
-    background-color: #363636;
-    width: 100%;
-    height: 90px;
-    margin-left: auto;
-    margin-right: auto;
+/*body{
+    background-color: black;
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("images2/profile.jpg");*/
 }
 
-.content-control {
-    width: 600px;
-    height: 800px;
-
-}
-.left{
-    float: left;
-    margin-top: 20px;
-    width: 400px;
-    font-family: Arial;
-    color: darkslategrey;
+ .form h2{
+    color: whitesmoke;
 }
 
-.left h3{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.right{
-    float: right;
-    font-family: Arial;
-    margin-top: 20px;
-    width: 500px;
-
-}
-h1 {
-    font-size: 3em;
-    margin: 0;
-    padding: 20px;
-    color: white;
-    }
-/*
-#nav li {
-    list-style: none;
-    float: left;
-    padding-right: 20px;
-}
-a{
-    color: white;
-    text-decoration: none;
-}
-ul{
-    padding: 0;
-}*/
 .form{
-    border: 2px solid cornflowerblue;
-    width: 400px;
-    height: 500px;
+    border: 2px solid white;
+    width: 600px;
     text-align: center;
+    margin: 150px auto; /* 150px below, auto aligns form to the center */
+    background-color: rgba(0,0,0,0.5);
     border-radius: 10px;
-    margin-left: 150px;
-    padding-right: 20px;
-    position: absolute;
-    right: 5px;
+    box-shadow: 0 0 15px turquoise;
 }
-label {
+label{
     float: left;
     width: 150px;
     text-align: right;
-    padding-right: 10px;
-    height: 30px;
-    margin-top: 15px;
+    padding-right: 12px;
+    margin-top: 14px;
     clear: left;
-    font-weight: bold;
+    color: white;
     font-size: 18px;
+    font-weight: bold;
 }
-input{
+.inputbox{
+    text-align: center;
+    font-size: 18px;
+    border: none; /*removes box border*/
+    outline: none; /* removes outline */
+    height: 35px;
+    background: transparent; /* removes color from the box */
+    color: white;
+    border-bottom: 3px solid turquoise;
+    border-radius: 10px;
+    width: 400px;
+}
+.inputbox:focus{
+    border-bottom: 3px solid whitesmoke;
+}
+::placeholder{
+    color: white;
+}
+.btn{
+    background: turquoise;
+    color: white;
+    border: none;
+    margin: 15px; /* separates btn box from box above*/
+    font-size: 20px;
+    padding: 8px 35px; /* This will provide padding/space around the btn. Top & btm 8px, 35px left & right sides */
+    border-radius: 50px;
+}
+.btn:hover{
+    background-color: #4d444d;
+    box-shadow: 0 0 15px turquoise;
+}
+.footer-control{
+    background: transparent;
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+}
 
-    width: 200px;
-    height: 30px;
-    border-radius: 15px;
-    padding-left: 20px;
-    font-size: 15px;
-    margin-left: 05px;
-    margin-top: 12px;
-    float: right;
+/*Styling for Sign Up page*/
+.control{
+    left: 0;
+    color: white;
+    z-index: 7;
+    font-family: Verdana;
 }
-input:focus{
-    outline: none;
-    background-color: lightblue;
+.header-label{
+    left: 100px;
+    height: 50px;
+    width: 110px;
+    top: 25px;
 }
-input [type='submit']{
-    background-color: cornflowerblue;
+.form h3{
+    color: white;
+    font-size: 2em;
+}
+#AppDescription h2 {
+    color: whitesmoke;
+    width: 400px;
 }
