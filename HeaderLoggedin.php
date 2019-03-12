@@ -150,7 +150,7 @@ $username=$_SESSION['username'];
      <section class="echo"> <!-- This class name will enable the styling of output after logging in -->
          <h4>Welcome <?php echo $username ?></h4>
      </section>
-     <img src="images/updateprofile.jpg">
+   
      
 
 </header>
