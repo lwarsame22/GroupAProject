@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Event</title>
-    <!--link rel="stylesheet" href="css/style.css"-->
+    <link rel="stylesheet" href="css/pstyle.css">
 </head>
 <body>
 <?php
