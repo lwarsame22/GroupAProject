@@ -56,7 +56,7 @@ require "Header.php";
                     <Input type="text" placeholder="Enter username" name="username" class="inputbox" required><br>
                     <label for="email">Email:</label>
                     <Input type="email" placeholder="Enter email" name="email" class="inputbox" required><br>
-                    <label for="password">Pass/word:</label>
+                    <label for="password">Password:</label>
                     <input type="password" placeholder="Enter Password" name="password" class="inputbox" required><br>
 
                     <div id="submit">
