@@ -23,8 +23,7 @@ else {
 
 
 
-<div
-        id=content>
+<div id=content>
     <?php
     $sql = "SELECT * FROM categories ORDER BY category_title ASC";
     $res = mysqli_query($conn, $sql);

@@ -28,3 +28,34 @@ if (isset($_POST['topic_submit'])) {
 }
 
 ?>
+
+<?php
+session_start();
+if (isset($_POST['eventButton'])) {
+    if (($_POST['e_location'] == "") && ($_POST['e_date'] == "")) {
+        echo "You did not fill in important fields. Please Return to the previous page.";
+        exit();
+    } else {
+        include_once("DBConnect.php");
+        $username=$_SESSION['username'];
+        $title = $_POST['title'];
+        $dateevent = $_POST['date'];
+        $description=$_POST['description'];
+        $location=$_POST['location'];
+        $sportname=$_POST['sportname']; // is this the id or the name of the sport
+        //$creator = $_SESSION['uid'];
+        $query = "INSERT INTO events(e_username, e_title, e_description, e_location, e_sportID) <!-- this e_sportID and $sportname could be the issue -->
+        VALUES ('$username','$title','$description','$location','$sportname')";
+
+        $res = mysqli_query($conn, $query);
+        $new_event_id = mysqli_insert_id();
+        $sql2 = "INSERT INTO posts (e_sportID, e_ID, e_username, e_title, post_date) VALUE ('$sportname' ,'$new_event_id','$username', '$title', now())";
+        $res2 = mysqli_query($conn, $sql2);
+
+        if (($res) && ($res2) {
+            header("Location: viewEvent.php?sportID=".$sportname."&event id=".$new_event_id);
+        }
+    }
+}
+
+?>
