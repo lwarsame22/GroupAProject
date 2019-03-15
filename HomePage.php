@@ -14,10 +14,27 @@
             background-color: black;
             background-attachment: scroll;
         }
-        
+        header{
+            background: #000;
+            height: 100px;
+        }
         .userRegister h2{
             color: white;
         }
+
+        p{
+            width: 450px;
+            color: white;
+        }
+
+        .form{
+            float: left;
+            position: relative;
+            right: 1000px;
+            top: -100px;
+            background-color: turquoise;
+        }
+
 
     </style>
 </head>
@@ -72,27 +89,5 @@ require "Header.php";
 </main>
 <!-- Main Ends -->
 
-
-
-
 </body>
-
-<!-- Footer Starts -->
-<footer class="footer-control">
-    <h3>Sport Playmate helps you connect and share with the network of sports lovers in your community</h3>
-
-    <h4>Connect and share with a network of sports lovers in your community</h4>
-    <!--  <span>
-          <li><a><i class="fab fa-facebook-square"></i></a></li>
-          <l><a href="http://www.facebook.com"><img src="facebooklogo.png" alt="Facebook"</a></l>
-          <li><a href="http://www.twitter.com"><img src="twitterlogo.png" alt="twitter"</a></li>
-          <li><a href="http://www.linkedin.com"><img src="linkedinlogo.png" alt="linkedin"</a></li>
-          <li><a href="http://www.googleplus.com"><img src="googlepluslogo.png" alt="Google+"</a></li>
-          <li><a href="http://www.youtube.com"><img src="youtubelogo.png" alt="YouTube"</a></li>
-      </span>-->
-    <h4>Copyright &copy; 2019. Software Project Engineering (CMM004)</h4>
-    <p>All Rights Reserved</p>
-    <small> Developed and Maintain by <a href="#">Group A Team</a></small>
-</footer>
-<!-- Footer Ends -->
 </html>

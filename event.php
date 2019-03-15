@@ -5,6 +5,46 @@
     <meta charset="UTF-8">
     <title>Event</title>
     <link rel="stylesheet" href="css/pstyle.css">
+    <style>
+        main{
+            background: url("Images/americanfoot.jpg") no-repeat scroll;
+            background-position: center;
+            background-size: cover;
+            height: 550px;
+        }
+        .eventform {
+            width: 700px;
+            background-color: mediumseagreen;
+            border-color: black;
+            height: 550px;
+            border-radius: 20px;
+
+        }
+        .eventform label{
+            color: black;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+
+        }
+        select{
+            padding: 15px 20px;
+            font-size: 20px;
+            border-radius: 10px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            margin-left: 200px;
+        }
+        .btn{
+            position: relative;
+        }
+        h2{
+            text-align: center;
+            padding: 40px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+
+    </style>
 </head>
 <body>
 <?php
@@ -31,7 +71,7 @@ else {
     <label for="description">Description: </label><br>
     <input type="text" placeholder="Enter Description" name="description" class="inputbox"><br>
     <label for="location">Location : </label><br>
-    <input type="text" placeholder="Enter location" name="location" class="inputbox"><br>
+    <input type="text" placeholder="Enter location" name="location" class="inputbox"><br><br>
     <select class="sportdropdown" name="sportName">
         <?php 
         $query2 = "SELECT * FROM sports";
@@ -46,27 +86,16 @@ else {
 
 
         ?>
-        </select>
-    <button type="submit" value="createEvent" name="eventButton" class="eventbtn">Create Event</button><br>
+        </select><br><br><br>
+    <button type="submit" value="createEvent" name="eventButton" class="btn">Create Event</button><br>
 </form>
     </main>
         <!-- Main Ends -->
         <!-- Footer -->
-        <footer class="control">
+<?php
 
-<h4>Connect and share with a network of sports lovers in your community</h4>
-     <!--  <span>
-           <li><a><i class="fab fa-facebook-square"></i></a></li>
-           <l><a href="http://www.facebook.com"><img src="facebooklogo.png" alt="Facebook"</a></l>
-           <li><a href="http://www.twitter.com"><img src="twitterlogo.png" alt="twitter"</a></li>
-           <li><a href="http://www.linkedin.com"><img src="linkedinlogo.png" alt="linkedin"</a></li>
-           <li><a href="http://www.googleplus.com"><img src="googlepluslogo.png" alt="Google+"</a></li>
-           <li><a href="http://www.youtube.com"><img src="youtubelogo.png" alt="YouTube"</a></li>
-       </span>-->
-<h4>Copyright &copy; 2019. Software Project Engineering (CMM004)</h4>
-    <p>All Rights Reserved</p>
-    <small> Developed and Maintain by <a href="#">Group A Team</a></small>
-</footer>
+require ("Footer.php")
+?>
 <!-- Footer ends -->
 </body>
 </html>

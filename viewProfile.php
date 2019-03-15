@@ -4,6 +4,30 @@
     <meta charset="UTF-8">
     <title>Profile</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        main{
+            background: url("images/updateprofile.jpg");
+        }
+    </style>
+    <style>
+        .viewProfileTable{
+            color: white;
+            font-size: 20px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+        a{
+            text-decoration: none;
+            color: turquoise;
+        }
+        table, td{
+            text-align: right;
+        }
+        .label{
+            text-align: left;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
 <?php
@@ -19,6 +43,7 @@ else {
     header('Location: HomePage.php');
 }
 ?>
+<main>
 <?php
 
 $query2 = "SELECT * FROM user_profile WHERE u_username='$username'";
@@ -39,21 +64,30 @@ if(mysqli_num_rows($result)==1){
     }
 }
 ?>
+
 <div class="viewProfileTable">
 <table>
-    <tr><td>username:</td><td><?php echo $username; ?></td></tr>
-    <tr><td>Firstname:</td><td><?php echo $firstname; ?></td></tr>
-    <tr><td>Lastname:</td><td><?php echo $lastname; ?></td></tr>
-    <tr><td>Email:</td><td><?php echo $email; ?></td></tr>
-    <tr><td>Gender:</td><td><?php echo $gender; ?></td></tr>
-    <tr><td>Address:</td><td><?php echo $address; ?></td></tr>
-    <tr><td>City:</td><td><?php echo $city; ?></td></tr>
-    <tr><td>Country:</td><td><?php echo $country; ?></td></tr>
-    <tr><td>Birth:</td><td><?php echo $birth; ?></td></tr>
-    <tr><td>Mobile:</td><td><?php echo $mobile; ?></td></tr>
+    <tr><td >Username:</td><td class="label"><?php echo $username; ?></td></tr>
+    <tr><td>Firstname:</td><td  class="label"><?php echo $firstname; ?></td></tr>
+    <tr><td >Lastname:</td><td class="label"><?php echo $lastname; ?></td></tr>
+    <tr><td>Email:</td><td class="label"><?php echo $email; ?></td></tr>
+    <tr><td>Gender:</td><td class="label"><?php echo $gender; ?></td></tr>
+    <tr><td>Address:</td><td class="label"><?php echo $address; ?></td></tr>
+    <tr><td>City:</td><td class="label"><?php echo $city; ?></td></tr>
+    <tr><td>Country:</td><td class="label"><?php echo $country; ?></td></tr>
+    <tr><td>Birth:</td><td class="label"><?php echo $birth; ?></td></tr>
+    <tr><td>Mobile:</td><td class="label"><?php echo $mobile; ?></td></tr>
 </table>
 </div>
-
+<a href="profile.php">Edit Profile</a>
+</main>
+<!--Main Ends -->
+<!-- Footer -->
+<footer>
+    <?php
+    require ("Footer.php")
+    ?>
+</footer>
 </body>
 </html>
 

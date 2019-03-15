@@ -7,15 +7,27 @@
     <link rel="stylesheet" href="css/pstyle.css">
     <style>
         body{
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-image: url("Images/profile.jpg");
             background-color: black;
-            background-attachment: scroll;
+
         }
         .profilebakground h2{
             color: white;
         }
+        main{
+            background: url("Images/updateprofile.jpg") no-repeat ;
+           background-position: center;
+        }
+        .control{
+        text-align: center;
+            color: white;
+        }
+        .profilebtn{
+            display: flex;
+        }
+        h2{
+            text-align: left 50px;
+        }
+
     </style>
 </head>
 <body>
@@ -34,6 +46,7 @@ else {
 <main class="profilebakground">    
  <div class="profileform">
 <form name="updateprofile" method="post" action="UpdateProfile.php">
+    <h2>Edit Profile</h2>
     <label for="firstname">First name:</label><br>
     <Input type="text" placeholder="Enter First name" name="uname" class="inputbox" required><br>
     <label for="lastname">Last name:</label><br>
@@ -56,27 +69,17 @@ else {
 
 
 <div class="profilebtn">
-    <button type="submit" value="updateProfile" name="profileButton" class="btn">Update Profile</button><br></div>
+    <button type="submit" value="updateProfile" name="profileButton" class="btn">Update Profile</button><br>
+<button type="submit" value="cancelprofile" name="profileButton" class="btn">Cancel</button></div>
 </form>
 </div>
         </main>        
 <!-- Main Section End -->
  <!-- Footer Starts -->       
-<footer class="control">
+<?php
 
-<h4>Connect and share with a network of sports lovers in your community</h4>
-     <!--  <span>
-           <li><a><i class="fab fa-facebook-square"></i></a></li>
-           <l><a href="http://www.facebook.com"><img src="facebooklogo.png" alt="Facebook"</a></l>
-           <li><a href="http://www.twitter.com"><img src="twitterlogo.png" alt="twitter"</a></li>
-           <li><a href="http://www.linkedin.com"><img src="linkedinlogo.png" alt="linkedin"</a></li>
-           <li><a href="http://www.googleplus.com"><img src="googlepluslogo.png" alt="Google+"</a></li>
-           <li><a href="http://www.youtube.com"><img src="youtubelogo.png" alt="YouTube"</a></li>
-       </span>-->
-<h4>Copyright &copy; 2019. Software Project Engineering (CMM004)</h4>
-    <p>All Rights Reserved</p>
-    <small> Developed and Maintain by <a href="#">Group A Team</a></small>
-</footer>
+require ("Footer.php")
+?>
         
 </body>
 </html>

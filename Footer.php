@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    .control{
+        text-align: center;
+        color: white;
+    }
+</style>
 
 <body>
         </body>

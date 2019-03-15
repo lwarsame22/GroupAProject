@@ -62,15 +62,15 @@ label{
     box-shadow: 0 0 15px turquoise;
 }
 .footer-control{
-    background: transparent;
+    background: black;
     text-align: center;
     color: white;
-    background-color: rgba(0,0,0,0.5);
+    position: absolute;
 }
 
 /*Styling for Sign Up page*/
 .control{
-    left: 0;
+    position: center;
     color: white;
     z-index: 7;
     font-family: Verdana;
@@ -95,6 +95,7 @@ ul{
     list-style: none;
     margin: 0px;
     padding: 0px;
+    position: center;
 
 }
 
