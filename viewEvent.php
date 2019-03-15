@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Profile</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pstyle.css">
     <style>
         main{
             background: url("images/updateprofile.jpg");
         }
     </style>
     <style>
-        .viewProfileTable{
+        .viewEventTable{
             color: white;
             font-size: 20px;
             font-family: Arial, sans-serif;
@@ -48,6 +48,7 @@ else {
 
     $query2 = "SELECT * FROM events";
     $result=mysqli_query($conn, $query2);
+    $row= mysqli_fetch_assoc($result)
     // maybe this is a for loop because there will be several results since it retrieves all
     // of the event rows
    // $row= mysqli_fetch_assoc($result)
