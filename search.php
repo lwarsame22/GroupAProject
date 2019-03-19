@@ -60,7 +60,7 @@ else {
     $query2="SELECT * FROM events, sports WHERE events.e_sportID=sports.s_ID ORDER BY e_date ASC ";
     $keyword=$_GET["keyword"];
 
-        if(isset($keyword)) {
+       // if(isset($keyword)) {
             // if keyword is set
             $query2 = $query2 . "where sports.s_name LIKE '%" . $keyword . "%'";
             $result = mysqli_query($conn, $query2);
@@ -78,9 +78,7 @@ else {
                 <?php }while ($row= mysqli_fetch_assoc($result)) ?>
         </table>
     </div>
-}else{
-    <?php echo "please search"; ?>
-    }
+
 </main>
 <!--Main Ends -->
 <!-- Footer -->
