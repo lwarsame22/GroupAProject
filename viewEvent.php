@@ -20,8 +20,15 @@
             text-decoration: none;
             color: turquoise;
         }
+        th{
+            text-align: center;
+        }
         table, td{
-            text-align: right;
+            text-align: left;
+        }
+        table, th, td {
+            border: 1px solid red;
+            border-collapse: collapse;
         }
         .label{
             text-align: left;
@@ -68,7 +75,7 @@ else {
 
     <div class="viewEventTable">
         <table>
-            <tr><td>EventID</td><td>Event Creator</td><td>Event title</td><td>Event Description</td><td>Event Location</td><td>Event Date</td><td>Event sportID</td></tr>
+            <tr><th>EventID</th><th>Event Creator</th><th>Event title</th><th>Event Description</th><th>Event Location</th><th>Event Date</th><th>Event sportID</th></tr>
 <?php do{ ?>
             <tr><td><?php echo $row['e_ID']; ?></td><td><?php echo $row['e_username']; ?></td><td><?php echo $row['e_title']; ?></td>
                 <td><?php echo $row['e_description']; ?></td><td><?php echo $row['e_location']; ?></td><td><?php echo $row['e_date']; ?></td>
