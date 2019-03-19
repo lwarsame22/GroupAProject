@@ -121,6 +121,17 @@ $username=$_SESSION['username'];
                         </div>
                 </div>
 
+            <div class="dropdown">
+             <button class="dropbtn">
+                 <a href="#">Messages</a>
+                 <i class="fa fa-caret-down"></i>
+             </button>
+                <div class="dropdown-content">
+                 <a href="viewMessages.php">View My Messages</a>
+                 <a href="sendMessage.php">New Message</a>
+                </div>
+            </div>
+
                 <div class="dropdown">
                 <button class="dropbtn">
                     <a href="event.php">Event</a>

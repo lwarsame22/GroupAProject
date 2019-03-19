@@ -57,7 +57,7 @@ else {
     <?php
 
 
-    $query2="SELECT * FROM events, sports WHERE events.e_sportID=sports.s_ID ORDER BY e_date ASC ";
+    $query2="SELECT * FROM events, sports WHERE events.e_sportID=sports.s_ID ORDER BY events.e_date ASC ";
     $keyword=$_GET["keyword"];
 
        // if(isset($keyword)) {
@@ -98,7 +98,7 @@ print "</tr>\n";
 
 print "</table>\n";
             }
-        
+
 
 
 
