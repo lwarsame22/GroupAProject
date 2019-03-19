@@ -65,20 +65,44 @@ else {
             $query2 = $query2 . "where sports.s_name LIKE '%" . $keyword . "%'";
             $result = mysqli_query($conn, $query2);
             //$row = mysqli_fetch_assoc($result);
-            $row="";
-    ?>
 
-    <div class="viewEventTable">
-        <table>
-            <tr><th>EventID</th><th>Event Creator</th><th>Event title</th><th>Event Description</th><th>Event Location</th><th>Event Date</th><th>Event Sport</th></tr>
-            <?php do{ ?>
-            <tr><td><?php echo $row['e_ID']; ?></td><td><?php echo $row['e_username']; ?></td><td><?php echo $row['e_title']; ?></td>
-                <td><?php echo $row['e_description']; ?></td><td><?php echo $row['e_location']; ?></td><td><?php echo $row['e_date']; ?></td>
-                <td><?php echo $row['s_name']; ?></td>
-                <?php }while ($row= mysqli_fetch_assoc($result)) ?>
-        </table>
-    </div>
 
+        print "<table>\n";
+        print "<tr>\n";
+        print "<th>Event ID</th><th>Event Creator</th><th>Event title</th><th>Event Description</th><th>Event Location</th><th>Event Date</th><th>Event Sport</th>\n";
+        print "</tr>\n";
+        if(mysqli_num_rows($result)==0){
+            echo "<p> No events found matching your search.</p>\n";
+        } else {
+            foreach($result as $row){
+
+                print "<tr>\n";
+
+print "<td>".$row["e_ID"]."</td>\n";
+
+//use column name as index into row to get value
+
+print "<td>".$row["e_username"]."</td>\n";
+
+print "<td>".$row["e_title"]."</td>\n";
+
+print "<td>".$row["e_description"]."</td>\n";
+
+print "<td>".$row["e_location"]."</td>\n";
+
+print "<td>".$row["e_date"]."</td>\n";
+print "<td>".$row["s_name"]."</td>\n";
+print "</tr>\n";
+//finish the row
+            }
+
+print "</table>\n";
+            }
+        
+
+
+
+?>
 </main>
 <!--Main Ends -->
 <!-- Footer -->
