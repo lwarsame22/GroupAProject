@@ -53,7 +53,8 @@ else {
 <main>
     <?php
 
-    $query2 = "SELECT * FROM events";
+    //$query2 = "SELECT * FROM events";
+    $query2="SELECT * FROM events, sports WHERE events.e_sportID=sports.s_ID";
     $result=mysqli_query($conn, $query2);
     $row= mysqli_fetch_assoc($result)
     // maybe this is a for loop because there will be several results since it retrieves all
