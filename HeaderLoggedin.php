@@ -127,7 +127,7 @@ $username=$_SESSION['username'];
                     <i class="fa fa-caret-down"></i>
                 </button>
                         <div class="dropdown-content">
-                            <a href="viewEvent.php">MyEvents</a>
+                            <a href="viewEvent.php">View Events</a>
                             <a href="event.php">Create Event</a>
                         </div>
                 </div>
@@ -136,6 +136,9 @@ $username=$_SESSION['username'];
                         <a href="search.php">Search</a>
                         <i class="fa fa-caret-down"></i>
                     </button>
+                    <div class="dropdown-content">
+                        <a href="search.php">Search</a>
+                    </div>
                 </div>
 
 

@@ -64,8 +64,8 @@ else {
             // if keyword is set
             $query2 = $query2 . "where sports.s_name LIKE '%" . $keyword . "%'";
             $result = mysqli_query($conn, $query2);
-            $row = mysqli_fetch_assoc($result);
-        }
+            //$row = mysqli_fetch_assoc($result);
+            $row="";
     ?>
 
     <div class="viewEventTable">
@@ -78,7 +78,9 @@ else {
                 <?php }while ($row= mysqli_fetch_assoc($result)) ?>
         </table>
     </div>
-
+}else{
+    <?php echo "please search"; ?>
+    }
 </main>
 <!--Main Ends -->
 <!-- Footer -->
