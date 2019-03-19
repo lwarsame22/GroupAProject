@@ -80,7 +80,7 @@ else {
 <?php do{ ?>
             <tr><td><?php echo $row['e_ID']; ?></td><td><?php echo $row['e_username']; ?></td><td><?php echo $row['e_title']; ?></td>
                 <td><?php echo $row['e_description']; ?></td><td><?php echo $row['e_location']; ?></td><td><?php echo $row['e_date']; ?></td>
-                <td><?php echo $row['e_sportID']; ?></td>
+                <td><?php echo $row['s_name']; ?></td>
 <?php }while ($row= mysqli_fetch_assoc($result)) ?>
         </table>
     </div>
