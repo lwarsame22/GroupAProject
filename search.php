@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Event</title>
+    <title>Search</title>
     <link rel="stylesheet" href="css/pstyle.css">
     <style>
         main{
@@ -48,37 +48,34 @@ else {
 }
 ?>
 <main>
+    <form method="GET" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
+        <input name="keyword" size="20">
+        <button type="submit">Search</button>
+    </form>
+
+
     <?php
 
-    //$query2 = "SELECT * FROM events";
-    $query2="SELECT * FROM events, sports WHERE events.e_sportID=sports.s_ID";
-    $result=mysqli_query($conn, $query2);
-    $row= mysqli_fetch_assoc($result)
-    // maybe this is a for loop because there will be several results since it retrieves all
-    // of the event rows
-   // $row= mysqli_fetch_assoc($result)
-        //while ($row= mysqli_fetch_assoc($result)){
 
-          //  $eventID=$row['e_ID'];
-          //  $creator=$row['e_username'];
-          //  $eventTitle=$row['e_title'];
-           // $eventDescription=$row['e_description'];
-           // $location=$row['e_location'];
-           // $date=$row['e_date'];
-            //$sportID=$row['e_sportID'];
+    $query2="SELECT * FROM events, sports WHERE events.e_sportID=sports.s_ID ORDER BY e_date ASC ";
+    $keyword=$_GET["keyword"];
 
-       // }
-   // }
+
+        // if keyword is set
+        $query2 = $query2 . "where sports.s_name LIKE '%" . $keyword . "%'";
+        $result = mysqli_query($conn, $query2);
+        $row = mysqli_fetch_assoc($result);
+
     ?>
 
     <div class="viewEventTable">
         <table>
             <tr><th>EventID</th><th>Event Creator</th><th>Event title</th><th>Event Description</th><th>Event Location</th><th>Event Date</th><th>Event Sport</th></tr>
-<?php do{ ?>
+            <?php do{ ?>
             <tr><td><?php echo $row['e_ID']; ?></td><td><?php echo $row['e_username']; ?></td><td><?php echo $row['e_title']; ?></td>
                 <td><?php echo $row['e_description']; ?></td><td><?php echo $row['e_location']; ?></td><td><?php echo $row['e_date']; ?></td>
                 <td><?php echo $row['s_name']; ?></td>
-<?php }while ($row= mysqli_fetch_assoc($result)) ?>
+                <?php }while ($row= mysqli_fetch_assoc($result)) ?>
         </table>
     </div>
 

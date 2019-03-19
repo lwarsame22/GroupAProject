@@ -133,7 +133,7 @@ $username=$_SESSION['username'];
                 </div>
                 <div class="dropdown">
                     <button class="dropbtn">
-                        <a href="viewCatergory.php">Search</a>
+                        <a href="search.php">Search</a>
                         <i class="fa fa-caret-down"></i>
                     </button>
                 </div>
