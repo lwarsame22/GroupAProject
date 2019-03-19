@@ -11,7 +11,7 @@ if ($_POST['eventButton']) {
 
   $dateevent = strip_tags($_POST['date']);
 
-  $decription = strip_tags($_POST['description']);
+  $description = strip_tags($_POST['description']);
 
   $location = strip_tags($_POST['location']);
 
@@ -20,8 +20,8 @@ if ($_POST['eventButton']) {
 
 
 // $pass= md5($password)esto sss;
-    $query = "INSERT INTO events(e_username, e_title, e_description, e_location, e_sportID)
-     VALUES ('$username','$title','$description','$location',$sportname)";
+    $query = "INSERT INTO events(e_username, e_title, e_description, e_location, e_date, e_sportID)
+     VALUES ('$username','$title','$description','$location','$dateevent','$sportname')";
 
 
      $result = mysqli_query($conn, $query);
