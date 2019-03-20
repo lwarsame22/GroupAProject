@@ -1,6 +1,6 @@
 
 <?php
-
+session_start();
 include_once('login.php');
 $username=$_SESSION['username'];
 ?>
