@@ -24,6 +24,7 @@
 <body>
 <?php
 include_once('DBconnect.php');
+session_start();
 if ( isset($_SESSION['username'] )){
     $query1="Select m1.id, m1.title, m1.timestamp, count(m2.id) as reps, user_profile.username from messages as m1, messages as m2, user_profile where((m1.user1='".$_SESSION['username']."' and m1.user1HasRead='no' and user_profile.username=m1.user2) or (m1.user2='".$_SESSION['username']."' and m1.user2HasRead='no' and user_profile=m1.user1))";
     $query2="Select m1.id, m1.title, m1.timestamp, count(m2.id) as reps, user_profile.username from messages as m1, messages as m2, user_profile where((m1.user1='".$_SESSION['username']."' and m1.user1HasRead='yes' and user_profile.username=m1.user2) or (m1.user2='".$_SESSION['username']."' and m1.user2HasRead='yes' and user_profile=m1.user1))";
