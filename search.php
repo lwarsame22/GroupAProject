@@ -60,7 +60,7 @@ else {
     $keyword=$_GET["keyword"];
 
        // if(isset($keyword)) {
-            // if keyword is set
+            // if keyword is set and is the name of a sport. search bar browses for events with sport name matching the keyword
             $query2 = $query2 . "where sports.s_name LIKE '%" . $keyword . "%'";
             $result = mysqli_query($conn, $query2);
             //$row = mysqli_fetch_assoc($result);

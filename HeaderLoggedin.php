@@ -149,7 +149,9 @@ $username=$_SESSION['username'];
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                        <a href="search.php">Search</a>
+                        <a href="search.php">Search by user</a>
+                        <a href="search.php">Search by location</a>
+                        <a href="search.php">Search by sport</a>
                     </div>
                 </div>
 
