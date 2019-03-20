@@ -36,8 +36,9 @@
 <body>
 <?php
 include_once('DBconnect.php');
-if ( isset($_SESSION['username'] )){
 session_start();
+if ( isset($_SESSION['username'] )){
+
     $username=$_SESSION['username'];
     require "HeaderLoggedin.php";
 }

@@ -107,7 +107,7 @@ $username=$_SESSION['username'];
 
 
                 <div class="dropdown">
-                <a href="HomePage.php">Home</a>
+                <a href="user.php">Home</a>
                 </div>
 
                 <div class="dropdown">
