@@ -139,6 +139,7 @@ $username=$_SESSION['username'];
                 </button>
                         <div class="dropdown-content">
                             <a href="viewEvent.php">View Events</a>
+                            <a href="viewMyCreatedEvents.php">View Events I organised</a>
                             <a href="event.php">Create Event</a>
                         </div>
                 </div>
