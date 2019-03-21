@@ -28,7 +28,7 @@ if ($_POST['profileButton']) {
     $statusMsg = '';
 
     // File upload path
-    $targetDir = "UploadedImg/";
+    $targetDir = "GroupAProject/UploadedImg/";
     $fileName = basename($_FILES["file"]["name"]);
     $targetFilePath = $targetDir . $fileName;
     $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
