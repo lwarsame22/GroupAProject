@@ -24,6 +24,18 @@ if ($_POST['profileButton']) {
 
     $mobilenumber = strip_tags($_POST['mobilenumber']);
 
+
+    //Image querys
+    $statusMsg = '';
+
+    // File upload path
+    $targetDir = "UploadedImg/";
+    $fileName = basename($_FILES["file"]["name"]);
+    $targetFilePath = $targetDir . $fileName;
+    $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
+
+
+
 // $pass= md5($password);
     $query = "UPDATE  user_profile
           SET u_name= '$uname',
@@ -49,14 +61,6 @@ if ($_POST['profileButton']) {
         echo "Failed to update";
     }
 
- //Image querys
-    $statusMsg = '';
-
-    // File upload path
-    $targetDir = "UploadedImg/";
-    $fileName = basename($_FILES["file"]["name"]);
-    $targetFilePath = $targetDir . $fileName;
-    $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
 
 if(isset($_POST["profileButton"]) && !empty($_FILES["file"]["name"])){
     // Allow certain file formats
@@ -67,7 +71,7 @@ if(isset($_POST["profileButton"]) && !empty($_FILES["file"]["name"])){
             // Insert image file name into database
            // $insert = $conn->query("INSERT into images (img_name, img_date) VALUES ('".$fileName."', NOW())");
            // if($insert){
-            $query2 = "INSERT into images (img_name, img_date) VALUES ('".$fileName."', NOW())";
+            $query2 = "INSERT into images (i_username, img_name, img_date) VALUES ('$username', '".$fileName."', NOW())";
             $result1 = mysqli_query($conn, $query2);
 
             if($result1){
