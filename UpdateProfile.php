@@ -49,7 +49,7 @@ if ($_POST['profileButton']) {
         echo "Failed to update";
     }
 
- //Image query   
+ //Image querys
     $statusMsg = '';
 
     // File upload path
