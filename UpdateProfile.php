@@ -36,7 +36,7 @@ if ($_POST['profileButton']) {
 
 
 
-// $pass= md5($password);
+// $pass= md5($password)  f;
     $query = "UPDATE  user_profile
           SET u_name= '$uname',
           u_lastname ='$ulname',
