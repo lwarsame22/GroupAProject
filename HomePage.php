@@ -11,7 +11,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-image: url("images/sports.jpg");
-            background-color: black;
+            background-color: white;
             background-attachment: scroll;
         }
         header{
