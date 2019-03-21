@@ -66,8 +66,8 @@ else {
     <div  id="dropBoxImg">
         <label for="imgUpload">Select file to upload</label><br>
     </div>
-    <input type="FILE" name="imgInput" class="inputbox" id="imgInput" />
-
+    <input type="file" name="file" class="inputbox" id="imgInput" />
+    <input type="submit" name="submit" value="Upload">
     <br><br>
 
 
