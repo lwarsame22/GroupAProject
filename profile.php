@@ -64,9 +64,9 @@ else {
     <label for="mobile">Mobile Number:</label><br>
     <Input type="tel" placeholder="Enter Mobile Number" name="mobilenumber" class="inputbox"><br>
     <div  id="dropBoxImg">
-        <label for="fileUpload">Select file to upload</label><br>    
+        <label for="imgUpload">Select file to upload</label><br>
     </div>
-    <input type="file" name="fileInput" class="inputbox" id="fileInput" />
+    <input type="img" name="imgInput" class="inputbox" id="imgInput" />
 
     <br><br>
 
