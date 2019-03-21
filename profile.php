@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="css/pstyle.css">
     <style>
         body{
-            background-color: black;
+            background-color: white;
 
         }
         .profilebakground h2{
-            color: white;
+            color: black;
         }
         main{
             background: url("Images/updateprofile.jpg") no-repeat ;
@@ -19,7 +19,7 @@
         }
         .control{
         text-align: center;
-            color: white;
+            color: black;
         }
         .profilebtn{
             display: flex;
