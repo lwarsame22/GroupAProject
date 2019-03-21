@@ -45,7 +45,7 @@ else {
 ?>
 <main class="profilebakground">    
  <div class="profileform">
-<form name="updateprofile" method="POST" action="UpdateProfile.php">
+<form name="updateprofile" method="POST" action="UpdateProfile.php" enctype="multipart/form-data">
     <h2>Edit Profile</h2>
     <label for="firstname">First name:</label><br>
     <Input type="text" placeholder="Enter First name" name="uname" class="inputbox" required><br>
@@ -67,7 +67,7 @@ else {
         <label for="imgUpload">Select file to upload</label><br>
     </div>
     <input type="file" name="file" class="inputbox" id="imgInput" />
-   
+
     <br><br>
 
 

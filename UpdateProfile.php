@@ -3,28 +3,31 @@ session_start();
 
 include_once('DBConnect.php');
 if ($_POST['profileButton']) {
-$username=$_SESSION['username'];
 
-$uname = strip_tags($_POST['uname']);
+    $username=$_SESSION['username'];
 
-$ulname = strip_tags($_POST['ulname']);
+    $uname = strip_tags($_POST['uname']);
 
-
-
-$gender = strip_tags($_POST['gender']); //Radio BOx
-
-$address = strip_tags($_POST['address']);
-
-$city = strip_tags($_POST['city']);
-
-$country = strip_tags($_POST['country']);
-
-$datebirth = strip_tags($_POST['datebirth']);
-
-$mobilenumber = strip_tags($_POST['mobilenumber']);
+    $ulname = strip_tags($_POST['ulname']);
 
 
 
+    $gender = strip_tags($_POST['gender']); //Radio BOx
+
+    $address = strip_tags($_POST['address']);
+
+    $city = strip_tags($_POST['city']);
+
+    $country = strip_tags($_POST['country']);
+
+    $datebirth = strip_tags($_POST['datebirth']);
+
+    $mobilenumber = strip_tags($_POST['mobilenumber']);
+
+
+    $statusMsg = '';
+
+    // File upload path
     $targetDir = "UploadedImg/";
     $fileName = basename($_FILES["file"]["name"]);
     $targetFilePath = $targetDir . $fileName;
