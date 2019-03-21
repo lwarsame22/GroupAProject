@@ -64,7 +64,7 @@ else {
     <label for="mobile">Mobile Number:</label><br>
     <Input type="tel" placeholder="Enter Mobile Number" name="mobilenumber" class="inputbox"><br>
     <form>
-        <div id="dropBoxImg">
+        <div>
             <p>Select file to upload</p>
         </div>
         <input type="file" name="fileInput" id="fileInput" />
@@ -79,7 +79,7 @@ else {
 </form>
 </div>
         </main>        
-<!-- Main Section End -->
+<!-- Main Section End  id="dropBoxImg"-->
  <!-- Footer Starts -->       
 <?php
 
