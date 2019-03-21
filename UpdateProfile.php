@@ -37,8 +37,8 @@ if(isset($_POST["profileButton"]) && !empty($_FILES["file"]["name"])){
     // Allow certain file formats
     $allowTypes = array('jpg','png','jpeg','gif','pdf');
     if(in_array($fileType, $allowTypes)){
-        // Upload file to server
-        if(move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)){
+        // Upload file to server tmp_name
+        if(move_uploaded_file($_FILES["file"]["name"], $targetFilePath)){
             // Insert image file name into database
             $insert = $db->query("INSERT into images (img_name, img_date) VALUES ('".$fileName."', NOW())");
             if($insert){
