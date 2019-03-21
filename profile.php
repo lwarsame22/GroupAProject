@@ -64,10 +64,10 @@ else {
     <label for="mobile">Mobile Number:</label><br>
     <Input type="tel" placeholder="Enter Mobile Number" name="mobilenumber" class="inputbox"><br>
     <form>
-        <div>
+        <div  id="dropBoxImg">
             <p>Select file to upload</p>
         </div>
-        <input type="file" name="fileInput" id="fileInput" />
+        <input type="file" name="fileInput" class="inputbox" id="fileInput" />
     </form>
     <br><br>
 
