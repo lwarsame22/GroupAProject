@@ -25,6 +25,10 @@ $mobilenumber = strip_tags($_POST['mobilenumber']);
 
 
 
+
+
+
+
 // $pass= md5($password);
 $query = "UPDATE  user_profile
           SET u_name= '$uname',

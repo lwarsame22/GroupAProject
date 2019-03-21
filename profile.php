@@ -63,12 +63,11 @@ else {
     <input type="date" placeholder="Enter Date Of Birth" name="datebirth" class="inputbox"><br>
     <label for="mobile">Mobile Number:</label><br>
     <Input type="tel" placeholder="Enter Mobile Number" name="mobilenumber" class="inputbox"><br>
-    <form>
-        <div  id="dropBoxImg">
+    <div  id="dropBoxImg">
             <p>Select file to upload</p>
-        </div>
-        <input type="file" name="fileInput" class="inputbox" id="fileInput" />
-    </form>
+    </div>
+    <input type="file" name="fileInput" class="inputbox" id="fileInput" />
+
     <br><br>
 
 

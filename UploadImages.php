@@ -1,7 +1,1 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: 1810356
- * Date: 21/03/2019
- * Time: 15:34
- */
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
