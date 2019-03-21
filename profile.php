@@ -45,7 +45,7 @@ else {
 ?>
 <main class="profilebakground">    
  <div class="profileform">
-<form name="updateprofile" method="post" action="UpdateProfile.php">
+<form name="updateprofile" method="POST" action="UpdateProfile.php">
     <h2>Edit Profile</h2>
     <label for="firstname">First name:</label><br>
     <Input type="text" placeholder="Enter First name" name="uname" class="inputbox" required><br>
@@ -64,7 +64,7 @@ else {
     <label for="mobile">Mobile Number:</label><br>
     <Input type="tel" placeholder="Enter Mobile Number" name="mobilenumber" class="inputbox"><br>
     <div  id="dropBoxImg">
-            <p>Select file to upload</p>
+        <label for="fileUpload">Select file to upload</label><br>    
     </div>
     <input type="file" name="fileInput" class="inputbox" id="fileInput" />
 
