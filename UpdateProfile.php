@@ -39,8 +39,8 @@ if(isset($_POST["profileButton"]) && !empty($_FILES["file"]["name"])){
     if(in_array($fileType, $allowTypes)){
         // Upload file to server tmp_name
         if(move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)){
-            // Insert image file name into database
-            $insert = $db->query("INSERT into images (img_name, img_date) VALUES ('".$fileName."', NOW())");
+            // Insert image file name into database $db
+            $insert = $conn->query("INSERT into images (img_name, img_date) VALUES ('".$fileName."', NOW())");
             if($insert){
                 $statusMsg = "The file ".$fileName. " has been uploaded successfully.";
             }else{
