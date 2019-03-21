@@ -78,7 +78,7 @@ else {
 </form>
 </div>
         </main>        
-<!-- Main Section End  id="dropBoxImg"-->
+<!-- Main Section End  -->
  <!-- Footer Starts -->       
 <?php
 
