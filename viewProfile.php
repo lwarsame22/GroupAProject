@@ -48,7 +48,7 @@ $query2 = "SELECT * FROM user_profile WHERE u_username='$username'";
 $result=mysqli_query($conn, $query2);
 if(mysqli_num_rows($result)==1){
     while ($row= mysqli_fetch_assoc($result)){
-
+        
         $username=$row['u_username'];
         $firstname=$row['u_name'];
         $lastname=$row['u_lastname'];
