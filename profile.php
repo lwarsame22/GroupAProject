@@ -67,7 +67,7 @@ else {
         <label for="imgUpload">Select file to upload</label><br>
     </div>
     <input type="file" name="file" class="inputbox" id="imgInput" />
-    <input type="submit" name="submit" value="Upload"/>
+    <!-- Main Section End  <input type="submit" name="submit" value="Upload"/> -->
 
     <br><br>
 
