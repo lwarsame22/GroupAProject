@@ -29,15 +29,15 @@ else {
    <div class="wrap">
     <div class="image-slider">
         <figure>
-            <img src="images/americanball1.jpg" style="width: 800px"; height="400">
-            <img src="images/basket_ball.jpg" style="width: 800px"; height="400px" alt="">
-            <img src="images/cricket.jpg" style="width: 800px"; height="400px">
-            <img src="images/racing.jpg" style="width: 800px"; height="400px">
-            <img src="images/basket_ball.jpg" style="width: 800px"; height="400px">
-            <img src="images/Hockey.jpg" style="width: 800px"; height="400px">
-            <img src="images/cycling.jpg" style="width: 800px"; height="400px">
-            <img src="images/football_net.jpg" style="width: 800px"; height="400px">
-            <img src="images/TennisMatch.jpg" style="width: 800px"; height="400px">
+            <img src="images/americanball2a.jpg" style="width: 800px"; height="400">
+            <img src="images/basket_ball2.png" style="width: 800px"; height="400px" alt="">
+            <img src="images/cricket2.png" style="width: 800px"; height="400px">
+            <img src="images/racing2.png" style="width: 800px"; height="400px">
+            <img src="images/basket_ball2.png" style="width: 800px"; height="400px">
+            <img src="images/Hockey2.png" style="width: 800px"; height="400px">
+            <img src="images/cycling2.png" style="width: 800px"; height="400px">
+            <img src="images/football2.jpng" style="width: 800px"; height="400px">
+            <img src="images/Tennis2.png" style="width: 800px"; height="400px">
 
         </figure>
     </div>

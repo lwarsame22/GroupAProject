@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="css/pstyle.css">
     <style>
         body{
-            background-color: black;
+            background-color: white;
 
         }
         .profilebakground h2{
-            color: white;
+            color: black;
         }
         main{
             background: url("Images/updateprofile.jpg") no-repeat ;
@@ -19,7 +19,7 @@
         }
         .control{
         text-align: center;
-            color: white;
+            color: black;
         }
         .profilebtn{
             display: flex;
@@ -45,7 +45,7 @@ else {
 ?>
 <main class="profilebakground">    
  <div class="profileform">
-<form name="updateprofile" method="post" action="UpdateProfile.php">
+<form name="updateprofile" method="post" action="UpdateProfile.php" enctype="multipart/form-data">
     <h2>Edit Profile</h2>
     <label for="firstname">First name:</label><br>
     <Input type="text" placeholder="Enter First name" name="uname" class="inputbox" required><br>
@@ -63,6 +63,11 @@ else {
     <input type="date" placeholder="Enter Date Of Birth" name="datebirth" class="inputbox"><br>
     <label for="mobile">Mobile Number:</label><br>
     <Input type="tel" placeholder="Enter Mobile Number" name="mobilenumber" class="inputbox"><br>
+    <div  id="dropBoxImg">
+        <label for="imgUpload">Select file to upload</label><br>
+    </div>
+    <input type="file" name="file" class="inputbox" id="imgInput" />
+    <input type="submit" name="submit" value="Upload"/>
 
     <br><br>
 
@@ -74,7 +79,7 @@ else {
 </form>
 </div>
         </main>        
-<!-- Main Section End -->
+<!-- Main Section End  -->
  <!-- Footer Starts -->       
 <?php
 

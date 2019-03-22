@@ -46,7 +46,7 @@ label{
     border-bottom: 3px solid whitesmoke;
 }
 ::placeholder{
-    color: white;
+    color: black;
 }
 .btn{
     background: turquoise;
