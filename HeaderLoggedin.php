@@ -1,10 +1,10 @@
 
 <?php
-//session_start();
+session_start();
 include_once('DBConnect.php');
-if(empty($_SESSION['username'])){
-    header('location: HomePage.php');
-};
+if(isset($_SESSION['username'])) {
+    $username=$_SESSION['username'];
+}
 ?>
 
 <!DOCTYPE html>
@@ -167,7 +167,7 @@ if(empty($_SESSION['username'])){
      </div>
    <!-- Main Section Begins -->
      <section class="echo"> <!-- This class name will enable the styling of output after logging in -->
-         <h4>Welcome <?php echo $username ?></h4>
+         <h4>Welcome <?php echo $username; ?></h4>
      </section>
    
      
