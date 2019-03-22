@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 
         if ($_POST['loginButton']) {
             include_once('DBConnect.php');
@@ -13,6 +13,7 @@ session_start();
 
 
             if(mysqli_num_rows($query)==1){
+                session_start();
                 $_SESSION['username'] = $username;
 
                 header('Location: user.php');//NEED TO EDIT THIS LOCATION LATER
