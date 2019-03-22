@@ -22,7 +22,7 @@ if ($_POST['profileButton']) {
 
     $mobilenumber = strip_tags($_POST['mobilenumber']);
 
-    $img_name = strip_tags($_POST['file']);
+    $img_name = basename($_FILES["file"]["name"]);
 
 
 
@@ -51,7 +51,7 @@ if(isset($_POST["profileButton"]) && !empty($_FILES["file"]["name"])){
             $result1 = mysqli_query($conn, $query2);
 
             if($result1){
-                echo "<img src=\"UploadedImg/" . $row['file'] . "\" alt=\"\" /><br />";
+               
                 $statusMsg = "The file ".$fileName. " has been uploaded successfully.";
             }else{
                 $statusMsg = "File upload failed, please try again.";
