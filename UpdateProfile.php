@@ -1,5 +1,5 @@
 <?php
-session_start();
+//session_start();
 
 include_once('DBConnect.php');
 if ($_POST['profileButton']) {

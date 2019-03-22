@@ -1,8 +1,10 @@
 
 <?php
-session_start();
-include_once('login.php');
-$username=$_SESSION['username'];
+//session_start();
+include_once('DBConnect.php');
+if(empty($_SESSION['username'])){
+    header('location: HomePage.php');
+};
 ?>
 
 <!DOCTYPE html>

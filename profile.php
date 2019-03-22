@@ -32,15 +32,15 @@
 </head>
 <body>
 <?php
-session_start();
-if ( isset($_SESSION['username'] )){
-    $username=$_SESSION['username'];
+//session_start();
+//if ( isset($_SESSION['username'] )){
+ //   $username=$_SESSION['username'];
 
     require "HeaderLoggedin.php";
-}
-else {
-    header('Location: HomePage.php');
-}
+//}
+//else {
+//    header('Location: HomePage.php');
+//}
 
 ?>
 <main class="profilebakground">    

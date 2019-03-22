@@ -35,15 +35,15 @@
 </head>
 <body>
 <?php
-include_once('DBconnect.php');
-session_start();
-if ( isset($_SESSION['username'] )){
-    $username=$_SESSION['username'];
-    require "HeaderLoggedin.php";
-}
-else {
-    header('Location: HomePage.php');
-}
+//include_once('DBconnect.php');
+//session_start();
+//if ( isset($_SESSION['username'] )){
+//    $username=$_SESSION['username'];
+    require_once ('HeaderLoggedin.php');
+
+//else {
+//    header('Location: HomePage.php');
+//}
 ?>
 <main>
     <?php
