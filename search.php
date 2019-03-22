@@ -57,7 +57,7 @@
 
 
     $query2="SELECT * FROM events, sports WHERE events.e_sportID=sports.s_ID ORDER BY events.e_date ASC ";
-    $keyword=$_GET["keyword"];
+    $keyword=$_GET['keyword'];
 
        // if(isset($keyword)) {
             // if keyword is set and is the name of a sport. search bar browses for events with sport name matching the keyword
