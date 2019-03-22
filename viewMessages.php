@@ -100,10 +100,6 @@ if(intval(mysqli_num_rows($result1))==0)
         }
         ?>
     </table>
-    <?php
-    }
-    else{ echo 'you must be logged in to access your messages';
-    }
-    ?>
+    
 </body>
 </html>
