@@ -24,6 +24,43 @@
 <body>
 <?php
 
-    require "HeaderLoggedin.php";
+require_once ('HeaderLoggedin.php');
 
 ?>
+<main>
+    <?php
+
+    $query2 = "SELECT * FROM user_mailboxes LEFT JOIN message ON message.id = user_mailboxes.message_id 
+              WHERE user_mailboxes.user = '$username' AND user_mailboxes.mailbox = 'in'";
+    $result=mysqli_query($conn, $query2);
+    $row= mysqli_fetch_assoc($result);
+    if($row==0){
+        echo "you currently have no messages in your inbox";
+        }
+        else{
+            $message=$row['messages'];
+            $fromUser=$row['fromUser'];
+            $when=$row['timestamp'];
+
+        }
+
+    ?>
+
+    <div class="viewMessages">
+        <table>
+            <tr><th>Message</th><th>From</th><th>Date</th></tr>
+            <?php do{ ?>
+            <tr><td><?php echo $row['messages']; ?></td><td><?php echo $row['fromUser']; ?></td><td><?php echo $row['timestamp']; ?></td>
+                <?php }while ($row= mysqli_fetch_assoc($result)) ?>
+        </table>
+    </div>
+</main>
+<!--Main Ends -->
+<!-- Footer -->
+<footer>
+    <?php
+    require ("Footer.php")
+    ?>
+</footer>
+</body>
+</html>
