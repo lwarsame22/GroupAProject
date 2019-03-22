@@ -51,7 +51,7 @@ if(isset($_POST["profileButton"]) && !empty($_FILES["file"]["name"])){
             $result1 = mysqli_query($conn, $query2);
 
             if($result1){
-               
+
                 $statusMsg = "The file ".$fileName. " has been uploaded successfully.";
             }else{
                 $statusMsg = "File upload failed, please try again.";
