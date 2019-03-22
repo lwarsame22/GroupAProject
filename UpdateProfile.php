@@ -10,8 +10,6 @@ if ($_POST['profileButton']) {
 
     $ulname = strip_tags($_POST['ulname']);
 
-
-
     $gender = strip_tags($_POST['gender']); //Radio BOx
 
     $address = strip_tags($_POST['address']);
@@ -23,6 +21,10 @@ if ($_POST['profileButton']) {
     $datebirth = strip_tags($_POST['datebirth']);
 
     $mobilenumber = strip_tags($_POST['mobilenumber']);
+
+    $img_name = basename($_FILES["file"]["name"]);
+
+
 
 
     //Image querys
@@ -36,41 +38,15 @@ if ($_POST['profileButton']) {
 
 
 
-// $pass= md5($password)  f;
-    $query = "UPDATE  user_profile
-          SET u_name= '$uname',
-          u_lastname ='$ulname',
-          gender ='$gender',
-          address ='$address',
-          city ='$city',
-          country ='$country',
-          datebirth='$datebirth',
-          mobilenum='$mobilenumber',
-          active='1'
-          WHERE u_username = '$username'";
-
-
-    $result = mysqli_query($conn, $query);
-
-    if ($result) {
-
-
-        header('Location: user.php'); // need to EDIT THIS LOCATION TO THE PROFILE VIEW PAGE
-    } else {
-
-        echo "Failed to update";
-    }
-
-
 if(isset($_POST["profileButton"]) && !empty($_FILES["file"]["name"])){
     // Allow certain file formats
     $allowTypes = array('jpg','png','jpeg','gif','pdf');
     if(in_array($fileType, $allowTypes)){
         // Upload file to server tmp_name
         if(move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)){
+
             // Insert image file name into database
-           // $insert = $conn->query("INSERT into images (img_name, img_date) VALUES ('".$fileName."', NOW())");
-           // if($insert){
+
             $query2 = "INSERT into images (i_username, img_name, img_date) VALUES ('$username', '".$fileName."', NOW())";
             $result1 = mysqli_query($conn, $query2);
 
@@ -93,7 +69,31 @@ if(isset($_POST["profileButton"]) && !empty($_FILES["file"]["name"])){
 // Display status message
 echo $statusMsg;
 
+// $pass= md5($password)  f;
+    $query = "UPDATE  user_profile
+          SET u_name= '$uname',
+          u_lastname ='$ulname',
+          gender ='$gender',
+          address ='$address',
+          city ='$city',
+          country ='$country',
+          datebirth='$datebirth',
+          mobilenum='$mobilenumber',
+          active='1',
+          u_img = '$img_name' 
+          WHERE u_username = '$username'";
 
+
+    $result = mysqli_query($conn, $query);
+
+    if ($result) {
+
+
+        header('Location: user.php'); // need to EDIT THIS LOCATION TO THE PROFILE VIEW PAGE
+    } else {
+
+        echo "Failed to update";
+    }
 
 
 
