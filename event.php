@@ -60,7 +60,7 @@
 ?>
     <main class="evntbakground">
     <div class="eventform">
-    <h2>Create An Event</h2>
+    <h2>Create an Event</h2>
 <form name="createEvent" method="post" action="createEvent.php">
     <label for="title">Event Title:</label><br>
     <Input type="text" placeholder="Enter Event Title" name="title" class="inputbox"><br>
@@ -70,6 +70,23 @@
     <input type="text" placeholder="Enter Description" name="description" class="inputbox"><br>
     <label for="location">Location : </label><br>
     <input type="text" placeholder="Enter location" name="location" class="inputbox"><br><br>
+    <label for="attendees">Limit Attendees? : </label><br>
+    <input type="text" placeholder="Enter attendees" name="attendees" class="inputbox"><br><br>
+    <label for="gender">Restrict Gender? </label><br>
+    <select class="sportdropdown" name="sportName">
+        <?php
+        $query2 = "SELECT * FROM gender";
+        $result=mysqli_query($conn, $query2);
+
+        while( $row = mysqli_fetch_array($result)){
+
+            echo "<option value='".$row['g_ID']."'>".$row['g_option']."</option>";
+
+        }
+       ?>
+    </select><br><br><br>
+    <input type="text" placeholder="Enter attendees" name="attendees" class="inputbox"><br><br>
+    <label for="sport">Sport related: </label><br>
     <select class="sportdropdown" name="sportName">
         <?php 
         $query2 = "SELECT * FROM sports";
@@ -80,9 +97,6 @@
                 echo "<option value='".$row['s_ID']."'>".$row['s_name']."</option>";
 
         }
-
-
-
         ?>
         </select><br><br><br>
     <button type="submit" value="createEvent" name="eventButton" class="btn">Create Event</button><br>
@@ -101,15 +115,4 @@ require ("Footer.php")
 
 
 
-<!--
-<select class="sportdropdown" name="sportName">
 
-    $query2 = "SELECT s_ID FROM sports";
-    $result=mysqli_query($conn, $query2);
-    for($x=0; $x<mysqli_num_rows($result); $x++){
-        while ($row= mysqli_fetch_assoc($result)){
-            echo "<option value=".$row['s_ID']." name=".$row['s_ID'].">" . $row['s_ID'] . "</option>";
-        }
-    }
-
-</select>  -->
