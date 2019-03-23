@@ -55,7 +55,7 @@
 
         <select class="genderdropdown" name="sportName">
         <?php
-        $query2 = "SELECT * FROM gender WHERE g_ID != 3";
+        $query2 = "SELECT * FROM gender ";
         $result=mysqli_query($conn, $query2);
 
         while( $row = mysqli_fetch_array($result)){
@@ -85,7 +85,7 @@
         <label for="imgUpload">Select file to upload</label><br>
     </div>
     <input type="file" name="file" class="inputbox" id="imgInput" />
-    <!-- Main Section End  <input type="submit" name="submit" value="Upload"/> -->
+    <!-- Main Section En  d  <input type="submit" name="submit" value="Upload"/> -->
 
     <br><br>
 
