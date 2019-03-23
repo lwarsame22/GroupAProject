@@ -78,6 +78,7 @@
     <div class="viewEventTable">
         <?php echo $e_ID; ?>
         <?php echo $eventID; ?>
+        <?php echo $eventname; ?>
         <table>
 
             <tr><th>EventID</th><th>Event Crea tor</th><th>Event title</th><th>Event Description</th><th>Event Location</th><th>Event Date</th><th>Event Sport</th></tr>
