@@ -58,7 +58,7 @@
    // $row= mysqli_fetch_assoc($result)
         //while ($row= mysqli_fetch_assoc($result)){
 
-          //  $eventID=$row['e_ID'];
+          //  $eventID=$row['e_ID'] ;
           //  $creator=$row['e_username'];
           //  $eventTitle=$row['e_title'];
            // $eventDescription=$row['e_description'];
