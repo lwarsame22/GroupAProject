@@ -48,7 +48,7 @@
 <main>
 
     <?php
-   // $e_ID = $_GET['e_ID']; pau comment
+   $e_ID = 'e_ID';
     //$query2 = "SELECT * FROM events";
     //$query2="SELECT * FROM events, sports WHERE events.e_ID='.$e_ID.' AND events.e_sportID=sports.s_ID AND e_date >= CURDATE() ORDER BY events.e_date ASC";
 
