@@ -48,7 +48,7 @@
 <main>
 
     <?php
-   $e_ID = '23';
+   $e_ID = 'e_ID';
     //$query2 = "SELECT * FROM events";
     //$query2="SELECT * FROM events, sports WHERE events.e_ID='.$e_ID.' AND events.e_sportID=sports.s_ID AND e_date >= CURDATE() ORDER BY events.e_date ASC";
 
@@ -63,6 +63,7 @@
     <div class="viewEventTable">
         <table>
             <tr><th>EventID</th><th>Event Crea tor</th><th>Event title</th><th>Event Description</th><th>Event Location</th><th>Event Date</th><th>Event Sport</th></tr>
+            <?php echo $row['e_ID']; ?>
 <?php do{ ?>
             <tr><td><?php echo $row['e_ID']; ?></td><td><?php echo $row['e_username']; ?></td><td><?php echo $row['e_title']; ?></td>
                 <td><?php echo $row['e_description']; ?></td><td><?php echo $row['e_location']; ?></td><td><?php echo $row['e_date']; ?></td>
