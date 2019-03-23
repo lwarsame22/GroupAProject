@@ -70,6 +70,7 @@
         <table>
             <tr><th>EventID</th><th>Event Crea tor</th><th>Event title</th><th>Event Description</th><th>Event Location</th><th>Event Date</th><th>Event Sport</th></tr>
             <?php echo $e_ID; ?>
+            <?php echo $query2; ?>
 <?php do{ ?>
             <tr><td><?php echo $row['e_ID']; ?></td><td><?php echo $row['e_username']; ?></td><td><?php echo $row['e_title']; ?></td>
                 <td><?php echo $row['e_description']; ?></td><td><?php echo $row['e_location']; ?></td><td><?php echo $row['e_date']; ?></td>
