@@ -64,26 +64,25 @@
     $result=mysqli_query($conn, $query2);
     $row= mysqli_fetch_assoc($result);
 
+    if(mysqli_num_rows($result)==1){
+        while ($row= mysqli_fetch_assoc($result)){
+
+            $eventID=$row['e_ID'];
+            $eventname=$row['e_title'];
+
+        }
+    }
+
     ?>
 
     <div class="viewEventTable">
         <table>
             <tr><th>EventID</th><th>Event Crea tor</th><th>Event title</th><th>Event Description</th><th>Event Location</th><th>Event Date</th><th>Event Sport</th></tr>
-            <?php echo $row; ?>
+            <?php echo $e_ID; ?>
+            <tr><td >Event ID:</td><td class="label"><?php echo $eventID; ?></td></tr>
+            <tr><td>Event name:</td><td  class="label"><?php echo $eventname; ?></td></tr>
 
 
-
-
-
-
-
-
-
-<?php do{ ?>
-            <tr><td><?php echo $row['e_ID']; ?></td><td><?php echo $row['e_username']; ?></td><td><?php echo $row['e_title']; ?></td>
-                <td><?php echo $row['e_description']; ?></td><td><?php echo $row['e_location']; ?></td><td><?php echo $row['e_date']; ?></td>
-                <td><?php echo $row['s_name']; ?></td>
-<?php }while ($row= mysqli_fetch_assoc($result)) ?>
         </table>
     </div>
 
