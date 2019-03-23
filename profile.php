@@ -51,7 +51,23 @@
     <Input type="text" placeholder="Enter First name" name="uname" class="inputbox" required><br>
     <label for="lastname">Last name:</label><br>
     <input type="text" placeholder="Enter Last name" name="ulname" class="inputbox" required><br>
-    <label for="gender">gender: </label><br>
+    <label for="gender">Gender: </label><br>
+
+        <select class="genderdropdown" name="sportName">
+        <?php
+        $query2 = "SELECT * FROM gender WHERE g_ID != 3";
+        $result=mysqli_query($conn, $query2);
+
+        while( $row = mysqli_fetch_array($result)){
+
+            echo "<option value='".$row['g_ID']."'>".$row['g_option']."</option>";
+
+        }
+        ?>
+        </select><br><br><br>
+
+
+
     <input type="text" placeholder="Enter f or m" name="gender" class="inputbox"><br>
     <label for="address">Address:</label><br>
     <Input type="text" placeholder="Enter Address" name="address" class="inputbox" ><br>
