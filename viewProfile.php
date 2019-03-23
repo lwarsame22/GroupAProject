@@ -11,7 +11,7 @@
     </style>
     <style>
         .viewProfileTable{
-            color: white;
+            color: black;
             font-size: 20px;
             font-family: Arial, sans-serif;
             font-weight: bold;

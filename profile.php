@@ -63,6 +63,8 @@
     <input type="date" placeholder="Enter Date Of Birth" name="datebirth" class="inputbox"><br>
     <label for="mobile">Mobile Number:</label><br>
     <Input type="tel" placeholder="Enter Mobile Number" name="mobilenumber" class="inputbox"><br>
+    <label for="mobile">Sport interests:</label><br>
+    <Input type="checkbox" placeholder="Enter Sports" name="sports" class="inputbox"><br>
     <div  id="dropBoxImg">
         <label for="imgUpload">Select file to upload</label><br>
     </div>
