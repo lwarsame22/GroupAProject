@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +10,7 @@
 
       }
       .profilebakground h2{
-            color: black;
+            color: whitesmoke;
      }
       main{
            background: url("Images/updateprofile.jpg") no-repeat ;
@@ -25,14 +24,14 @@
             display: flex;
         }
        h2{
-           text-align: left ;
+           text-align: left;
        }
 
     </style>
 </head>
 
 <?php
-require "Header.php";
+require "HeaderLoggedin.php";
 ?>
 
 <body>
@@ -47,7 +46,7 @@ require "Header.php";
     <input type="text" placeholder="Enter Last name" name="ulname" class="inputbox" required><br>
     <label for="gender">Gender: </label><br>
 
-        <select class="genderdropdown" name="genderName">
+        <select class="genderdropdown" name="gender">
         <?php
         $query2 = "SELECT * FROM gender";
         $result=mysqli_query($conn, $query2);
