@@ -33,8 +33,8 @@ require "HeaderLoggedin.php";
         while ($row = mysqli_fetch_assoc($result)) {
             $e_ID = $row['e_ID'];
             $e_title = $row['e_title'];
-            $description = $row['category_description'];
-            $events .="<a href='viewCatergory.php?cid=".$id."' class = 'cat_links'>".$title." - <font size='-1'>".$description."</font></a>";
+            $description = $row['e_description'];
+            $events .="<a href='viewEvent.php?cid=".$e_ID."' class = 'cat_links'>".$e_title." - <font size='-1'>".$description."</font></a>";
         }
         echo $events;
     } else {
