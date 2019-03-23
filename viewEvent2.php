@@ -23,20 +23,20 @@ require "HeaderLoggedin.php";
 
 
 
-<div id=content>
+<div >
     <?php
 
     $query2="SELECT * FROM events, sports WHERE events.e_sportID=sports.s_ID AND events.e_username='$username'";
     $result=mysqli_query($conn, $query2);
     $events="";
-    if (mysqli_num_rows($res) > 0) {
+    if (mysqli_num_rows($result) > 0) {
         while ($row = mysqli_fetch_assoc($result)) {
             $e_ID = $row['e_ID'];
             $e_title = $row['e_title'];
             $description = $row['category_description'];
             $events .="<a href='viewCatergory.php?cid=".$id."' class = 'cat_links'>".$title." - <font size='-1'>".$description."</font></a>";
         }
-        echo $categories;
+        echo $events;
     } else {
         echo "<p>There are no event available yet...</p>";
     }
