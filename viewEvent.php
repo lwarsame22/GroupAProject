@@ -78,14 +78,12 @@
     ?>
 
     <div class="viewEventTable">
-        <?php echo $e_ID; ?>
-        <?php echo $eventID; ?>
-        <?php echo $eventname; ?>
+
         <table>
 
             <tr><th>EventID</th><th>Event title</th><th>Event Description</th><th>Event Location</th><th>Event Date</th><th>Event Sport</th></tr>
 
-            <tr><td ><td><?php echo $eventID; ?></td><td><?php echo $eventname; ?></td><td> <?php echo $eventdes; ?> </td> <td> <?php echo $eventloc; ?> </td></tr>
+            <tr><td><?php echo $eventID; ?></td><td><?php echo $eventname; ?></td><td> <?php echo $eventdes; ?> </td> <td> <?php echo $eventloc; ?> </td></tr>
 
 
         </table>
