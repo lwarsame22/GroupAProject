@@ -36,7 +36,7 @@ require "HeaderLoggedin.php";
             $e_ID = $row['e_ID'];
             $e_title = $row['e_title'];
             $description = $row['e_description'];
-            $events .="<a href='viewEvent.php?cid=".$e_ID."' class = 'cat_links'>".$e_title." - <font size='-1'>".$description."</font></a>";
+            $events .="<a href='viewEvent.php?eid=".$e_ID."' class = 'cat_links'>".$e_title." - <font size='-1'>".$description."</font></a>";
         }
         echo $events;
     } else {
