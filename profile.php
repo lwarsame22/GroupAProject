@@ -53,9 +53,9 @@
     <input type="text" placeholder="Enter Last name" name="ulname" class="inputbox" required><br>
     <label for="gender">Gender: </label><br>
 
-        <select class="genderdropdown" name="sportName">
+        <select class="genderdropdown" name="genderName">
         <?php
-        $query2 = "SELECT * FROM gender ";
+        $query2 = "SELECT * FROM gender";
         $result=mysqli_query($conn, $query2);
 
         while( $row = mysqli_fetch_array($result)){
@@ -66,9 +66,6 @@
         ?>
         </select><br><br><br>
 
-
-
-    <input type="text" placeholder="Enter f or m" name="gender" class="inputbox"><br>
     <label for="address">Address:</label><br>
     <Input type="text" placeholder="Enter Address" name="address" class="inputbox" ><br>
     <label for="city">City:</label><br>
