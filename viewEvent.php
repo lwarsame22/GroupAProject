@@ -69,6 +69,8 @@
 
             $eventID=$row['e_ID'];
             $eventname=$row['e_title'];
+            $eventdes=$row['e_description'];
+            $eventloc=$row['e_location'];
 
         }
     }
@@ -81,10 +83,9 @@
         <?php echo $eventname; ?>
         <table>
 
-            <tr><th>EventID</th><th>Event Crea tor</th><th>Event title</th><th>Event Description</th><th>Event Location</th><th>Event Date</th><th>Event Sport</th></tr>
+            <tr><th>EventID</th><th>Event title</th><th>Event Description</th><th>Event Location</th><th>Event Date</th><th>Event Sport</th></tr>
 
-            <tr><td >Event ID:</td><td class="label"><?php echo $eventID; ?></td></tr>
-            <tr><td>Event name:</td><td  class="label"><?php echo $eventname; ?></td></tr>
+            <tr><td ><td><?php echo $eventID; ?></td><td><?php echo $eventname; ?></td><td> <?php echo $eventdes; ?> </td> <td> <?php echo $eventloc; ?> </td></tr>
 
 
         </table>
