@@ -54,7 +54,7 @@
 
 
 
-    $query2="SELECT * FROM events, sports WHERE events.e_ID='e_ID' AND events.e_sportID=sports.s_ID  AND e_date >= CURDATE() ORDER BY events.e_date ASC";
+    $query2="SELECT * FROM events, sports WHERE events.e_ID='.$e_ID.' AND events.e_sportID=sports.s_ID  AND e_date >= CURDATE() ORDER BY events.e_date ASC";
     $result=mysqli_query($conn, $query2);
     $row= mysqli_fetch_assoc($result);
 
