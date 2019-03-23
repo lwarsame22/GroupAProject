@@ -6,6 +6,9 @@
     background-image: url("images2/profile.jpg");*/
 }
 
+body {
+    background-color: whitesmoke;
+}
  .form h2{
     color: whitesmoke;
 }
