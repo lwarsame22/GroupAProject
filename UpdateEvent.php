@@ -1,0 +1,44 @@
+<?php
+session_start();
+
+include_once('DBConnect.php');
+if ($_POST['eventuButton']) {
+
+    $e_title=$_SESSION['ename'];
+
+    $e_description = strip_tags($_POST['description']);
+
+    $e_location = strip_tags($_POST['location']);
+
+    $e_sportID = strip_tags($_POST['sportsName']); //Radio BOx
+
+
+
+
+// $pass= md5($password)  f;
+    $query = "UPDATE  events
+          SET e_title= '$e_title',
+          e_description ='$e_description',
+          e_location ='$e_location',
+          e_sportID ='$e_sportID',
+          WHERE u_username = '$username'";
+
+
+    $result = mysqli_query($conn, $query);
+
+    if ($result) {
+
+
+        header('Location: viewEvent.php '); // need to EDIT THIS LOCATION TO THE PROFILE VIEW PAGE
+    } else {
+
+        echo "Failed to update";
+    }
+
+
+
+}
+
+
+?>
+

@@ -1,46 +1,46 @@
 
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Profile</title>
-    <link rel="stylesheet" href="css/pstyle.css">
-    <style>
-        body{
-            background-color: white;
-
-        }
-        .profilebakground h2{
-            color: black;
-        }
-        main{
-            background: url("Images/updateprofile.jpg") no-repeat ;
-           background-position: center;
-        }
-        .control{
-        text-align: center;
-            color: black;
-        }
-        .profilebtn{
-            display: flex;
-        }
-        h2{
-            text-align: left 50px;
-        }
-
-    </style>
-</head>
-<body>
-<?php
-//session_start();
-//if ( isset($_SESSION['username'] )){
- //   $username=$_SESSION['username'];
-
-    require "HeaderLoggedin.php";
-//}
-//else {
-//    header('Location: HomePage.php');
-//}
+//<html lang="en">
+//<head>
+//    <meta charset="UTF-8">
+//    <title>Profile</title>
+//    <link rel="stylesheet" href="css/pstyle.css">
+//    <style>
+//        body{
+//            background-color: white;
+//
+//        }
+//        .profilebakground h2{
+//            color: black;
+//        }
+//        main{
+//            background: url("Images/updateprofile.jpg") no-repeat ;
+//           background-position: center;
+//        }
+//        .control{
+//        text-align: center;
+//            color: black;
+//        }
+//        .profilebtn{
+//            display: flex;
+//        }
+//        h2{
+//            text-align: left 50px;
+//        }
+//
+//    </style>
+//</head>
+//<body>
+//<?php
+////session_start();
+////if ( isset($_SESSION['username'] )){
+// //   $username=$_SESSION['username'];
+//
+//    require "HeaderLoggedin.php";
+////}
+////else {
+////    header('Location: HomePage.php');
+////}
 
 ?>
 <main class="profilebakground">    

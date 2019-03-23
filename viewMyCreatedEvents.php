@@ -79,7 +79,9 @@
                 <?php }while ($row= mysqli_fetch_assoc($result)) ?>
         </table>
     </div>
-
+<div>
+    <a href="editEvent.php">Edit Event</a>
+</div>
 </main>
 <!--Main Ends -->
 <!-- Footer -->
