@@ -12,16 +12,18 @@ if ($_POST['eventuButton']) {
 
     $e_sportID = strip_tags($_POST['sportsName']); //Radio BOx
 
+    $e_ID = strip_tags($_)
+
 
 
 
 // $pass= md5($password)  f;
-    $query = "UPDATE  events
-          SET e_title= '$e_title',
+    $query = "UPDATE  events 
+          SET e_title = '$e_title',
           e_description ='$e_description',
           e_location ='$e_location',
           e_sportID ='$e_sportID',
-          WHERE u_username = '$username'";
+          WHERE e_ID  = '$e_id'";
 
 
     $result = mysqli_query($conn, $query);
