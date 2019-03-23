@@ -26,7 +26,9 @@ require "HeaderLoggedin.php";
 <div >
     <?php
 
-    $query2="SELECT * FROM events, sports WHERE events.e_sportID=sports.s_ID AND events.e_username='$username'";
+    //$query2="SELECT * FROM events, sports WHERE events.e_sportID=sports.s_ID AND events.e_username='$username'"; LEE code
+
+    $query2="SELECT * FROM events WHERE e_date >= CURDATE()";
     $result=mysqli_query($conn, $query2);
     $events="";
     if (mysqli_num_rows($result) > 0) {
