@@ -59,8 +59,8 @@
    //$e_ID = 'e_ID';
 
 
-
-    $query2="SELECT * FROM events, sports WHERE events.e_ID='.$e_ID.' AND events.e_sportID=sports.s_ID  AND e_date >= CURDATE() ORDER BY events.e_date ASC";
+    //$query2="SELECT * FROM events, sports WHERE events.e_ID='.$e_ID.' AND events.e_sportID=sports.s_ID  AND e_date >= CURDATE() ORDER BY events.e_date ASC";
+    $query2="SELECT * FROM events WHERE events.e_ID='.$e_ID.'  AND e_date >= CURDATE() ORDER BY events.e_date ASC";
     $result=mysqli_query($conn, $query2);
     $row= mysqli_fetch_assoc($result);
 
@@ -76,9 +76,11 @@
     ?>
 
     <div class="viewEventTable">
+        <?php echo $e_ID; ?>
         <table>
+
             <tr><th>EventID</th><th>Event Crea tor</th><th>Event title</th><th>Event Description</th><th>Event Location</th><th>Event Date</th><th>Event Sport</th></tr>
-            <?php echo $e_ID; ?>
+
             <tr><td >Event ID:</td><td class="label"><?php echo $eventID; ?></td></tr>
             <tr><td>Event name:</td><td  class="label"><?php echo $eventname; ?></td></tr>
 
