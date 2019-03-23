@@ -140,7 +140,7 @@ if(isset($_SESSION['username'])) {
                     <i class="fa fa-caret-down"></i>
                 </button>
                         <div class="dropdown-content">
-                            <a href="viewEvent.php">View Events</a>
+                            <a href="viewEvent2.php">View Events</a>
                             <a href="viewMyCreatedEvents.php">View Events I organised</a>
                             <a href="event.php">Create Event</a>
                         </div>
