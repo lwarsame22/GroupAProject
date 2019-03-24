@@ -349,7 +349,7 @@ label{
 /* Styling for Event Page */
 
 .evntbakground{
-            background: black url("Images/sports.jpg") no-repeat scroll top left;
+            background: darkgray url("Images/sports.jpg") no-repeat scroll top left;
             background-size: cover;
         }
 
@@ -497,11 +497,24 @@ footer>p{
 
 .cat_links {
     display: block;
-    padding: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border: 1px solid #782A7E;
+    border: 1px solid lightskyblue;
     margin-bottom: 5px;
-    background-color: #95a5a6;
+    background-color: white;
     color: #000000;
+    text-align: left;
+}
+.edate {
+    text-align: right;
+    color: lightskyblue;
+    font-size: 10px;
+}
+
+.editevent {
+    background-color: #95a5a6;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding-bottom: 15px;
+    border: #782A7E;
 }

@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Event</title>
-    <link rel="stylesheet" href="css/pstyle.css">
+    <link rel="stylesheet" href="css/leestemplate.css">
     <style>
         main{
-            background: url("images/updateprofile.jpg");
+            <!--background: url("images/updateprofile.jpg"); -->
         }
     </style>
     <style>
@@ -19,16 +19,31 @@
         a{
             text-decoration: none;
             color: turquoise;
+
         }
-        th{
+        h1{
             text-align: center;
+            text-decoration: underline;
+            font-size: 20px;
+            font-family: Arial;
         }
-        table, td{
-            text-align: left;
+        p{
+            text-align: center;
+            font-size: 18px;
+            font-family: Arial;
         }
-        table, th, td {
-            border: 1px solid red;
-            border-collapse: collapse;
+        h3 {
+            text-align: center;
+            font-size: 18px;
+            font-family: Arial;
+            word-wrap: break-word;
+            border: #782A7E;
+        }
+        .postreply {
+            padding-top: 50px;
+            justify-content: center;
+            text-align: center;
+
         }
 
     </style>
@@ -71,13 +86,14 @@
             $eventname=$row['e_title'];
             $eventdes=$row['e_description'];
             $eventloc=$row['e_location'];
+            $edate=$row['e_date'];
 
         }
     }
 
     ?>
 
-    <div class="viewEventTable">
+    <!--<div class="viewEventTable">
 
         <table>
 
@@ -87,8 +103,27 @@
 
 
         </table>
-    </div>
 
+    </div> -->
+    <div class="viewEventTable">
+        <h1><?php echo $eventname; ?></h1>
+        <p style="color: #dddddd">This event will take place on <font color="red"><?php echo $edate; ?></font> </p>
+        <p style="color: #dddddd">Location: <font color="red"><?php echo $eventloc; ?></font></p>
+        <h3 style="color: #dddddd"> <?php echo $eventdes; ?></h3>
+    </div>
+<div class="postreply">
+    <form action='postreply.php' method="post">
+        <p style="color: #f9f9f9">Leave A Comment</p>
+        <textarea name="reply_content" cols="75" rows="5"></textarea>
+        <br>
+        <input type="hidden" name="cid" value="<?php echo $e_ID; ?>">
+        <input type="submit" name="reply_submit" value="Post Your Reply">
+    </form>
+
+<!--</div>
+    <div class="editevent">
+        <a href="editEvent.php">Edit Event</a>
+    </div> -->
 </main>
 <!--Main Ends   -->
 <!-- Footer -->

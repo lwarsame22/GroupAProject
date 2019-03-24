@@ -35,8 +35,9 @@ require "HeaderLoggedin.php";
         while ($row = mysqli_fetch_assoc($result)) {
             $e_ID = $row['e_ID'];
             $e_title = $row['e_title'];
-            $description = $row['e_description'];
-            $events .="<a href='viewEvent.php?eid=".$e_ID."' class = 'cat_links'>".$e_title." - <font size='-1'>".$description."</font></a>";
+            $location = $row['e_location'];
+            $e_date = $row['e_date'];
+            $events .="<a href='viewEvent.php?eid=".$e_ID."' class = 'cat_links'>".$e_title." -<br> <font size='-3', color='#778899'>".$location."-</font><font class='edate' >.$e_date</font></a>";
         }
         echo $events;
     } else {
