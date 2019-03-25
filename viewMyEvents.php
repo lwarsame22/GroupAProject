@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Event</title>
-    <link rel="stylesheet" href="css/pstyle.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
         main{
             background: url("images/updateprofile.jpg");
@@ -48,9 +48,9 @@
     <?php
 
 
-    $query2="SELECT * FROM events WHERE events.e_username='$username'";
+    $query2="SELECT * FROM events WHERE events.e_username='$username'AND events.e_date>=CURDATE() ";
     $result=mysqli_query($conn, $query2);
-    $row= mysqli_fetch_assoc($result);
+    
     $events="";
         if (mysqli_num_rows($result) > 0) {
             while ($row = mysqli_fetch_assoc($result)) {
