@@ -64,22 +64,22 @@
 
             $result = mysqli_query($conn, $query2);
             $row = mysqli_fetch_assoc($result);
+    $events="";
+    if (mysqli_num_rows($result) > 0) {
+        while ($row = mysqli_fetch_assoc($result)) {
+            $e_ID = $row['e_ID'];
+            $e_title = $row['e_title'];
+            $location = $row['e_location'];
+            $e_date = $row['e_date'];
+            $events .="<a href='viewEventdetails.php?eid=".$e_ID."' class = 'cat_links'>".$e_title." -<br> <font size='-3', color='#778899'>".$location."-</font><font class='edate' >.$e_date</font></a>";
+        }
+        echo $events;
+    } else {
+        echo "<p style='color: #f9f9f9' class='searchresult'>There are no event available in associated with $keyword ...</p>";
+    }
 
-?>
 
-
-             <div class="viewEventTable">
-        <table>
-            <tr><th>EventID</th><th>Event Creator</th><th>Event title</th><th>Event Description</th><th>Event Location</th><th>Event Date</th><th>Event Sport</th></tr>
-<?php do{ ?>
-    <tr><td><?php echo $row['e_ID']; ?></td><td><?php echo $row['e_username']; ?></td><td><?php echo $row['e_title']; ?></td>
-        <td><?php echo $row['e_description']; ?></td><td><?php echo $row['e_location']; ?></td><td><?php echo $row['e_date']; ?></td>
-        <td><?php echo $row['s_name']; ?></td>
-        <?php }while ($row= mysqli_fetch_assoc($result)) ?>
-        </table>
-        </div>
-
-
+    ?>
 
 </main>
 <!--Main Ends -->
