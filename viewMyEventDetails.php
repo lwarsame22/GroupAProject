@@ -69,6 +69,8 @@ require "HeaderLoggedin.php";
     $query2="SELECT * FROM events WHERE events.e_ID='$e_ID'  AND e_date >= CURDATE() ORDER BY events.e_date ASC";
     $query3="SELECT * FROM comment_on co WHERE co.c_eventID='$e_ID'";
 
+
+
     //Event details query
     $result=mysqli_query($conn, $query2);
 
@@ -76,16 +78,9 @@ require "HeaderLoggedin.php";
     $result2=mysqli_query($conn, $query3);
 
 
-    $eventID="";
-    $eventname="";
-    $eventdes="";
-    $eventloc="";
-    $edate="";
-
-
     if(mysqli_num_rows($result)==1){
         while ($row= mysqli_fetch_assoc($result)){
-
+            $Creator=$row['e_username'];
             $eventID=$row['e_ID'];
             $eventname=$row['e_title'];
             $eventdes=$row['e_description'];
@@ -120,9 +115,8 @@ require "HeaderLoggedin.php";
 
     ?>
 
-    <!--<div class="view EventTable">  <tr><td> <?php echo $eventID; ?></td><td><?php echo $eventname; ?></td><td> <?php echo $eventdes; ?> </td> <td> <?php echo $eventloc; ?> </td></tr>
 
-    </div> -->
+
     <div class="viewEventTable">
         <form >
             <h1><?php echo $eventname; ?></h1>
