@@ -60,7 +60,7 @@ require "HeaderLoggedin.php";
             // if keyword is set and is the name of a sport. search bar browses for events with sport name matching the keyword
 
             //$row = mysqli_fetch_assoc($result);
-            $query2 = "SELECT * FROM user_profile WHERE u_username LIKE '%" . $keyword . "%'";// query needs to change
+            $query2 = "SELECT * FROM user_profile WHERE u_username LIKE '%" . $keyword . "%' ";// query needs to change
 
             $result = mysqli_query($conn, $query2);
             $row = mysqli_fetch_assoc($result);
@@ -72,7 +72,7 @@ require "HeaderLoggedin.php";
         <table>
             <tr><th>EventID</th><th>Event Creator</th><th>Event title</th><th>Event Description</th><th>Event Location</th><th>Event Date</th><th>Event Sport</th></tr>
 <?php do{ ?>
-    <tr><td><?php echo $row['']; ?></td><td><?php echo $row['']; ?></td><td><?php echo $row['']; ?></td>
+    <tr><td><?php echo $row['u_username']; ?></td><td><?php echo $row['']; ?></td><td><?php echo $row['']; ?></td>
         <td><?php echo $row['']; ?></td><td><?php echo $row['']; ?></td><td><?php echo $row['e_date']; ?></td>
         <td><?php echo $row['']; ?></td>
         <?php }while ($row= mysqli_fetch_assoc($result)) ?>
