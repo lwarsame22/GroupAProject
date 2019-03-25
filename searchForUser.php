@@ -68,13 +68,12 @@ require "HeaderLoggedin.php";
 ?>
 
     <!-- This part will change to display specific information about a user -->
-             <div class="viewEventTable">
+             <div class="viewProfileTable">
         <table>
-            <tr><th>EventID</th><th>Event Creator</th><th>Event title</th><th>Event Description</th><th>Event Location</th><th>Event Date</th><th>Event Sport</th></tr>
+            <tr><th>Username</th><th>City</th><th>Email</th><th>Mobile number</th></tr>
 <?php do{ ?>
-    <tr><td><?php echo $row['u_username']; ?></td><td><?php echo $row['']; ?></td><td><?php echo $row['']; ?></td>
-        <td><?php echo $row['']; ?></td><td><?php echo $row['']; ?></td><td><?php echo $row['e_date']; ?></td>
-        <td><?php echo $row['']; ?></td>
+    <tr><td><?php echo $row['u_username']; ?></td><td><?php echo $row['city']; ?></td><td><?php echo $row['u_mail']; ?></td>
+        <td><?php echo $row['mobilenum']; ?></td>
         <?php }while ($row= mysqli_fetch_assoc($result)) ?>
         </table>
         </div>
