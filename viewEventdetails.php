@@ -98,7 +98,8 @@
             $c_uname=$row['c_username'];
             $c_time=$row['c_timestamp'];
             $c_content =$row['c_content'];
-            $cmmt.= ".$c_uname."." ".".$c_content."." ".".$c_time.";
+            $cmmt.= "$c_uname $c_content   $c_time"<br>;
+
         }
         echo $cmmt;
     }  else {
