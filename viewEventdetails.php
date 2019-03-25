@@ -109,7 +109,7 @@
 
     ?>
 
-    <!--<div class="viewEventTable">
+    <!--<div class="view EventTable">
 
             <tr><td><?php echo $eventID; ?></td><td><?php echo $eventname; ?></td><td> <?php echo $eventdes; ?> </td> <td> <?php echo $eventloc; ?> </td></tr>
 
