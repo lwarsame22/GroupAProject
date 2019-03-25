@@ -43,7 +43,7 @@ else {
 
     if ($result) {
 
-        header('viewEventdetails.php');
+        header('user.php');
 
     } else {
 
