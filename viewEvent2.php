@@ -43,6 +43,12 @@ require "HeaderLoggedin.php";
         echo "<p>There are no event available yet...</p>";
     }
 
+<script>
+function initMap(){
+        var input = document.getElementById('location');
+        var autocomplete = new google.maps.places.Autocomplete(input);
+        }
+        <script src="https://maps.googleapis.com/maps/api/js?libraries=places&callback=initMap&key=AIzaSyCcBHs7kmrr4QgWqjRhltk7guZMkWzFlt"async defer></script>
 
     ?>
 
