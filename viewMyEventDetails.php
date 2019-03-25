@@ -6,10 +6,7 @@
     <link rel="stylesheet" href="css/leestemplate.css">
     <style>
         main{
-            background-color: url("Images/updateprofile.jpg");
-            width: 1000px;
-            margin-left: auto;
-            margin-right: auto;
+        <!--background: url("images/updateprofile.jpg"); -->
         }
     </style>
     <style>
@@ -54,7 +51,7 @@
 <body>
 <?php
 
-    require "HeaderLoggedin.php";
+require "HeaderLoggedin.php";
 
 ?>
 <main>
@@ -72,6 +69,8 @@
     $query2="SELECT * FROM events WHERE events.e_ID='$e_ID'  AND e_date >= CURDATE() ORDER BY events.e_date ASC";
     $query3="SELECT * FROM comment_on co WHERE co.c_eventID='$e_ID'";
 
+
+
     //Event details query
     $result=mysqli_query($conn, $query2);
 
@@ -79,16 +78,9 @@
     $result2=mysqli_query($conn, $query3);
 
 
-    $eventID="";
-    $eventname="";
-    $eventdes="";
-    $eventloc="";
-    $edate="";
-
-
     if(mysqli_num_rows($result)==1){
         while ($row= mysqli_fetch_assoc($result)){
-
+            $Creator=$row['e_username'];
             $eventID=$row['e_ID'];
             $eventname=$row['e_title'];
             $eventdes=$row['e_description'];
@@ -123,31 +115,33 @@
 
     ?>
 
-    <!--<div class="view EventTable">  <tr><td> <?php echo $eventID; ?></td><td><?php echo $eventname; ?></td><td> <?php echo $eventdes; ?> </td> <td> <?php echo $eventloc; ?> </td></tr>
 
-    </div> -->
+
     <div class="viewEventTable">
         <form >
-        <h1><?php echo $eventname; ?></h1>
-        <p style="color: #dddddd">This event will take place on <font color="#00ced1"><?php echo $edate; ?></font> </p>
-        <p style="color: #dddddd">Location: <font color="#00ced1"><?php echo $eventloc; ?></font></p>
-        <h3 style="color: #dddddd"> <?php echo $eventdes; ?></h3>
+            <h1><?php echo $eventname; ?></h1>
+            <p style="color: #dddddd">This event will take place on <font color="#00ced1"><?php echo $edate; ?></font> </p>
+            <p style="color: #dddddd">Location: <font color="#00ced1"><?php echo $eventloc; ?></font></p>
+            <h3 style="color: #dddddd"> <?php echo $eventdes; ?></h3>
         </form>
 
+        <div>
+            <a href="editEvent.php">Edit Event</a>
+        </div>
 
     </div>
 
 
-<div class="postreply">
-    <form action="postreply.php" method="post">
-        <h3 style="color: #dddddd"> <?php echo $cmmt; ?></h3>
-        <p style="color: #f9f9f9">Leave A Comment</p>
-        <textarea name="reply_content" cols="75" rows="5"></textarea>
-        <br>
-        <input type="hidden" name="cid" value="<?php echo $e_ID; ?>">
+    <div class="postreply">
+        <form action="postreply.php" method="post">
+            <h3 style="color: #dddddd"> <?php echo $cmmt; ?></h3>
+            <p style="color: #f9f9f9">Leave A Comment</p>
+            <textarea name="reply_content" cols="75" rows="5"></textarea>
+            <br>
+            <input type="hidden" name="cid" value="<?php echo $e_ID; ?>">
 
-        <button type="submit" value="postcomment" name="commentButton" class="btn">Post Comment</button><br>
-    </form>
+            <button type="submit" value="postcomment" name="commentButton" class="btn">Post Comment</button><br>
+        </form>
 
 
 

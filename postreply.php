@@ -27,7 +27,8 @@ else {
 }
 
 */
-if ($_POST['commentButton']) {
+
+    if ($_POST['commentButton']) {
 
     $username = $_SESSION['username'];
 
@@ -42,12 +43,14 @@ if ($_POST['commentButton']) {
 
     if ($result) {
 
+        header('user.php');
 
-        echo "Posted";
     } else {
 
-        echo "Failed to update";
+    echo "Failed to update";
     }
-}
-?>
+    }
+
+    ?>
+
 
