@@ -57,7 +57,7 @@ require "HeaderLoggedin.php";
 
         }
         ?>
-        </select><br><br><br>
+        </select><br><br>
 
     <label for="address">Address:</label><br>
     <Input type="text" placeholder="Enter Address" name="address" class="inputbox" ><br>
