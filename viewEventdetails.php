@@ -77,6 +77,12 @@
     $result2=mysqli_query($conn, $query3);
 
 
+    $eventID="";
+    $eventname="";
+    $eventdes="";
+    $eventloc="";
+    $edate="";
+
     if(mysqli_num_rows($result)==1){
         while ($row= mysqli_fetch_assoc($result)){
 
@@ -109,9 +115,7 @@
 
     ?>
 
-    <!--<div class="view EventTable">
-
-            <tr><td><?php echo $eventID; ?></td><td><?php echo $eventname; ?></td><td> <?php echo $eventdes; ?> </td> <td> <?php echo $eventloc; ?> </td></tr>
+    <!--<div class="view EventTable">  <tr><td> <?php echo $eventID; ?></td><td><?php echo $eventname; ?></td><td> <?php echo $eventdes; ?> </td> <td> <?php echo $eventloc; ?> </td></tr>
 
 
 
