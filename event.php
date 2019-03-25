@@ -10,21 +10,23 @@
             width: 1000px;
             margin-left: auto;
             margin-right: auto
-            background: url("Images/americanfoot.jpg") no-repeat scroll;
-            background-position: center;
+            background: white url("Images/img2/eventbg.jpg") no-repeat scroll center;
             background-size: cover;
             height: 700px;
         }
         .eventform {
-            width: 700px;
-            background-color: mediumseagreen;
+            width: 600px;
+            background-color: rgba(0, 0, 255, 0.2);
             border-color: black;
-            height: 550px;
+            height: 700px;
             border-radius: 20px;
-
+            padding-left: 20px;
+        }
+        .eventform input{
+            padding-top: -40px;
         }
         .eventform label{
-            color: black;
+            color: white;
             font-family: Arial, sans-serif;
             font-weight: bold;
 
@@ -42,8 +44,9 @@
         }
         h2{
             text-align: center;
-            padding: 40px;
-            font-family: 'Roboto', sans-serif;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            color: white;
         }
 
 
@@ -88,8 +91,7 @@
         }
        ?>
     </select><br><br><br>
-    <input type="text" placeholder="Enter attendees" name="attendees" class="inputbox"><br><br>
-    <label for="sport">Sport related: </label><br>
+       <label for="sport">Sport related: </label><br>
     <select class="sportdropdown" name="sportName">
         <?php 
         $query2 = "SELECT * FROM sports";

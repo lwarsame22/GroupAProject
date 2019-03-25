@@ -10,9 +10,13 @@
         }
     </style>
     <style>
+        main {
+            height: 700px;
+        }
         .viewEventTable{
+
             color: white;
-            font-size: 20px;
+            font-size: 18px;
             font-family: Arial, sans-serif;
             font-weight: bold;
         }
@@ -27,7 +31,7 @@
             text-align: left;
         }
         table, th, td {
-            border: 1px solid red;
+            border: 1px solid turquoise;
             border-collapse: collapse;
         }
 

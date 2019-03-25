@@ -15,6 +15,9 @@
             font-size: 20px;
             font-family: Arial, sans-serif;
             font-weight: bold;
+            border: 1px solid turquoise;
+            width: 400px;
+            background-color: rgba(0, 0, 255, 0.2);
         }
         a{
             text-decoration: none;
