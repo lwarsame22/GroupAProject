@@ -30,7 +30,7 @@ require "HeaderLoggedin.php";
     }else{
         $keyword="";
     }
-    
+
 
     ?>
 
@@ -41,7 +41,7 @@ require "HeaderLoggedin.php";
     $result=mysqli_query($conn, $query2);
     $row= mysqli_fetch_assoc($result);
     if($row==0){
-    echo "you currently have no messages in your inbox";
+    echo "you currently have no messages in your outbox";
     }
     else{
     $message=$row['messages'];
