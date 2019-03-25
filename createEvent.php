@@ -29,7 +29,7 @@ if ($_POST['eventButton']) {
      if ($result) {
 
 
-     header('Location: viewEvent.php'); // need to EDIT THIS LOCATION TO THE PROFILE VIEW PAGE
+     header('Location: viewallEvents.php'); // need to EDIT THIS LOCATION TO THE PROFILE VIEW PAGE
       } else {
 
           echo "Failed to update";

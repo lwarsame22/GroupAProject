@@ -110,6 +110,7 @@ if(isset($_SESSION['username'])) {
 
                 <div class="dropdown">
                 <a href="user.php">Home</a>
+                    <i class="fa fa-caret-down"></i>
                 </div>
 
                 <div class="dropdown">
