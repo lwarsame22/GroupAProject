@@ -76,13 +76,13 @@
     //Commments query
     $result2=mysqli_query($conn, $query3);
 
-/*
+
     $eventID="";
     $eventname="";
     $eventdes="";
     $eventloc="";
     $edate="";
-*/
+
 
     if(mysqli_num_rows($result)==1){
         while ($row= mysqli_fetch_assoc($result)){
@@ -94,6 +94,12 @@
             $edate=$row['e_date'];
 
         }
+        echo $eventID,
+        $eventname,
+        $eventdes,
+        $eventloc,
+        $edate;
+
     }
 
 
