@@ -1,12 +1,17 @@
 <?php
 
-</head>
-<body>
-<?php
 
     require "HeaderLoggedin.php";
 
 ?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+<body>
 <main>
     <form method="GET" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
         <input name="keyword" size="20">
