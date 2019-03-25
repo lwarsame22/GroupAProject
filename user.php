@@ -6,6 +6,16 @@
     <title>user</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/unsemantic-grid-responsive-tablet.css">
+    <style>
+        .wrap{
+    width: 800px;
+    height: 400px;
+    margin-left: auto;
+    margin-right:auto;       
+    background: white;
+    padding: 20px 50px;
+}
+    </style>
 
 </head>
 <body>
@@ -30,15 +40,15 @@
    <div class="wrap">
     <div class="image-slider">
         <figure>
-            <img src="images/americanball2a.jpg" style="width: 800px"; height="400">
-            <img src="images/basket_ball2.png" style="width: 800px"; height="400px" alt="">
-            <img src="images/cricket2.png" style="width: 800px"; height="400px">
-            <img src="images/racing2.png" style="width: 800px"; height="400px">
-            <img src="images/basket_ball2.png" style="width: 800px"; height="400px">
-            <img src="images/Hockey2.png" style="width: 800px"; height="400px">
-            <img src="images/cycling2.png" style="width: 800px"; height="400px">
-            <img src="images/football2.jpng" style="width: 800px"; height="400px">
-            <img src="images/Tennis2.png" style="width: 800px"; height="400px">
+            <img src="Images/americanfootball3.png" style="width: 800px"; height="400">
+            <img src="Images/basketball3.png" style="width: 800px"; height="400px" alt="">
+            <img src="Images/cricket3.png" style="width: 800px"; height="400px">
+            <img src="Images/cycling3.png" style="width: 800px"; height="400px">
+            <img src="Images/footballinnet3.png" style="width: 800px"; height="400px">
+            <img src="Images/hockey3.png" style="width: 800px"; height="400px">
+            <img src="Images/racing3.png" style="width: 800px"; height="400px">
+            <img src="Images/Tennis3.png" style="width: 800px"; height="400px">
+            <img src="Images/wheelchairrugby3.png" style="width: 800px"; height="400px">
 
         </figure>
     </div>
