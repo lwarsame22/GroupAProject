@@ -33,7 +33,7 @@ if ($_POST['commentButton']) {
 
     $ucomment = strip_tags($_POST['reply_content']);
 
-    $eventid = $_POST['e_ID'];
+    $eventid = strip_tags($_POST['cid']);
 
     $query = "INSERT INTO comment_on (c_username,c_eventID, c_timestamp,c_content) VALUES ('" . $username . "','" . $eventid . "',now(),'" . $ucomment . "')";
 
