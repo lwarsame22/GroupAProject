@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="css/pstyle.css">
     <style>
         main{
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto
             background: url("Images/americanfoot.jpg") no-repeat scroll;
             background-position: center;
             background-size: cover;
-            height: 550px;
+            height: 700px;
         }
         .eventform {
             width: 700px;
