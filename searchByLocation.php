@@ -63,7 +63,7 @@ require "HeaderLoggedin.php";
             // if keyword is set and is the name of a sport. search bar browses for events with sport name matching the keyword
 
             //$row = mysqli_fetch_assoc($result);
-            $query2 = "SELECT * FROM events, sports WHERE events.e_sportID=sports.s_ID AND events.e_location LIKE '%" . $keyword . "%' AND e_date >= CURDATE() ORDER BY events.e_date ASC ";
+            $query2 = "SELECT * FROM  WHERE events.e_sportID=sports.s_ID AND events.e_location LIKE '%" . $keyword . "%' AND e_date >= CURDATE() ORDER BY events.e_date ASC ";
 
             $result = mysqli_query($conn, $query2);
             $row = mysqli_fetch_assoc($result);
