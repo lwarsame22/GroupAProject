@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Search</title>
-    <link rel="stylesheet" href="css/pstyle.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
         main{
             background: url("images/updateprofile.jpg");
