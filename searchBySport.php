@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Search</title>
-    <link rel="stylesheet" href="css/pstyle.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
         main{
             background: url("images/updateprofile.jpg");
@@ -63,7 +63,7 @@
             $query2 = "SELECT * FROM events, sports WHERE events.e_sportID=sports.s_ID AND sports.s_name LIKE '%" . $keyword . "%' AND e_date >= CURDATE() ORDER BY events.e_date ASC ";
 
             $result = mysqli_query($conn, $query2);
-            $row = mysqli_fetch_assoc($result);
+            
     $events="";
     if (mysqli_num_rows($result) > 0) {
         while ($row = mysqli_fetch_assoc($result)) {
