@@ -1,12 +1,47 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <link rel="stylesheet" href="css/pstyle.css">
+    <style>
+        main{
+            background: url("images/updateprofile.jpg");
+        }
+    </style>
+    <style>
+        .viewEventTable{
+            color: white;
+            font-size: 20px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+        a{
+            text-decoration: none;
+            color: turquoise;
+        }
+        th{
+            text-align: center;
+        }
+        table, td{
+            text-align: left;
+        }
+        table, th, td {
+            border: 1px solid red;
+            border-collapse: collapse;
+        }
 
+    </style>
 </head>
 <body>
 <?php
 
-    require "HeaderLoggedin.php";
+require "HeaderLoggedin.php";
 
 ?>
+
+
+
 <main>
     <form method="GET" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
         <input name="keyword" size="20">
