@@ -29,23 +29,10 @@ if ($_POST['commentButton']) {
 
     $username = $_SESSION['username'];
 
-    $uname = strip_tags($_POST['uname']);
+    $ucomment = strip_tags($_POST['reply_content']);
 
-    $ulname = strip_tags($_POST['ulname']);
+    $eventid = $_POST['e_ID'];
 
-    $gender = strip_tags($_POST['gender']); //Radio BOx
-
-    $address = strip_tags($_POST['address']);
-
-    $city = strip_tags($_POST['city']);
-
-    $country = strip_tags($_POST['country']);
-
-    $datebirth = strip_tags($_POST['datebirth']);
-
-    $mobilenumber = strip_tags($_POST['mobilenumber']);
-
-    $img_name = basename($_FILES["file"]["name"]);
 }
 ?>
 
