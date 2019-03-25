@@ -63,7 +63,7 @@
 ?>
     <main class="evntbakground">
     <div class="eventform">
-    <h2>Create an Event</h2>
+    <h2>Create an Event!</h2>
 <form name="createEvent" method="post" action="createEvent.php">
     <label for="title">Event Title:</label><br>
     <Input type="text" placeholder="Enter Event Title" name="title" class="inputbox"><br>
