@@ -165,7 +165,7 @@ if(isset($_SESSION['username'])) {
          </form>
      </section>
      </div>
-   <!-- Main Section Begins -->
+   <!-- Main Section Be  gins -->
      <section class="echo"> <!-- This class name will enable the styling of output after logging in -->
          <h4>Welcome <?php echo $username; ?></h4>
      </section>
