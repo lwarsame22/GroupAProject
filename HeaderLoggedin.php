@@ -134,7 +134,7 @@ if(isset($_SESSION['username'])) {
              </button>
                 <div class="dropdown-content">
                  <a href="viewMessages.php">View My Messages</a>
-                 <a href="sendMessage.php">New Message</a>
+                 <a href="createNewMessage.php">New Message</a>
                 </div>
             </div>
 
