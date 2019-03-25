@@ -117,31 +117,59 @@
 
     </div> -->
     <div class="viewEventTable">
+        <form action="<?php echo $_SERVER["PHP_SELF"]; ?>"   method="post">
         <h1><?php echo $eventname; ?></h1>
         <p style="color: #dddddd">This event will take place on <font color="#00ced1"><?php echo $edate; ?></font> </p>
         <p style="color: #dddddd">Location: <font color="#00ced1"><?php echo $eventloc; ?></font></p>
         <h3 style="color: #dddddd"> <?php echo $eventdes; ?></h3>
-
+        </form>
 
 
     </div>
 
 
 <div class="postreply">
-    <form action='postreply.php' method="post">
+    <form action="<?php echo $_SERVER["PHP_SELF"]; ?>"   method="post">
         <h3 style="color: #dddddd"> <?php echo $cmmt; ?></h3>
         <p style="color: #f9f9f9">Leave A Comment</p>
         <textarea name="reply_content" cols="75" rows="5"></textarea>
         <br>
         <input type="hidden" name="cid" value="<?php echo $e_ID; ?>">
-        <!--input type="submit" name="reply_submit" value="Post Your Reply"-->
+
         <button type="submit" value="postcomment" name="commentButton" class="btn">Post Comment</button><br>
     </form>
 
-<!--</div>
-    <div class="editevent">
-        <a href="editEvent.php">Edit Event</a>
-    </div> -->
+
+    <?php
+    if ($_POST['commentButton']) {
+
+    $username = $_SESSION['username'];
+
+    $ucomment = strip_tags($_POST['reply_content']);
+
+    $eventid = strip_tags($_POST['cid']);
+
+    $query = "INSERT INTO comment_on (c_username,c_eventID, c_timestamp,c_content) VALUES ('" . $username . "','" . $eventid . "',now(),'" . $ucomment . "')";
+
+
+    $result = mysqli_query($conn, $query);
+
+    if ($result) {
+
+
+    echo "Posted";
+    } else {
+
+    echo "Failed to update";
+    }
+    }
+
+    ?>
+
+
+
+
+
 </main>
 <!--Main Ends   -->
 

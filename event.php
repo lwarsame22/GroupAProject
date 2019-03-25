@@ -76,7 +76,7 @@
     <label for="attendees">Limit Attendees? : </label><br>
     <input type="text" placeholder="Enter attendees" name="attendees" class="inputbox"><br><br>
     <label for="gender">Restrict Gender? </label><br>
-    <select class="sportdropdown" name="sportName">
+    <select class="sportdropdown" name="genderName">
         <?php
         $query2 = "SELECT * FROM gender";
         $result=mysqli_query($conn, $query2);
