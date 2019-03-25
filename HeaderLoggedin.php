@@ -140,8 +140,8 @@ if(isset($_SESSION['username'])) {
                     <i class="fa fa-caret-down"></i>
                 </button>
                         <div class="dropdown-content">
-                            <a href="viewEvent2.php">View Events</a>
-                            <a href="viewMyCreatedEvents.php">View Events I organised</a>
+                            <a href="viewallEvents.php">View Events</a>
+                            <a href="viewMyEvents.php">View Events I organised</a>
                             <a href="event.php">Create Event</a>
                         </div>
                 </div>
@@ -165,7 +165,7 @@ if(isset($_SESSION['username'])) {
          </form>
      </section>
      </div>
-   <!-- Main Section Begins -->
+   <!-- Main Section Be  gins -->
      <section class="echo"> <!-- This class name will enable the styling of output after logging in -->
          <h4>Welcome <?php echo $username; ?></h4>
      </section>

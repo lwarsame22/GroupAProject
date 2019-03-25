@@ -35,20 +35,15 @@
 </head>
 <body>
 <?php
-//include_once('DBconnect.php');
-//session_start();
-//if ( isset($_SESSION['username'] )){
-//    $username=$_SESSION['username'];
+
     require_once ('HeaderLoggedin.php');
 
-//else {
-//    header('Location: HomePage.php');
-//}
+
 ?>
 <main>
     <?php
 
-    //$query2 = "SELECT * FROM events";
+
     $query2="SELECT * FROM events, sports WHERE events.e_sportID=sports.s_ID AND events.e_username='$username'";
     $result=mysqli_query($conn, $query2);
     $row= mysqli_fetch_assoc($result)

@@ -50,15 +50,9 @@
 </head>
 <body>
 <?php
-//include_once('DBconnect.php');
-//session_start();
-//if ( isset($_SESSION['username'] )){
-    //$username=$_SESSION['username'];
+
     require "HeaderLoggedin.php";
-//}
-//else {
-//    header('Location: HomePage.php');
-//}
+
 ?>
 <main>
 
@@ -70,9 +64,6 @@
         $e_ID = $_GET["eid"];
 
     }
-
-   //$e_ID = 'e_ID';
-
 
     //$query2="SELECT * FROM events, sports WHERE events.e_ID='.$e_ID.' AND events.e_sportID=sports.s_ID  AND e_date >= CURDATE() ORDER BY events.e_date ASC";
     $query2="SELECT * FROM events WHERE events.e_ID='$e_ID' AND e_date >= CURDATE() ORDER BY events.e_date ASC";
@@ -95,20 +86,17 @@
 
     <!--<div class="viewEventTable">
 
-        <table>
 
-            <tr><th>EventID</th><th>Event title</th><th>Event Description</th><th>Event Location</th><th>Event Date</th><th>Event Sport</th></tr>
 
             <tr><td><?php echo $eventID; ?></td><td><?php echo $eventname; ?></td><td> <?php echo $eventdes; ?> </td> <td> <?php echo $eventloc; ?> </td></tr>
 
 
-        </table>
 
     </div> -->
     <div class="viewEventTable">
         <h1><?php echo $eventname; ?></h1>
-        <p style="color: #dddddd">This event will take place on <font color="red"><?php echo $edate; ?></font> </p>
-        <p style="color: #dddddd">Location: <font color="red"><?php echo $eventloc; ?></font></p>
+        <p style="color: #dddddd">This event will take place on <font color="#00ced1"><?php echo $edate; ?></font> </p>
+        <p style="color: #dddddd">Location: <font color="#00ced1"><?php echo $eventloc; ?></font></p>
         <h3 style="color: #dddddd"> <?php echo $eventdes; ?></h3>
     </div>
 <div class="postreply">
@@ -117,7 +105,8 @@
         <textarea name="reply_content" cols="75" rows="5"></textarea>
         <br>
         <input type="hidden" name="cid" value="<?php echo $e_ID; ?>">
-        <input type="submit" name="reply_submit" value="Post Your Reply">
+        <!--input type="submit" name="reply_submit" value="Post Your Reply"-->
+        <button type="submit" value="postcomment" name="commentButton" class="btn">Post Comment</button><br>
     </form>
 
 <!--</div>
@@ -126,6 +115,7 @@
     </div> -->
 </main>
 <!--Main Ends   -->
+
 <!-- Footer -->
 <footer>
     <?php

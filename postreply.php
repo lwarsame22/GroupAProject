@@ -1,6 +1,7 @@
 <?php
 session_start();
 include_once("DBConnect.php");
+
 if ($_SESSION['username']) {
     if (isset($_POST['reply_submit'])) {
 
@@ -21,6 +22,17 @@ if ($_SESSION['username']) {
 }
 else {
     exit();
+}
+
+
+if ($_POST['commentButton']) {
+
+    $username = $_SESSION['username'];
+
+    $ucomment = strip_tags($_POST['reply_content']);
+
+    $eventid = $_POST['e_ID'];
+
 }
 ?>
 
