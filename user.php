@@ -24,16 +24,9 @@
 <!--This PHP IF logic is using a choosing a different header depending if the user is logged in or not -->
 
 <?php
-//session_start();
-//$username=$_SESSION['username'];
-//if ( isset($_SESSION['username'] )){
 
 
     require "HeaderLoggedin.php";
-//}
-//else {
-//    require "Header.php";
-//}
 
 ?>
 <main>
