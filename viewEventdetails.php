@@ -76,12 +76,13 @@
     //Commments query
     $result2=mysqli_query($conn, $query3);
 
-
+/*
     $eventID="";
     $eventname="";
     $eventdes="";
     $eventloc="";
     $edate="";
+*/
 
     if(mysqli_num_rows($result)==1){
         while ($row= mysqli_fetch_assoc($result)){
@@ -133,7 +134,7 @@
 
 
 <div class="postreply">
-    <form action="viewEventdetails.php"   method="post">
+    <form action="<?php echo $_SERVER["PHP_SELF"]; ?>"   method="post">
         <h3 style="color: #dddddd"> <?php echo $cmmt; ?></h3>
         <p style="color: #f9f9f9">Leave A Comment</p>
         <textarea name="reply_content" cols="75" rows="5"></textarea>
@@ -160,8 +161,8 @@
 
     if ($result) {
 
+        header('viewEventdetails.php');
 
-    echo "Posted";
     } else {
 
     echo "Failed to update";
