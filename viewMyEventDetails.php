@@ -125,10 +125,11 @@ require "HeaderLoggedin.php";
             <h3 style="color: #dddddd"> <?php echo $eventdes; ?></h3>
         </form>
 
-        <div>
-            <a href="editEvent.php">Edit Event</a>
-        </div>
+       <?php
 
+           echo "<a href='editEvent.php?eid=$e_ID'>Edit Event</a>";
+
+           ?>
     </div>
 
 
