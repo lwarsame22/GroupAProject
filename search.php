@@ -40,7 +40,7 @@
 //if ( isset($_SESSION['username'] )){
 
 //    $username=$_SESSION['username'];
-    require "HeaderLoggedin.php";
+require "HeaderLoggedin.php";
 //}
 //else {
 //    header('Location: HomePage.php');
