@@ -66,7 +66,7 @@ require "HeaderLoggedin.php";
             $query2 = "SELECT * FROM events, sports WHERE events.e_sportID=sports.s_ID AND events.e_location LIKE '%" . $keyword . "%' AND e_date >= CURDATE() ORDER BY events.e_date ASC ";
 
             $result = mysqli_query($conn, $query2);
-            $row = mysqli_fetch_assoc($result);
+            
     $events="";
     if (mysqli_num_rows($result) > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
