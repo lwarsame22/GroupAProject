@@ -121,7 +121,7 @@
 
     </div> -->
     <div class="viewEventTable">
-        <form action="<?php echo $_SERVER["PHP_SELF"]; ?>"   method="post">
+        <form >
         <h1><?php echo $eventname; ?></h1>
         <p style="color: #dddddd">This event will take place on <font color="#00ced1"><?php echo $edate; ?></font> </p>
         <p style="color: #dddddd">Location: <font color="#00ced1"><?php echo $eventloc; ?></font></p>
@@ -133,7 +133,7 @@
 
 
 <div class="postreply">
-    <form action="<?php echo $_SERVER["PHP_SELF"]; ?>"   method="post">
+    <form action="viewEventdetails.php"   method="post">
         <h3 style="color: #dddddd"> <?php echo $cmmt; ?></h3>
         <p style="color: #f9f9f9">Leave A Comment</p>
         <textarea name="reply_content" cols="75" rows="5"></textarea>
