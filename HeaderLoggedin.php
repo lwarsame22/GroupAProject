@@ -104,7 +104,10 @@ if(isset($_SESSION['username'])) {
      <div class="playmatetitle">
          <h1>Playmate</h1>
      </div>
-
+     <!-- Main Section Be  gins -->
+     <section class="echo"> <!-- This class name will enable the styling of output after logging in -->
+         <h4>Welcome <?php echo $username; ?></h4>
+     </section>
      <div class = "navbar">
 
 
@@ -166,10 +169,7 @@ if(isset($_SESSION['username'])) {
          </form>
      </section>
      </div>
-   <!-- Main Section Be  gins -->
-     <section class="echo"> <!-- This class name will enable the styling of output after logging in -->
-         <h4>Welcome <?php echo $username; ?></h4>
-     </section>
+
    
      
 
