@@ -63,29 +63,43 @@
         $e_ID = $_GET["eid"];
 
     }
-
+    $query="SELECT * FROM user_profile u, events e WHERE e.e_ID='$e_ID' AND e.e_username=u.u_username";
     //$query2="SELECT * FROM events, sports WHERE events.e_ID='.$e_ID.' AND events.e_sportID=sports.s_ID  AND e_date >= CURDATE() ORDER BY events.e_date ASC";
     //$query2="SELECT * FROM events WHERE events.e_ID='$e_ID' AND e_date >= CURDATE() ORDER BY events.e_date ASC";
     $query2="SELECT * FROM events WHERE events.e_ID='$e_ID'  AND e_date >= CURDATE() ORDER BY events.e_date ASC";
     $query3="SELECT * FROM comment_on co WHERE co.c_eventID='$e_ID'";
 
+    // Creator details query
+    $result3=mysqli_query($conn, $query);
     //Event details query
     $result=mysqli_query($conn, $query2);
 
     //Commments query
     $result2=mysqli_query($conn, $query3);
 
-
+    //WHY IS THIS HERE?
     $eventID="";
     $eventname="";
     $eventdes="";
     $eventloc="";
     $edate="";
 
+    if(mysqli_num_rows($result3)==1){
+        while ($row= mysqli_fetch_assoc($result)){
+            $profile=$row['e_username'];
+            $eventID=$row['e_ID'];
+            $eventname=$row['e_title'];
+            $eventdes=$row['e_description'];
+            $eventloc=$row['e_location'];
+            $edate=$row['e_date'];
+
+        }
+
+    }
 
     if(mysqli_num_rows($result)==1){
         while ($row= mysqli_fetch_assoc($result)){
-
+            $profile=$row['e_username'];
             $eventID=$row['e_ID'];
             $eventname=$row['e_title'];
             $eventdes=$row['e_description'];
@@ -123,6 +137,15 @@
     <!--<div class="view EventTable">  <tr><td> <?php echo $eventID; ?></td><td><?php echo $eventname; ?></td><td> <?php echo $eventdes; ?> </td> <td> <?php echo $eventloc; ?> </td></tr>
 
     </div> -->
+    <div class="creatorProfile">
+
+        <h1><?php echo $profile ?></h1>
+        <div>
+            <a href=createNewMessage.php?user='.$profile.'">Message User</a>
+
+        </div>
+    </div>
+
     <div class="viewEventTable">
         <form >
         <h1><?php echo $eventname; ?></h1>

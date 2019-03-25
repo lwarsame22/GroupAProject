@@ -15,51 +15,19 @@
 <?php
 
 require "HeaderLoggedin.php";
-
+if(isset($_GET["user"]))
+{
+    $creator = $_GET["user"];
+//simple form here need action page seperate
+    // redirected to sentbox
+}
 ?>
 <main>
-    <form method="GET" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
-        <input name="keyword" size="20">
-        <button type="submit">Search</button>
+    <form method="Post" action="sendmessage.php">
+        <input type="hidden" name="user" value="<?php echo $creator; ?>" />
+        <input type="text" name="message" >
+        <button type="submit" name="sendmessage" >Send message</button>
     </form>
-
-    <?php
-
-    if(isset($_GET["keyword"])){
-        $keyword = $_GET["keyword"];
-    }else{
-        $keyword="";
-    }
-
-
-    ?>
-
-
-    <?php
-    $query2 = "SELECT * FROM user_mailboxes LEFT JOIN message ON message.id = user_mailboxes.message_id
-    WHERE user_mailboxes.user = '$username' AND user_mailboxes.mailbox = 'out'";
-    $result=mysqli_query($conn, $query2);
-    $row= mysqli_fetch_assoc($result);
-    if($row==0){
-    echo "you currently have no messages in your outbox";
-    }
-    else{
-    $message=$row['messages'];
-    $toUser=$row['toUser'];
-    $when=$row['timestamp'];
-
-    }
-
-    ?>
-
-    <div class="viewSentMessages">
-        <table>
-            <tr><th>Message</th><th>From</th><th>Date</th></tr>
-            <?php do{ ?>
-            <tr><td><?php echo $row['messages']; ?></td><td><?php echo $row['toUser']; ?></td><td><?php echo $row['timestamp']; ?></td>
-                <?php }while ($row= mysqli_fetch_assoc($result)) ?>
-        </table>
-    </div>
 
 
 </main>
