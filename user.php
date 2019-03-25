@@ -10,7 +10,8 @@
         .wrap{
     width: 800px;
     height: 400px;
-    margin: auto;
+    margin-left: auto;
+    margin-right:auto;       
     background: white;
     padding: 20px 50px;
 }
