@@ -117,11 +117,12 @@
 
     </div> -->
     <div class="viewEventTable">
+        <form action="<?php echo $_SERVER["PHP_SELF"]; ?>"   method="post">
         <h1><?php echo $eventname; ?></h1>
         <p style="color: #dddddd">This event will take place on <font color="#00ced1"><?php echo $edate; ?></font> </p>
         <p style="color: #dddddd">Location: <font color="#00ced1"><?php echo $eventloc; ?></font></p>
         <h3 style="color: #dddddd"> <?php echo $eventdes; ?></h3>
-
+        </form>
 
 
     </div>
@@ -169,10 +170,6 @@
 
 
 
-<!--</div>
-    <div class="editevent">
-        <a href="editEvent.php">Edit Event</a>
-    </div> -->
 </main>
 <!--Main Ends   -->
 
