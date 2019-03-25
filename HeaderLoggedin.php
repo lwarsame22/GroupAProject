@@ -16,6 +16,9 @@ if(isset($_SESSION['username'])) {
     <style>
         body{
             background: black;
+            width: 1000px;
+            margin-right: auto;
+            margin-left: auto;
         }
         .navbar {
             overflow: hidden;
@@ -25,7 +28,7 @@ if(isset($_SESSION['username'])) {
 
         .navbar a {
             float: left;
-            font-size: 16px;
+            font-size: 20px;
             color: white;
             text-align: center;
             padding: 14px 16px;
@@ -38,15 +41,16 @@ if(isset($_SESSION['username'])) {
         }
 
         .dropdown .dropbtn {
-            font-size: 16px;
-            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            font-family: Arial, sans-serif;
             border: none;
             outline: none;
             color: white;
             padding: 14px 16px;
             background-color: inherit;
-            font-family: inherit;
+            font-family: Arial, sans-serif;
             margin: 0;
+            font-weight: bold;
         }
 
         .navbar a:hover, .dropdown:hover .dropbtn {
@@ -64,13 +68,13 @@ if(isset($_SESSION['username'])) {
 
         .playmatetitle{
             background-color: black;
-            font-size: 20px;
-            font-family: 'Roboto', sans-serif;
+            font-size: 30px;
+            font-family: Arial, sans-serif;
 
         }
         .dropdown-content a {
             float: none;
-            font-family: 'Roboto', sans-serif;
+            font-family: Arial, sans-serif;
             color: black;
             padding: 18px 22px;
             text-decoration: none;
@@ -89,10 +93,13 @@ if(isset($_SESSION['username'])) {
 
         h4{
             color: turquoise;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
         }
         h1{
             color: white;
             font-weight: bold;
+            font-size: 30px;
         }
 
     </style>

@@ -24,8 +24,16 @@
             display: flex;
         }
        h2{
-           text-align: left;
+           text-align: center;
        }
+      .profileform{
+          width: 600px;
+          border: 1px solid turquoise;
+          font-family: Arial, sans-serif;
+          font-size: 18px;
+          background-color: rgba(0, 0, 255, 0.2);
+
+      }
 
     </style>
 </head>
@@ -75,7 +83,7 @@ require "HeaderLoggedin.php";
         <label for="imgUpload">Select file to upload</label><br>
     </div>
     <input type="file" name="file" class="inputbox" id="imgInput" />
-    <!-- Main Section En  d  <input type="submit" name="submit" value="Upload"/> -->
+    <!-- Main Section End  <input type="submit" name="submit" value="Upload"/> -->
 
     <br><br>
 

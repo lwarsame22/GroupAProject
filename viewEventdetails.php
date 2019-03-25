@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="css/leestemplate.css">
     <style>
         main{
-            <!--background: url("images/updateprofile.jpg"); -->
+            background-color: url("Images/updateprofile.jpg");
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
     <style>

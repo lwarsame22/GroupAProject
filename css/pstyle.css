@@ -3,8 +3,8 @@
     background-attachment: scroll;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("images2/profile.jpg");*/
-}
+    background-image: url("images2/profile.jpg");
+}*/
 
 body {
     background-color: whitesmoke;
@@ -49,7 +49,7 @@ label{
     border-bottom: 3px solid whitesmoke;
 }
 ::placeholder{
-    color: black;
+    color: white;
 }
 .btn{
     background: turquoise;

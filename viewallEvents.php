@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <title>My Events</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+
+    </style>
 </head>
 <body>
 <?php
@@ -23,7 +26,7 @@ require "HeaderLoggedin.php";
 
 
 
-<div >
+<div class="viewallevents">
     <?php
 
     //$query2="SELECT * FROM events, sports WHERE events.e_sportID=sports.s_ID AND events.e_username='$username'"; LEE code
