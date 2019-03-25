@@ -55,7 +55,6 @@
 
 ?>
 <main>
-
     <?php
 
 
@@ -119,12 +118,9 @@
         echo "<p>nada.</p>";
     }
 
-
     ?>
 
     <!--<div class="view EventTable">  <tr><td> <?php echo $eventID; ?></td><td><?php echo $eventname; ?></td><td> <?php echo $eventdes; ?> </td> <td> <?php echo $eventloc; ?> </td></tr>
-
-
 
     </div> -->
     <div class="viewEventTable">
@@ -140,7 +136,7 @@
 
 
 <div class="postreply">
-    <form action="<?php echo $_SERVER["PHP_SELF"]; ?>"   method="post">
+    <form  method="post">
         <h3 style="color: #dddddd"> <?php echo $cmmt; ?></h3>
         <p style="color: #f9f9f9">Leave A Comment</p>
         <textarea name="reply_content" cols="75" rows="5"></textarea>
@@ -151,31 +147,6 @@
     </form>
 
 
-    <?php
-    if ($_POST['commentButton']) {
-
-    $username = $_SESSION['username'];
-
-    $ucomment = strip_tags($_POST['reply_content']);
-
-    $eventid = strip_tags($_POST['cid']);
-
-    $query = "INSERT INTO comment_on (c_username,c_eventID, c_timestamp,c_content) VALUES ('" . $username . "','" . $eventid . "',now(),'" . $ucomment . "')";
-
-
-    $result = mysqli_query($conn, $query);
-
-    if ($result) {
-
-        header('viewEventdetails.php');
-
-    } else {
-
-    echo "Failed to update";
-    }
-    }
-
-    ?>
 
 
 
