@@ -11,10 +11,11 @@ if ($_SESSION['username']) {
         $reply_conten = $_POST['reply_content'];
         $query = "INSERT INTO comment_on (c_username,c_eventID,c_timestamp,c_content) VALUES ('" . $u_username . "','" . $eventid . "',now(),'" . $reply_conten . "')";
 
-        $res = mysqli_query($query) or die(mysqli_error());
+        $res = mysqli_query($query) or die(mysqli_error(error_reporting()));
 
 
     } else {
+
         exit();
     }
 }
