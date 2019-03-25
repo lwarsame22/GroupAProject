@@ -31,15 +31,14 @@
 </head>
 <body>
 <?php
-//session_start();
-//if ( isset($_SESSION['username'] )){
-//   $username=$_SESSION['username'];
 
 require "HeaderLoggedin.php";
-//}
-//else {
-//    header('Location: HomePage.php');
-//}
+  
+    if(isset($_GET["eid"]))
+    {
+        $e_ID = $_GET["eid"];
+
+    }
 ?>
 <main class="">
     <div class="">
