@@ -147,13 +147,13 @@ if(isset($_SESSION['username'])) {
                 </div>
                 <div class="dropdown">
                     <button class="dropbtn">
-                        <a href="search.php">Search</a>
+                        <a href="searchBySport.php">Search</a>
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                        <a href="search.php">Search by user</a>
-                        <a href="search.php">Search by location</a>
-                        <a href="search.php">Search by sport</a>
+                        <a href="searchForUser.php">Search by user</a>
+                        <a href="searchByLocation.php">Search by location</a>
+                        <a href="searchBySport.php">Search by sport</a>
                     </div>
                 </div>
 

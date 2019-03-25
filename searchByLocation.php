@@ -1,50 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Search</title>
-    <link rel="stylesheet" href="css/pstyle.css">
-    <style>
-        main{
-            background: url("images/updateprofile.jpg");
-        }
-    </style>
-    <style>
-        .viewEventTable{
-            color: white;
-            font-size: 20px;
-            font-family: Arial, sans-serif;
-            font-weight: bold;
-        }
-        a{
-            text-decoration: none;
-            color: turquoise;
-        }
-        th{
-            text-align: center;
-        }
-        table, td{
-            text-align: left;
-        }
-        table, th, td {
-            border: 1px solid red;
-            border-collapse: collapse;
-        }
+<?php
 
-    </style>
 </head>
 <body>
 <?php
-//include_once('DBconnect.php');
-//session_start();
-//if ( isset($_SESSION['username'] )){
 
-//    $username=$_SESSION['username'];
-require "HeaderLoggedin.php";
-//}
-//else {
-//    header('Location: HomePage.php');
-//}
+    require "HeaderLoggedin.php";
+
 ?>
 <main>
     <form method="GET" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
@@ -67,7 +28,7 @@ require "HeaderLoggedin.php";
             // if keyword is set and is the name of a sport. search bar browses for events with sport name matching the keyword
 
             //$row = mysqli_fetch_assoc($result);
-            $query2 = "SELECT * FROM events, sports WHERE events.e_sportID=sports.s_ID AND sports.s_name LIKE '%" . $keyword . "%' AND e_date >= CURDATE() ORDER BY events.e_date ASC ";
+            $query2 = "SELECT * FROM events, sports WHERE events.e_sportID=sports.s_ID AND events.e_location LIKE '%" . $keyword . "%' AND e_date >= CURDATE() ORDER BY events.e_date ASC ";
 
             $result = mysqli_query($conn, $query2);
             $row = mysqli_fetch_assoc($result);
