@@ -23,7 +23,7 @@ if ($_SESSION['username']) {
     }
 }
 else {
-    exit();
+    exit()  ;
 }
 
 */
