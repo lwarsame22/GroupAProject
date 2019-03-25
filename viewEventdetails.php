@@ -136,7 +136,7 @@
 
 
 <div class="postreply">
-    <form  method="post">
+    <form action="postreply.php" method="post">
         <h3 style="color: #dddddd"> <?php echo $cmmt; ?></h3>
         <p style="color: #f9f9f9">Leave A Comment</p>
         <textarea name="reply_content" cols="75" rows="5"></textarea>
