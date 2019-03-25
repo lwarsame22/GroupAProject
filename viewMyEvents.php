@@ -64,9 +64,6 @@
 
         ?>
 
-<div>
-    <a href="editEvent.php">Edit Event</a>
-</div>
 </main>
 <!--Main Ends -->
 <!-- Footer -->
