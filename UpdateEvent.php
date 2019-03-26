@@ -12,7 +12,7 @@ if ($_POST['eventuButton']) {
 
     $e_sportID = strip_tags($_POST['sportName']); //Radio BOx
 
-    $e_ID = $_POST['eid'];
+    $e_ID = $_GET['eid'];
 
 
 
