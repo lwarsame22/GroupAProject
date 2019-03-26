@@ -1,18 +1,17 @@
 <?php
 session_start();
-
 include_once('DBConnect.php');
+$username=$_SESSION['username'];
 
 
-$username = strip_tags($_POST['username']);
 $messages = strip_tags($_POST['message']);
-$touser=$_GET['user'];
 
+$creator=$_POST['user'];
 // $pass= md5($password);
 
 
-$query = "INSERT INTO message(messages, fromUser, toUser, timestamp) 
-          VALUES('$messages', '$username', '$touser', now())";
+$query = "INSERT INTO message(messages, fromUser, toUser) 
+          VALUES('$messages', '$username', '$creator')";
 
 $result = mysqli_query($conn, $query);
 // $query2 ="INSERT INTO user_profile(u_mail) VALUES ('$email')";
@@ -20,8 +19,7 @@ $result = mysqli_query($conn, $query);
 
 if ($result) {
 
-    $_SESSION['username'] = $username;
-    header('Location: user.php');
+     echo $username;
 } else {
 
     echo "Failed to register";
