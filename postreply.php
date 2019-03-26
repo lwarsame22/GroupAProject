@@ -34,21 +34,21 @@ else {
 
     $ucomment = strip_tags($_POST['reply_content']);
 
-    $eventid = strip_tags($_POST['cid']);
+    $eventid = $_POST['eid'];
 
     $query = "INSERT INTO comment_on (c_username,c_eventID, c_timestamp,c_content) VALUES ('" . $username . "','" . $eventid . "',now(),'" . $ucomment . "')";
 
 
     $result = mysqli_query($conn, $query);
 
-    if ($result) {
+  
 
-        header('user.php');
+       eader('Location: viewEventdetails.php?eid='.$eventid);
 
-    } else {
+   // } else {
 
-    echo "Failed to update";
-    }
+    //echo "Failed to update";
+    //}
     }
 
     ?>
