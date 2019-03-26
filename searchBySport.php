@@ -40,7 +40,7 @@
 
 ?>
 <main>
-    <form method="GET" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
+    <form method="GET" action="<?php echo htmlentities($_SERVER["PHP_SELF"]); ?>">
         <input name="keyword" size="20">
         <button type="submit">Search</button>
     </form>
