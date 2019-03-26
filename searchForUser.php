@@ -63,21 +63,20 @@ require "HeaderLoggedin.php";
             $query2 = "SELECT * FROM user_profile WHERE u_username LIKE '%" . $keyword . "%' ";// query needs to change
 
             $result = mysqli_query($conn, $query2);
-            $row = mysqli_fetch_assoc($result);
+            $userList="";
+            if(mysqli_num_rows($result)>0){
+                while($row = mysqli_fetch_assoc($result)){
+
+                    $profile=$row['u_username'];
+                    $location=$row['city'];
+                    $userList .="<a href='createNewMessage.php?user=".$profile."' class ='cat_links'>".$profile." -<br> <font size=''-3', color='#778899'>".$location."><br></a>";
+                }
+                echo $userList;
+            } else{
+                echo "<p style='color: #f9f9f9' class='searchresult'>There are no users associated with $keyword </p>";
+            }
 
 ?>
-
-    <!-- This part will change to display specific information about a user -->
-             <div class="viewProfileTable">
-        <table>
-            <tr><th>Username</th><th>City</th><th>Email</th><th>Mobile number</th></tr>
-<?php do{ ?>
-    <tr><td><?php echo $row['u_username']; ?></td><td><?php echo $row['city']; ?></td><td><?php echo $row['u_mail']; ?></td>
-        <td><?php echo $row['mobilenum']; ?></td>
-        <?php }while ($row= mysqli_fetch_assoc($result)) ?>
-        </table>
-        </div>
-
 
 </main>
 <!--Main Ends -->
