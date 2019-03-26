@@ -143,10 +143,13 @@
     <div class="creatorProfile">
 
         <h1><?php echo $profile ?></h1>
-        <div>
-            <a href=createNewMessage.php?user='.$profile.'">Message User</a>
+         
+            <?php
 
-        </div>
+            echo "<a href='createNewMessage.php?user=$profile'>Message User</a>";
+
+            ?>
+       
     </div>
 
     <div class="viewEventTable">
