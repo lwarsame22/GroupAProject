@@ -30,7 +30,7 @@ if ($_POST['profileButton']) {
     //Image querys
     $statusMsg = '';
 
-    // File   upload path
+    // File   upload p ath
     $targetDir = "C:/inetpub/wwwroot/1810356/GruopAProject/UploadedImg/";
     $fileName = basename($_FILES["file"]["name"]);
     $targetFilePath = $targetDir . $fileName;
