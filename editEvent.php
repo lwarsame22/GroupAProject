@@ -45,6 +45,7 @@ require "HeaderLoggedin.php";
         <form name="updateEvent" method="post" action="UpdateEvent.php" enctype="multipart/form-data">
             <h2>Edit Event</h2>
             <label for="Title">Title:</label><br>
+            <input type="hidden" name="eid" value="<?php echo $e_ID; ?>" />
             <Input type="text" placeholder="Name of the Event" name="ename" class="inputbox" required><br>
             <label for="Description">Event Description:</label><br>
             <input type="text" placeholder="Enter Description" name="description" class="inputbox" required><br>
