@@ -91,7 +91,7 @@ require "HeaderLoggedin.php";
 
 <div class="profilebtn">
     <button type="submit" value="updateProfile" name="profileButton" class="btn">Update Profile</button><br>
-<button type="submit" value="cancelprofile" name="profileButton" class="btn">Cancel</button></div>
+<button type="submit" value="cancelprofile" name="cancelButton" class="btn">Cancel</button></div>
 </form>
 </div>
         </main>        

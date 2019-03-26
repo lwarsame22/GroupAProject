@@ -67,13 +67,13 @@ if(mysqli_num_rows($result)==1){
         $mobile=$row['mobilenum'];
         $image =$row['u_img'];
 
-        $upload = "UploadImg".$image;
+        $upload = "UploadImg/".$image;
     }
 }
 ?>
 
 <div class="viewProfileTable">
-    <?php echo $upload; ?>
+    <img src="<?php echo $upload; ?>" height="100px" width="100 px">
 <table>
     <tr><td >Username:</td><td class="label"><?php echo $username; ?></td></tr>
     <tr><td>Firstname:</td><td  class="label"><?php echo $firstname; ?></td></tr>

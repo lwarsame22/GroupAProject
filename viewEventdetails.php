@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Event</title>
     <link rel="stylesheet" href="css/leestemplate.css">
+    <link rel="stylesheet" href="css/bootstrap-3.3.7/">
     <style>
         main{
             background-color: url("Images/updateprofile.jpg");

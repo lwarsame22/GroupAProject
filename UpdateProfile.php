@@ -22,8 +22,8 @@ if ($_POST['profileButton']) {
 
     $mobilenumber = strip_tags($_POST['mobilenumber']);
 
-    $img_name = basename($_FILES["file"]["name"]);
-
+    //$img_name = basename($_FILES["file"]["name"]);
+    //$img_name= strip_tags($_POST['file']);
 
 
 
@@ -31,7 +31,7 @@ if ($_POST['profileButton']) {
     $statusMsg = '';
 
     // File   upload p ath
-    $targetDir = "C:/inetpub/wwwroot/1810356/GruopAProject/UploadedImg/";
+    $targetDir = "C:/inetpub/wwwroot/1812682/GroupAProject/UploadImg/";
     $fileName = basename($_FILES["file"]["name"]);
     $targetFilePath = $targetDir . $fileName;
     $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
@@ -46,9 +46,21 @@ if(isset($_POST["profileButton"]) && !empty($_FILES["file"]["name"])){
         if(move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)){
 
             // Insert image file name into database
+            $query = "UPDATE  user_profile
+          SET u_name= '$uname',
+          u_lastname ='$ulname',
+          genderID ='$gender',
+          address ='$address',
+          city ='$city',
+          country ='$country',
+          datebirth='$datebirth',
+          mobilenum='$mobilenumber',
+          active='1',
+          u_img = '$fileName' 
+          WHERE u_username = '$username'";
 
-            $query2 = "INSERT into images (i_username, img_name, img_date) VALUES ('$username', '".$fileName."', NOW())";
-            $result1 = mysqli_query($conn, $query2);
+            $result1 = mysqli_query($conn, $query);
+
 
             if($result1){
 
@@ -70,6 +82,7 @@ if(isset($_POST["profileButton"]) && !empty($_FILES["file"]["name"])){
 echo $statusMsg;
 
 // $pass= md5($password)  f;
+    /*
     $query = "UPDATE  user_profile
           SET u_name= '$uname',
           u_lastname ='$ulname',
@@ -95,7 +108,7 @@ echo $statusMsg;
         echo "Failed to update";
     }
 
-
+*/
 
 }
 
