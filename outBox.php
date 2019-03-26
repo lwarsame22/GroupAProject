@@ -5,12 +5,20 @@
     <title>Sent Messages</title>
     <link rel="stylesheet" href="css/pstyle.css">
     <style>
-        main{
-            background: url("images/updateprofile.jpg");
-        }
-    </style>
-    <style>
 
+        main{
+            background: url("images/homepage.jpg");
+        }
+
+        .viewMessages{
+            color: white;
+            font-size: 20px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+
+            width: 800px;
+            background-color: rgba(0, 0, 255, 0.2);
+        }
         a{
             text-decoration: none;
             color: turquoise;
@@ -18,6 +26,12 @@
         table, td{
             text-align: right;
         }
+        .label{
+            text-align: left;
+            padding: 20px;
+        }
+
+
 
     </style>
 </head>
