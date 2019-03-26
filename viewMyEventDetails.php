@@ -88,11 +88,6 @@ require "HeaderLoggedin.php";
             $edate=$row['e_date'];
 
         }
-        echo $eventID,
-        $eventname,
-        $eventdes,
-        $eventloc,
-        $edate;
 
     }
 
@@ -108,7 +103,7 @@ require "HeaderLoggedin.php";
             $cmmt.= "$c_uname $c_content   $c_time <br> <br>" ;
 
         }
-        echo $cmmt;
+        // echo $cmmt;
     }  else {
         echo "<p>nada.</p>";
     }
