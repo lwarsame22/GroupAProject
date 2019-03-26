@@ -30,7 +30,7 @@ if ($_POST['profileButton']) {
     //Image querys
     $statusMsg = '';
 
-    // File upload path
+    // File   upload path
     $targetDir = "UploadedImg/";
     $fileName = basename($_FILES["file"]["name"]);
     $targetFilePath = $targetDir . $fileName;
