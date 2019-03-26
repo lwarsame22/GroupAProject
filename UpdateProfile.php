@@ -27,7 +27,7 @@ if ($_POST['profileButton']) {
 
 
 
-    //Image querys   
+    //Image querys
     $statusMsg = '';
 
     // File   upload path

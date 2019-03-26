@@ -16,7 +16,7 @@
             font-family: Arial, sans-serif;
             font-weight: bold;
 
-            width: 800px;
+            width: 200px;
             background-color: rgba(0, 0, 255, 0.2);
         }
         a{
