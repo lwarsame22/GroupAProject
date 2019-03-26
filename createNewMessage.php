@@ -21,6 +21,9 @@ if(isset($_GET["user"]))
 //simple form here need action page seperate
     // redirected to sentbox
 }
+
+    ?>
+<?php echo "TO: ".$creator
 ?>
 <main>
     <form method="Post" action="sendmessage.php">
