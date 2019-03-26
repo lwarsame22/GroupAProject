@@ -134,7 +134,7 @@ require "HeaderLoggedin.php";
             <p style="color: #f9f9f9">Leave A Comment</p>
             <textarea name="reply_content" cols="75" rows="5"></textarea>
             <br>
-            <input type="hidden" name="cid" value="<?php echo $e_ID; ?>">
+            <input type="hidden" name="eid" value="<?php echo $e_ID; ?>">
 
             <button type="submit" value="postcomment" name="commentButton" class="btn">Post Comment</button><br>
         </form>

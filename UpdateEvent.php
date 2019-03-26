@@ -4,15 +4,15 @@ session_start();
 include_once('DBConnect.php');
 if ($_POST['eventuButton']) {
 
-    $e_title=$_SESSION['ename'];
+    $e_title=$_POST['ename'];
 
     $e_description = strip_tags($_POST['description']);
 
     $e_location = strip_tags($_POST['location']);
 
-    $e_sportID = strip_tags($_POST['sportsName']); //Radio BOx
+    $e_sportID = strip_tags($_POST['sportName']); //Radio BOx
 
-    $e_ID = ($_GET['eid']);
+    $e_ID = $_POST['eid'];
 
 
 
