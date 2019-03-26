@@ -65,11 +65,13 @@ if(mysqli_num_rows($result)==1){
         $country=$row['country'];
         $birth=$row['datebirth'];
         $mobile=$row['mobilenum'];
+        $image =$row['u_img'];
     }
 }
 ?>
 
 <div class="viewProfileTable">
+    <?php echo $image; ?>
 <table>
     <tr><td >Username:</td><td class="label"><?php echo $username; ?></td></tr>
     <tr><td>Firstname:</td><td  class="label"><?php echo $firstname; ?></td></tr>
