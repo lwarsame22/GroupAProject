@@ -43,7 +43,7 @@ else {
 
   
 
-       eader('Location: viewEventdetails.php?eid='.$eventid);
+       header('Location: viewEventdetails.php?eid='.$eventid);
 
    // } else {
 
