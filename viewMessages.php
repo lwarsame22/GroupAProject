@@ -6,11 +6,18 @@
     <link rel="stylesheet" href="css/pstyle.css">
     <style>
         main{
-            background: url("images/updateprofile.jpg");
+            background: url("images/homepage.jpg");
         }
-    </style>
-    <style>
 
+        .viewMessages{
+            color: white;
+            font-size: 20px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+
+            width: 400px;
+            background-color: rgba(0, 0, 255, 0.2);
+        }
         a{
             text-decoration: none;
             color: turquoise;
@@ -18,6 +25,12 @@
         table, td{
             text-align: right;
         }
+        .label{
+            text-align: left;
+            padding: 20px;
+        }
+
+
 
     </style>
 </head>
