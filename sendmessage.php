@@ -12,14 +12,19 @@ $creator=$_POST['user'];
 
 $query = "INSERT INTO message(messages, fromUser, toUser) 
           VALUES('$messages', '$username', '$creator')";
-
-$result = mysqli_query($conn, $query);
+//$idInsertLast = mysqli_insert_id($conn);
+//$result = mysqli_query($conn, $query);
 // $query2 ="INSERT INTO user_profile(u_mail) VALUES ('$email')";
 // $result2= mysqli_query($conn, $query2);
-
-if ($result) {
-
-     echo $username;
+if (mysqli_query($conn, $query)) {
+$last_id = mysqli_insert_id($conn);
+// if ($result) {
+    //$last_id = mysqli_insert_id($conn);
+    $query2="INSERT INTO user_mailboxes(user, mailbox, message_id) VALUES ('$username', 'out', '$last_id')";
+    $query3="INSERT INTO user_mailboxes(user, mailbox, message_id) VALUES ('$creator', 'in', '$last_id')";
+    $result2=mysqli_query($conn, $query2);
+    $result3-mysqli_query($conn,$query3);
+    header('Location: outBox.php');
 } else {
 
     echo "Failed to register";
