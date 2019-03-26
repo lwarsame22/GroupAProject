@@ -61,11 +61,11 @@
     <?php
 
 
-    if(isset($_GET["eid"]))
-    {
+   // if(isset($_GET["eid"]))
+    //{
         $e_ID = $_GET["eid"];
 
-    }
+    //}
     $query="SELECT * FROM user_profile u, events e WHERE e.e_ID='$e_ID' AND e.e_username=u.u_username";
     //$query2="SELECT * FROM events, sports WHERE events.e_ID='.$e_ID.' AND events.e_sportID=sports.s_ID  AND e_date >= CURDATE() ORDER BY events.e_date ASC";
     //$query2="SELECT * FROM events WHERE events.e_ID='$e_ID' AND e_date >= CURDATE() ORDER BY events.e_date ASC";
@@ -110,14 +110,9 @@
             $edate=$row['e_date'];
 
         }
-        echo $eventID,
-        $eventname,
-        $eventdes,
-        $eventloc,
-        $edate;
+      
 
     }
-
 
 
     $cmmt="";
@@ -130,26 +125,23 @@
             $cmmt.= "$c_uname $c_content   $c_time <br> <br>" ;
 
         }
-        echo $cmmt;
+        // echo $cmmt;
     }  else {
         echo "<p>nada.</p>";
     }
 
     ?>
 
-    <!--<div class="view EventTable">  <tr><td> <?php echo $eventID; ?></td><td><?php echo $eventname; ?></td><td> <?php echo $eventdes; ?> </td> <td> <?php echo $eventloc; ?> </td></tr>
-
-    </div> -->
     <div class="creatorProfile">
 
-        <h1><?php echo $profile ?></h1>
-         
+        <h4><?php echo $profile ?></h4>
+         <div>
             <?php
 
             echo "<a href='createNewMessage.php?user=$profile'>Message User</a>";
 
             ?>
-       
+        </div>
     </div>
 
     <div class="viewEventTable">
@@ -170,7 +162,7 @@
         <p style="color: #f9f9f9">Leave A Comment</p>
         <textarea name="reply_content" cols="75" rows="5"></textarea>
         <br>
-        <input type="hidden" name="cid" value="<?php echo $e_ID; ?>">
+        <input type="hidden" name="eid" value="<?php echo $e_ID; ?>">
 
         <button type="submit" value="postcomment" name="commentButton" class="btn">Post Comment</button><br>
     </form>
