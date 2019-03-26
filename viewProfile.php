@@ -66,12 +66,14 @@ if(mysqli_num_rows($result)==1){
         $birth=$row['datebirth'];
         $mobile=$row['mobilenum'];
         $image =$row['u_img'];
+
+        $upload = "UploadImg".$image;
     }
 }
 ?>
 
 <div class="viewProfileTable">
-    <?php echo $image; ?>
+    <?php echo $upload; ?>
 <table>
     <tr><td >Username:</td><td class="label"><?php echo $username; ?></td></tr>
     <tr><td>Firstname:</td><td  class="label"><?php echo $firstname; ?></td></tr>
