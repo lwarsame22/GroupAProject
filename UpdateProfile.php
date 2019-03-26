@@ -39,7 +39,7 @@ if ($_POST['profileButton']) {
 
 
 if(isset($_POST["profileButton"]) && !empty($_FILES["file"]["name"])){
-    // Allow certain file formats
+    // Allow certain file   formats
     $allowTypes = array('jpg','png','jpeg','gif','pdf');
     if(in_array($fileType, $allowTypes)){
         // Upload file to server tmp_name
