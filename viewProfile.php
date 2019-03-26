@@ -17,7 +17,8 @@
             font-weight: bold;
 
             width: 400px;
-            background-color: whitesmoke;
+            background-color: rgba(0, 0, 255, 0.2);
+            transparency: .80;
         }
         a{
             text-decoration: none;
