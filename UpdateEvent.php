@@ -23,7 +23,7 @@ if ($_POST['eventuButton']) {
           e_description ='$e_description',
           e_location ='$e_location',
           e_sportID ='$e_sportID',
-          WHERE e_ID  = '$e_id'";
+          WHERE e_ID  = '$e_ID'";
 
 
     $result = mysqli_query($conn, $query);
