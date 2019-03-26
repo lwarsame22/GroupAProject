@@ -88,11 +88,6 @@ require "HeaderLoggedin.php";
             $edate=$row['e_date'];
 
         }
-        echo $eventID,
-        $eventname,
-        $eventdes,
-        $eventloc,
-        $edate;
 
     }
 
@@ -108,7 +103,7 @@ require "HeaderLoggedin.php";
             $cmmt.= "$c_uname $c_content   $c_time <br> <br>" ;
 
         }
-        echo $cmmt;
+        // echo $cmmt;
     }  else {
         echo "<p>nada.</p>";
     }
@@ -139,7 +134,7 @@ require "HeaderLoggedin.php";
             <p style="color: #f9f9f9">Leave A Comment</p>
             <textarea name="reply_content" cols="75" rows="5"></textarea>
             <br>
-            <input type="hidden" name="cid" value="<?php echo $e_ID; ?>">
+            <input type="hidden" name="eid" value="<?php echo $e_ID; ?>">
 
             <button type="submit" value="postcomment" name="commentButton" class="btn">Post Comment</button><br>
         </form>

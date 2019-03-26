@@ -15,9 +15,10 @@
             font-size: 20px;
             font-family: Arial, sans-serif;
             font-weight: bold;
-            border: 1px solid turquoise;
+
             width: 400px;
             background-color: rgba(0, 0, 255, 0.2);
+            transparency: .80;
         }
         a{
             text-decoration: none;
@@ -64,11 +65,13 @@ if(mysqli_num_rows($result)==1){
         $country=$row['country'];
         $birth=$row['datebirth'];
         $mobile=$row['mobilenum'];
+        $image =$row['u_img'];
     }
 }
 ?>
 
 <div class="viewProfileTable">
+    <?php echo $image; ?>
 <table>
     <tr><td >Username:</td><td class="label"><?php echo $username; ?></td></tr>
     <tr><td>Firstname:</td><td  class="label"><?php echo $firstname; ?></td></tr>
