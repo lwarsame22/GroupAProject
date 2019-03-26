@@ -24,7 +24,7 @@
         }
         table, td{
             text-align: right;
-            height: 400px;
+
         }
         .label{
             text-align: left;
