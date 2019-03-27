@@ -140,7 +140,7 @@ if(isset($_SESSION['username'])) {
                  <i class="fa fa-caret-down"></i>
              </button>
                 <div class="dropdown-content">
-                 <a href="viewMessages.php">View My Inbox</a>
+                 <a href="Inbox.php">View My Inbox</a>
                  <a href="outbox.php">My Outbox</a>
                 </div>
             </div>
