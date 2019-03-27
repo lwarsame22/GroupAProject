@@ -290,10 +290,13 @@ label{
     flex-wrap: nowrap;
 }
 
-.fourcolumn h2{
-    background: white;
+.available-sports h2{
+    background: black;
     text-align: center;
-    color: black;
+    color: white;
+    border: 1px solid black;
+    font-size: 18px;
+    font-weight: bold;
 }
 .fourcolumn p{
     color: white;
