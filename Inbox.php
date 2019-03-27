@@ -47,27 +47,23 @@ require_once ('HeaderLoggedin.php');
     $query2 = "SELECT * FROM user_mailboxes LEFT JOIN message ON message.id = user_mailboxes.message_id 
               WHERE user_mailboxes.user = '$username' AND user_mailboxes.mailbox = 'in'";
     $result=mysqli_query($conn, $query2);
-    $row= mysqli_fetch_assoc($result);
-    if($row==0){
-        echo "you currently have no messages in your inbox";
-        }
-        else{
+    //$row= mysqli_fetch_assoc($result);
+    $msgList="";
+    if(mysqli_num_rows($result)>0){
+        while($row = mysqli_fetch_assoc($result)){
+            $msgID=$row['id'];
             $message=$row['messages'];
             $fromUser=$row['fromUser'];
             $when=$row['timestamp'];
-
+            $msgList .="<a href='inbox.php?msgID=".$msgID."' class ='cat_links'>".$message." -<br> <font size=''-3', color='#778899'>".$fromUser."<br></a>";
         }
+        echo $msgList;
+    } else{
+        echo "<p style='color: #f9f9f9' class='searchresult'>Your Inbox is currently empty</p>";
+    }
 
     ?>
 
-    <div class="viewMessages">
-        <table>
-            <tr><th>Message</th><th>From</th><th>Date</th></tr>
-            <?php do{ ?>
-            <tr><td><?php echo $row['messages']; ?></td><td><?php echo $row['fromUser']; ?></td><td><?php echo $row['timestamp']; ?></td>
-                <?php }while ($row= mysqli_fetch_assoc($result)) ?>
-        </table>
-    </div>
 </main>
 <!--Main Ends -->
 <!-- Footer -->
