@@ -23,8 +23,8 @@ if(isset($_GET["user"]))
 }
 
     ?>
-<?php echo "TO: ".$creator
-?>
+<p style="color: #f9f9f9">Reply to <?php echo $creator; ?>: </p>
+
 <main>
     <form method="Post" action="sendmessage.php">
         <input type="hidden" name="user" value="<?php echo $creator; ?>" />
