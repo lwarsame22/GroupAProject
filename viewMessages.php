@@ -81,7 +81,7 @@ if(mysqli_num_rows($result)==1){
 
 }
 ?>
-    <?php echo $msgID, $profile; ?>
+
     <div class="Inbox">
         <form >
             <h1><?php echo "Message from: $profile" ?></h1>
