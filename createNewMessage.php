@@ -28,7 +28,7 @@ if(isset($_GET["user"]))
 <main>
     <form method="Post" action="sendmessage.php">
         <input type="hidden" name="user" value="<?php echo $creator; ?>" />
-        <input type="text" name="message" >
+        <textarea name="message" cols="75" rows="5"></textarea>
         <button type="submit" name="sendmessage" >Send message</button>
     </form>
 
