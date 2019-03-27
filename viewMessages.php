@@ -86,7 +86,7 @@ if(mysqli_num_rows($result)==1){
         <form >
             <h1><?php echo "Message from: $profile" ?></h1>
             <p style="color: #dddddd">Was delivered on <font color="#00ced1"><?php echo $timestamp; ?></font> </p>
-            <p style="color: #dddddd">Title<font color="#00ced1"><?php echo $message; ?></font> </p>
+            <p style="color: #dddddd">Message: <font color="#00ced1"><?php echo $message; ?></font> </p>
         </form>
 
 
