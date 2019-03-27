@@ -55,7 +55,7 @@ require_once ('HeaderLoggedin.php');
             $message=$row['messages'];
             $fromUser=$row['fromUser'];
             $when=$row['timestamp'];
-            $msgList .="<a href='inbox.php?msgID=".$msgID."' class ='cat_links'>".$message." -<br> <font size=''-3', color='#778899'>".$fromUser."<br></a>";
+            $msgList .="<a href='viewMessages.php?msgID=".$msgID."' class ='cat_links'>".$message." -<br> <font size=''-3', color='#778899'>".$fromUser."<br></a>";
         }
         echo $msgList;
     } else{

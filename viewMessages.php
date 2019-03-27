@@ -103,4 +103,7 @@ if(mysqli_num_rows($result)==1){
         </form>
 
 
-
+</div>
+</main>
+</body>
+</html>
