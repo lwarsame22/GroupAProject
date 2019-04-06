@@ -48,7 +48,7 @@ require "HeaderLoggedin.php";
  <div class="profileform">
 <form name="updatesskills" method="post" action="UpdateProfile.php" enctype="multipart/form-data">
     <h2>Edit Sport Skills </h2>
-
+    <div class="sport1">
     <label for="skill1">Sport 1 skill:</label>
     <select class="sportsdropdown" name="sports">
         <?php
@@ -77,7 +77,8 @@ require "HeaderLoggedin.php";
         }
         ?>
     </select><br><br>
-
+    </div>
+    <div class="sport2">
     <label for="skill2">Sport 2 skill:</label>
     <select class="sportsdropdown" name="sports">
         <?php
@@ -106,6 +107,8 @@ require "HeaderLoggedin.php";
         }
         ?>
     </select><br> <br>
+    </div>
+    <div class="sport3">
     <label for="skill3">Sport 3 skill:</label>
     <select class="sportsdropdown" name="sports">
         <?php
@@ -134,6 +137,8 @@ require "HeaderLoggedin.php";
         }
         ?>
     </select><br><br>
+    </div>
+    <div class="sport4">
     <label for="skill4">Sport 4 skill:</label>
     <select class="sportsdropdown" name="sports">
         <?php
@@ -161,7 +166,8 @@ require "HeaderLoggedin.php";
 
         }
         ?>
-    </select><br>
+    </select><br> <br>
+    </div>
     <label for="skill5">Sport 5 skill:</label>
     <select class="sportsdropdown" name="sports">
         <?php
@@ -192,7 +198,7 @@ require "HeaderLoggedin.php";
     </select><br>
 
 
-
+ </div>
 
 <div class="profilebtn">
     <button type="submit" value="updateProfile" name="profileButton" class="btn">Update Skills</button><br>
