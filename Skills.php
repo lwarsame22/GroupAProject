@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-    <title>Profile</title>
+    <title>Profiiile</title>
     <link rel="stylesheet" href="css/pstyle.css">
   <style>
        body{
