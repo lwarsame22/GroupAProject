@@ -56,10 +56,10 @@ require "HeaderLoggedin.php";
 
         <select class="genderdropdown" name="gender">
         <?php
-        $query2 = "SELECT * FROM gender";
-        $result=mysqli_query($conn, $query2);
+        $query = "SELECT * FROM gender";
+        $result1=mysqli_query($conn, $query);
 
-        while( $row = mysqli_fetch_array($result)){
+        while( $row = mysqli_fetch_array($result1)){
 
             echo "<option value='".$row['g_ID']."'>".$row['g_option']."</option>";
 
@@ -95,16 +95,16 @@ require "HeaderLoggedin.php";
     <select class="skillsdropdown" name="skills">
         <?php
 
-        $query2 = "SELECT * FROM skill_level";
-        $result=mysqli_query($conn, $query2);
+        $query3 = "SELECT * FROM skill_level";
+        $result2=mysqli_query($conn, $query3);
 
-        while( $row = mysqli_fetch_array($result)){
+        while( $row = mysqli_fetch_array($result2)){
 
             echo "<option value='".$row['levelID']."'>".$row['Level']."</option>";
 
         }
         ?>
-    </select>
+    </select><br>
 
 
 
