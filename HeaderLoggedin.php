@@ -130,7 +130,8 @@ if(isset($_SESSION['username'])) {
                 </button>
                         <div class="dropdown-content">
                             <a href="viewProfile.php">View</a>
-                            <a href="profile.php">Edit</a>
+                            <a href="profile.php">Edit Profile</a>
+                            <a href="Skills.php">Edit Skills</a>
                         </div>
                 </div>
 
