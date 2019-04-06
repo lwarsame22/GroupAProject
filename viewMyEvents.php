@@ -48,9 +48,9 @@
 <!-- Events I am creating  class="grid-container"-->
 
 <main >
-    <section  class="grid-container">
-        <div class="grid-60">
-
+    <section  class="grid-container2">
+        <div class="grid-45">
+            <h2> Events I have created </h2>
     <?php
     $query2="SELECT * FROM events WHERE events.e_username='$username'AND events.e_date>=CURDATE() ";
     $result=mysqli_query($conn, $query2);
@@ -74,8 +74,8 @@
 
     <!-- Events I am creating  </section> <section >class="grid-container"-->
 
-        <div  class="grid-40">
-
+        <div  class="grid-45">
+            <h2> Events I am attending </h2>
     <?php
     $query3="SELECT * 
             FROM join_event j, events e 
