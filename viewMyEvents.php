@@ -48,8 +48,8 @@
 <!-- Events I am creating  class="grid-container"-->
 
 <main >
-    <section  class="grid-60">
-        <div class="MycreatedEvents">
+    <section  class="grid-container">
+        <div class="grid-60">
 
     <?php
     $query2="SELECT * FROM events WHERE events.e_username='$username'AND events.e_date>=CURDATE() ";
@@ -69,12 +69,12 @@
             echo "<p>You have not created an Event yet</p>";
         }
         ?>
-</div></section>
+</div>
 
 
-    <!-- Events I am creating  class="grid-container"-->
-        <section  class="grid-40">
-        <div class="MyattendingEvents">
+    <!-- Events I am creating  </section> <section >class="grid-container"-->
+
+        <div  class="grid-40">
 
     <?php
     $query3="SELECT * 
