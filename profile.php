@@ -106,6 +106,7 @@ require "HeaderLoggedin.php";
         ?>
     </select><br>
 
+    <label for="skill1">Sport 2 skill:</label>
     <select class="sportsdropdown" name="sports">
         <?php
 
@@ -133,6 +134,7 @@ require "HeaderLoggedin.php";
         }
         ?>
     </select><br>
+    <label for="skill1">Sport 3 skill:</label>
     <select class="sportsdropdown" name="sports">
         <?php
 
