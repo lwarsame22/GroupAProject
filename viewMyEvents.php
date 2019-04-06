@@ -69,10 +69,10 @@
     $query3="SELECT * 
             FROM join_event j, events e 
             WHERE j.j_username='$username'AND e.e_ID =j.j_events";
-    $result2=mysqli_query($conn, $query3);
+//    $result2=mysqli_query($conn, $query3);
 
     $attendingevents="";
-    if (mysqli_num_rows($result2) > 0) {
+    if (mysqli_num_rows(mysqli_query($conn, $query3)) > 0) {
         while ($row = mysqli_fetch_assoc($result2)) {
             $e_ID = $row['e_ID'];
             $e_title = $row['e_title'];
