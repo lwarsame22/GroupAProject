@@ -46,10 +46,10 @@ require "HeaderLoggedin.php";
 
 <main class="profilebakground">    
  <div class="profileform">
-<form name="updatesskills" method="post" action="UpdateProfile.php" enctype="multipart/form-data">
+<form name="updatesskills" method="post" action="UpdateSkills.php" enctype="multipart/form-data">
     <h2>Edit Sport Skills </h2>
     <div class="sport1">
-    <label for="skill1">Sport 1 skill:</label>
+    <label for="skill1">Sport 1 skill:</label><br>
     <select class="sportsdropdown" name="sports">
         <?php
 
@@ -62,8 +62,8 @@ require "HeaderLoggedin.php";
 
         }
         ?>
-    </select> <br> <br>
-    <label for="level1">Skill Level</label><br>
+    </select> <br>
+    <label for="level1">Skill Level :</label><br>
     <select class="skillsdropdown" name="skills">
         <?php
 
@@ -77,7 +77,7 @@ require "HeaderLoggedin.php";
         }
         ?>
     </select><br><br>
-    </div>
+    </div>  <br>
     <div class="sport2">
     <label for="skill2">Sport 2 skill:</label>
     <select class="sportsdropdown" name="sports">
