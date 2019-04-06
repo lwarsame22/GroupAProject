@@ -103,10 +103,13 @@ require "HeaderLoggedin.php";
         $query3 = "SELECT s_name FROM sports";
         $result2=mysqli_query($conn, $query3);
         $rows= mysqli_num_rows($result2);
-
+        $return="";
        for( $i=0; $i<$rows; $i++){
+
            $row = mysqli_fetch_row($result2);
-           $return = '<ul class="sport">';
+           $return.='$row';
+
+           return $return;
        }
 
 
