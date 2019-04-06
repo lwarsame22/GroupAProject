@@ -8,15 +8,14 @@ if ($_POST['SkillsButton']) {
 
     $skills1 = strip_tags($_POST['skills1']);
 
+    $query2 = "SELECT s_name FROM sports";
+
+
+for(i=1, i<){
 
 
 
-
-
-    //Image querys
-   // lll   $statusMsg = $sport1.$skills1;
-
-
+}
 
 
 
