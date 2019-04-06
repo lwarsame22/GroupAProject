@@ -44,10 +44,13 @@
 
 
 ?>
-<main>
+
+//Events I have created
+<main class="grid-container">
+    <section  class="grid-60">
+        <div class="MycreatedEvents">
+
     <?php
-
-
     $query2="SELECT * FROM events WHERE events.e_username='$username'AND events.e_date>=CURDATE() ";
     $result=mysqli_query($conn, $query2);
     
@@ -64,8 +67,15 @@
         } else {
             echo "<p>You have not created an Event yet</p>";
         }
+        ?>
+</div></section>
+
 
 //Events I am attending
+        <section  class="grid-40">
+        <div class="MyattendingEvents">
+
+            <?php
     $query3="SELECT * 
             FROM join_event j, events e 
             WHERE j.j_username='$username'AND e.e_ID =j.j_event";
@@ -87,6 +97,10 @@
 
 
         ?>
+
+        </div>
+        </section>
+
 
 </main>
 <!--Main Ends -->
