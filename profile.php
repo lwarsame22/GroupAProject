@@ -65,7 +65,7 @@ require "HeaderLoggedin.php";
 
         }
         ?>
-        </select><br><br>
+        </select><br>
 
     <label for="address">Address:</label><br>
     <Input type="text" placeholder="Enter Address" name="address" class="inputbox" ><br>
@@ -77,8 +77,37 @@ require "HeaderLoggedin.php";
     <input type="date" placeholder="Enter Date Of Birth" name="datebirth" class="inputbox"><br>
     <label for="mobile">Mobile Number:</label><br>
     <Input type="tel" placeholder="Enter Mobile Number" name="mobilenumber" class="inputbox"><br>
-    <label for="mobile">Sport interests:</label><br>
-    <Input type="checkbox" placeholder="Enter Sports" name="sports" class="inputbox"><br>
+    <label for="skill1">Sport skills:</label><br>
+    <select class="sportsdropdown" name="sports">
+        <?php
+
+        $query2 = "SELECT * FROM sports";
+        $result=mysqli_query($conn, $query2);
+
+        while( $row = mysqli_fetch_array($result)){
+
+        echo "<option value='".$row['s_ID']."'>".$row['s_name']."</option>";
+
+        }
+        ?>
+    </select>
+    <label for="level">Skill Level</label><br>
+    <select class="skillsdropdown" name="skills">
+        <?php
+
+        $query2 = "SELECT * FROM skill_level";
+        $result=mysqli_query($conn, $query2);
+
+        while( $row = mysqli_fetch_array($result)){
+
+            echo "<option value='".$row['levelID']."'>".$row['Level']."</option>";
+
+        }
+        ?>
+    </select>
+
+
+
     <div  id="dropBoxImg">
         <label for="imgUpload">Select file to upload</label><br>
     </div>
