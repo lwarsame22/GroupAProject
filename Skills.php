@@ -62,7 +62,7 @@ require "HeaderLoggedin.php";
 
         }
         ?>
-    </select>
+    </select> <br> <br>
     <label for="level1">Skill Level</label><br>
     <select class="skillsdropdown" name="skills">
         <?php
@@ -76,7 +76,7 @@ require "HeaderLoggedin.php";
 
         }
         ?>
-    </select><br>
+    </select><br><br>
 
     <label for="skill2">Sport 2 skill:</label>
     <select class="sportsdropdown" name="sports">
@@ -105,7 +105,7 @@ require "HeaderLoggedin.php";
 
         }
         ?>
-    </select><br>
+    </select><br> <br>
     <label for="skill3">Sport 3 skill:</label>
     <select class="sportsdropdown" name="sports">
         <?php
@@ -133,7 +133,7 @@ require "HeaderLoggedin.php";
 
         }
         ?>
-    </select><br>
+    </select><br><br>
     <label for="skill4">Sport 4 skill:</label>
     <select class="sportsdropdown" name="sports">
         <?php
