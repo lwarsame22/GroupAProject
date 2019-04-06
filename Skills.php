@@ -96,21 +96,25 @@ require "HeaderLoggedin.php";
     </div>  <br>
 
 
-    <label for="level1">TEst :</label><br>
-    <select class="sport" name="sports">
+    <label for="level1" class="sport" >TEst :</label><br>
+
         <?php
 
         $query3 = "SELECT s_name FROM sports";
         $result2=mysqli_query($conn, $query3);
-        $sport= "";
+        $rows= mysqli_num_rows($result2);
 
-        while(  mysqli_fetch_array($result2)){
+       for( $i=0; $i<$rows; $i++){
+           $row = mysqli_fetch_row($result2);
+           $return = '<ul class="sport">';
+       }
 
-            echo $query3;
 
-        }
         ?>
-    </select><br><br>
+    <br><br>
+
+
+
 
 
 
