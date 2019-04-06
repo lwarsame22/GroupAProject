@@ -72,6 +72,7 @@
     $query2="SELECT * FROM events WHERE events.e_ID='$e_ID'  AND e_date >= CURDATE() ORDER BY events.e_date ASC";
     $query3="SELECT * FROM comment_on co WHERE co.c_eventID='$e_ID'";
 
+
     // Creator details query
     $result3=mysqli_query($conn, $query);
     //Event details query
@@ -79,7 +80,14 @@
 
     //Commments query
     $result2=mysqli_query($conn, $query3);
-
+    // create query to check if user has joined an event
+    $query4="SELECT * FROM join_event WHERE j_username='$username' AND j_event='$e_ID'";
+    $result4=mysqli_query($conn, $query4);
+    if($result4){
+        $join="Joined";
+    }else{
+        $join="NotJoined";
+    }
     //WHY IS THIS HERE?
     $eventID="";
     $eventname="";
@@ -143,20 +151,25 @@
             ?>
         </div>
     </div>
+<?php
 
-    <div class="viewEventTable">
+if($join=='NotJoined') {
+    echo '<div class="viewEventTable">
         <form action="joinEvent.php" method="post">
         <h1><?php echo $eventname; ?></h1>
         <p style="color: #dddddd">This event will take place on <font color="#00ced1"><?php echo $edate; ?></font> </p>
         <p style="color: #dddddd">Location: <font color="#00ced1"><?php echo $eventloc; ?></font></p>
         <h3 style="color: #dddddd"> <?php echo $eventdes; ?></h3>
+            
             <input type="hidden" name="eid" value="<?php echo $e_ID; ?>">
             <button type="submit" value="joinEvent" name="joinButton" class="btn">Join Event</button><br>
         </form>
 
 
-    </div>
+    </div>';
+}
 
+?>
 
 <div class="postreply">
     <form action="postreply.php" method="post">

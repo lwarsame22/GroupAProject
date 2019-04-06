@@ -6,8 +6,6 @@
             $username = strip_tags($_POST['username']);
             $password = strip_tags($_POST['password']);
 
-            $password= md5($password);
-
             $sql = "SELECT *  FROM user_profile where u_username = '$username' AND password ='$password' LIMIT 1 ";
             $query = mysqli_query($conn, $sql);
 
