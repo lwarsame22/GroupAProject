@@ -151,7 +151,7 @@
         <p style="color: #dddddd">Location: <font color="#00ced1"><?php echo $eventloc; ?></font></p>
         <h3 style="color: #dddddd"> <?php echo $eventdes; ?></h3>
             <input type="hidden" name="eid" value="<?php echo $e_ID; ?>">
-            <button type="submit" value="joinEvent" name="eventButton" class="btn">Create Event</button><br>
+            <button type="submit" value="joinEvent" name="joinButton" class="btn">Join Event</button><br>
         </form>
 
 
