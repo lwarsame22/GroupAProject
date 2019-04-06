@@ -4,7 +4,7 @@ session_start();
 include_once('DBConnect.php');
 if ($_POST['SkillsButton']) {
 
-    $sport1=$_SESSION['sports1'];
+    $sport1=strip_tags($_POST['sport1']);
 
     $skills1 = strip_tags($_POST['skills1']);
 
@@ -14,14 +14,14 @@ if ($_POST['SkillsButton']) {
 
 
     //Image querys
-    $statusMsg = '$sport1'.'$skills1';
+   // $statusMsg = $sport1.$skills1;
 
 
 
 
 
 // Display status message
-echo $statusMsg;
+echo $sport1;
 
 
 
