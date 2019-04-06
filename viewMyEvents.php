@@ -97,7 +97,7 @@
             $e_title = $row['e_title'];
             $location = $row['e_location'];
             $e_date = $row['e_date'];
-            $attendingevents .="<a href='viewMyEventDetails.php?eid=".$e_ID."' class = 'cat_links'>".$e_title." -<br> <font size='-3', color='#778899'>".$location."-</font><font class='edate' >.$e_date</font></a>";
+            $attendingevents .="<a href='viewEventDetails.php?eid=".$e_ID."' class = 'cat_links'>".$e_title." -<br> <font size='-3', color='#778899'>".$location."-</font><font class='edate' >.$e_date</font></a>";
         }
         echo $attendingevents;
     } else {
