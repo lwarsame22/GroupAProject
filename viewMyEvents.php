@@ -20,6 +20,14 @@
             font-family: Arial, sans-serif;
             font-weight: bold;
         }
+        h2{
+
+            color: white;
+            font-size: 22px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+
         a{
             text-decoration: none;
             color: turquoise;
