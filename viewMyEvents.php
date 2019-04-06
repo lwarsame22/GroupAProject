@@ -45,8 +45,9 @@
 
 ?>
 
-//Events I have created
-<main class="grid-container">
+<!-- Events I am creating  class="grid-container"-->
+
+<main >
     <section  class="grid-60">
         <div class="MycreatedEvents">
 
@@ -71,11 +72,11 @@
 </div></section>
 
 
-//Events I am attending
+    <!-- Events I am creating  class="grid-container"-->
         <section  class="grid-40">
         <div class="MyattendingEvents">
 
-            <?php
+    <?php
     $query3="SELECT * 
             FROM join_event j, events e 
             WHERE j.j_username='$username'AND e.e_ID =j.j_event";
