@@ -14,7 +14,7 @@ if ($_POST['SkillsButton']) {
 
 
     //Image querys
-   // $statusMsg = $sport1.$skills1;
+   // lll   $statusMsg = $sport1.$skills1;
 
 
 
