@@ -152,8 +152,8 @@ if(isset($_SESSION['username'])) {
                     <i class="fa fa-caret-down"></i>
                 </button>
                         <div class="dropdown-content">
-                            <a href="viewallEvents.php">View Events</a>
-                            <a href="viewMyEvents.php">View Events I organised</a>
+                            <a href="viewallEvents.php">View All Events</a>
+                            <a href="viewMyEvents.php">View My Events </a>
                             <a href="event.php">Create Event</a>
                         </div>
                 </div>
