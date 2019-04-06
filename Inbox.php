@@ -24,6 +24,8 @@
         }
         table, td{
             text-align: right;
+            border-bottom: 1px solid #cecfd5;
+            padding: 10px 15px;
 
         }
         .label{
