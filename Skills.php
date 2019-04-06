@@ -104,7 +104,7 @@ require "HeaderLoggedin.php";
         $result2=mysqli_query($conn, $query3);
         $sport= "";
 
-        while( $row = mysqli_fetch_array($result2)){
+        while(  mysqli_fetch_array($result2)){
 
             echo $query3;
 
