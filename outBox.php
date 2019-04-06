@@ -23,6 +23,10 @@
             text-decoration: none;
             color: turquoise;
         }
+        td{
+            border-bottom: 1px solid #cecfd5;
+            padding: 10px 15px;
+        }
         table, td{
             text-align: right;
         }
@@ -44,7 +48,7 @@ require_once ('HeaderLoggedin.php');
 <main>
 <?php
 $query2 = "SELECT * FROM user_mailboxes LEFT JOIN message ON message.id = user_mailboxes.message_id
-    WHERE user_mailboxes.user = '$username' AND user_mailboxes.mailbox = 'out'";
+    WHERE user_mailboxes.user = '$username' AND user_mailboxes.mailbox = 'out' ORDER BY timestamp DESC";
 $result=mysqli_query($conn, $query2);
 $row= mysqli_fetch_assoc($result);
 if($row==0){
@@ -61,7 +65,7 @@ else{
 
 <div class="viewMessages">
     <table>
-        <tr><th>Message</th><th>From</th><th>Date</th></tr>
+        <tr><th>Message</th><th>To</th><th>Date</th></tr>
         <?php do{ ?>
         <tr><td><?php echo $row['messages']; ?></td><td><?php echo $row['toUser']; ?></td><td><?php echo $row['timestamp']; ?></td>
             <?php }while ($row= mysqli_fetch_assoc($result)) ?>

@@ -6,7 +6,6 @@
     <title>My Events</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-
     </style>
 </head>
 <body>
@@ -15,8 +14,6 @@
 //session_start();
 //if ( isset($_SESSION['username'] )){
 // $username=$_SESSION['username'];
-
-
 require "HeaderLoggedin.php";
 //}
 //else {
@@ -28,9 +25,7 @@ require "HeaderLoggedin.php";
 
 <div class="viewallevents">
     <?php
-
     //$query2="SELECT * FROM events, sports WHERE events.e_sportID=sports.s_ID AND events.e_username='$username'"; LEE code
-
     $query2="SELECT * FROM events WHERE e_date >= CURDATE()";
     $result=mysqli_query($conn, $query2);
     $events="";
@@ -46,8 +41,6 @@ require "HeaderLoggedin.php";
     } else {
         echo "<p>There are no event available yet...</p>";
     }
-
-
     ?>
 
 </body>

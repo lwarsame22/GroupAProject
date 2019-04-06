@@ -68,8 +68,7 @@
 
     //}
     $query="SELECT * FROM user_profile u, events e WHERE e.e_ID='$e_ID' AND e.e_username=u.u_username";
-    //$query2="SELECT * FROM events, sports WHERE events.e_ID='.$e_ID.' AND events.e_sportID=sports.s_ID  AND e_date >= CURDATE() ORDER BY events.e_date ASC";
-    //$query2="SELECT * FROM events WHERE events.e_ID='$e_ID' AND e_date >= CURDATE() ORDER BY events.e_date ASC";
+
     $query2="SELECT * FROM events WHERE events.e_ID='$e_ID'  AND e_date >= CURDATE() ORDER BY events.e_date ASC";
     $query3="SELECT * FROM comment_on co WHERE co.c_eventID='$e_ID'";
 
@@ -146,11 +145,13 @@
     </div>
 
     <div class="viewEventTable">
-        <form >
+        <form action="joinEvent.php" method="post">
         <h1><?php echo $eventname; ?></h1>
         <p style="color: #dddddd">This event will take place on <font color="#00ced1"><?php echo $edate; ?></font> </p>
         <p style="color: #dddddd">Location: <font color="#00ced1"><?php echo $eventloc; ?></font></p>
         <h3 style="color: #dddddd"> <?php echo $eventdes; ?></h3>
+            <input type="hidden" name="eid" value="<?php echo $e_ID; ?>">
+            <button type="submit" value="joinEvent" name="eventButton" class="btn">Create Event</button><br>
         </form>
 
 
@@ -164,7 +165,6 @@
         <textarea name="reply_content" cols="75" rows="5"></textarea>
         <br>
         <input type="hidden" name="eid" value="<?php echo $e_ID; ?>">
-
         <button type="submit" value="postcomment" name="commentButton" class="btn">Post Comment</button><br>
     </form>
 

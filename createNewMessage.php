@@ -23,13 +23,13 @@ if(isset($_GET["user"]))
 }
 
     ?>
-<p style="color: #f9f9f9">Reply to <?php echo $creator; ?>: </p>
+<p style="color: #f9f9f9">Send Message to : <?php echo $creator; ?> </p>
 
 <main>
     <form method="Post" action="sendmessage.php">
         <input type="hidden" name="user" value="<?php echo $creator; ?>" />
-        <textarea name="message" cols="75" rows="5"></textarea>
-        <button type="submit" name="sendmessage" >Send message</button>
+        <textarea name="message" cols="75" rows="5"></textarea><br>
+        <button type="submit" name="sendmessage" class="btn">Send message</button>
     </form>
 
 
