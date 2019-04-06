@@ -80,14 +80,7 @@
 
     //Commments query
     $result2=mysqli_query($conn, $query3);
-    // create query to check if user has joined an event
-    $query4="SELECT * FROM join_event WHERE j_username='$username' AND j_event='$e_ID'";
-    $result4=mysqli_query($conn, $query4);
-    if($result4){
-        $join="Joined";
-    }else{
-        $join="NotJoined";
-    }
+
     //WHY IS THIS HERE?
     $eventID="";
     $eventname="";
@@ -152,21 +145,39 @@
         </div>
     </div>
 <?php
+// create query to check if user has joined an event
+$query4="SELECT * FROM join_event WHERE j_username='$username' AND j_event='$e_ID'";
+$result4=mysqli_query($conn, $query4);
 
-if($join=='NotJoined') {
-    echo '<div class="viewEventTable">
-        <form action="joinEvent.php" method="post">
-        <h1><?php echo $eventname; ?></h1>
-        <p style="color: #dddddd">This event will take place on <font color="#00ced1"><?php echo $edate; ?></font> </p>
-        <p style="color: #dddddd">Location: <font color="#00ced1"><?php echo $eventloc; ?></font></p>
-        <h3 style="color: #dddddd"> <?php echo $eventdes; ?></h3>
+if(mysqli_num_rows($result4)>0){
+    echo "<div class='viewEventTable'>
+        <form action='joinEvent.php' method='post'>
+        <h1>$eventname</h1>
+        <p style='color: #dddddd'>This event will take place on <font color='#00ced1'>$edate</font> </p>
+        <p style='color: #dddddd'>Location: <font color='#00ced1'>$eventloc </font></p>
+        <h3 style='color: #dddddd'>$eventdes</h3>
             
-            <input type="hidden" name="eid" value="<?php echo $e_ID; ?>">
-            <button type="submit" value="joinEvent" name="joinButton" class="btn">Join Event</button><br>
+            <input type='hidden' name='eid' value='$e_ID' >
+            <button type='submit' value='leaveEvent' name='leaveButton' class='btn'>Leave Event</button><br>
         </form>
 
 
-    </div>';
+    </div>";
+
+}else{
+    echo "<div class='viewEventTable'>
+        <form action='joinEvent.php' method='post'>
+        <h1>$eventname</h1>
+        <p style='color: #dddddd'>This event will take place on <font color='#00ced1'>$edate</font> </p>
+        <p style='color: #dddddd'>Location: <font color='#00ced1'>$eventloc </font></p>
+        <h3 style='color: #dddddd'>$eventdes</h3>
+            
+            <input type='hidden' name='eid' value='$e_ID' >
+            <button type='submit' value='joinEvent' name='joinButton' class='btn'>Join Event</button><br>
+        </form>
+
+
+    </div>";
 }
 
 ?>
