@@ -49,8 +49,9 @@ require "HeaderLoggedin.php";
 <form name="updatesskills" method="post" action="UpdateSkills.php" enctype="multipart/form-data">
     <h2>Edit Sport Skills </h2>
     <div class="sport1">
-    <label for="skill1">Sport 1 skill:</label><br>
+        <label for="skill1">Sport 1 skill:</label>
     <select class="sportsdropdown" name="sports">
+
         <?php
 
         $query2 = "SELECT * FROM sports";
@@ -63,7 +64,7 @@ require "HeaderLoggedin.php";
         }
         ?>
     </select> <br>
-    <label for="level1">Skill Level :</label><br>
+
     <select class="skillsdropdown" name="skills">
         <?php
 
@@ -77,127 +78,135 @@ require "HeaderLoggedin.php";
         }
         ?>
     </select><br><br>
-    </div>  <br>
+    </div>
+
     <div class="sport2">
-    <label for="skill2">Sport 2 skill:</label>
-    <select class="sportsdropdown" name="sports">
-        <?php
+        <label for="skill2">Sport 2 skill:</label>
+        <select class="sportsdropdown" name="sports">
 
-        $query2 = "SELECT * FROM sports";
-        $result=mysqli_query($conn, $query2);
+            <?php
 
-        while( $row = mysqli_fetch_array($result)){
+            $query2 = "SELECT * FROM sports";
+            $result=mysqli_query($conn, $query2);
 
-            echo "<option value='".$row['s_ID']."'>".$row['s_name']."</option>";
+            while( $row = mysqli_fetch_array($result)){
 
-        }
-        ?>
-    </select>
-    <label for="level2">Skill Level</label><br>
-    <select class="skillsdropdown" name="skills">
-        <?php
+                echo "<option value='".$row['s_ID']."'>".$row['s_name']."</option>";
 
-        $query3 = "SELECT * FROM skill_level";
-        $result2=mysqli_query($conn, $query3);
+            }
+            ?>
+        </select> <br>
 
-        while( $row = mysqli_fetch_array($result2)){
+        <select class="skillsdropdown" name="skills">
+            <?php
 
-            echo "<option value='".$row['levelID']."'>".$row['Level']."</option>";
+            $query3 = "SELECT * FROM skill_level";
+            $result2=mysqli_query($conn, $query3);
 
-        }
-        ?>
-    </select><br> <br>
+            while( $row = mysqli_fetch_array($result2)){
+
+                echo "<option value='".$row['levelID']."'>".$row['Level']."</option>";
+
+            }
+            ?>
+        </select><br><br>
     </div>
+
     <div class="sport3">
-    <label for="skill3">Sport 3 skill:</label>
-    <select class="sportsdropdown" name="sports">
-        <?php
+        <label for="skill3">Sport 3 skill:</label>
+        <select class="sportsdropdown" name="sports">
 
-        $query2 = "SELECT * FROM sports";
-        $result=mysqli_query($conn, $query2);
+            <?php
 
-        while( $row = mysqli_fetch_array($result)){
+            $query2 = "SELECT * FROM sports";
+            $result=mysqli_query($conn, $query2);
 
-            echo "<option value='".$row['s_ID']."'>".$row['s_name']."</option>";
+            while( $row = mysqli_fetch_array($result)){
 
-        }
-        ?>
-    </select>
-    <label for="level3">Skill Level</label><br>
-    <select class="skillsdropdown" name="skills">
-        <?php
+                echo "<option value='".$row['s_ID']."'>".$row['s_name']."</option>";
 
-        $query3 = "SELECT * FROM skill_level";
-        $result2=mysqli_query($conn, $query3);
+            }
+            ?>
+        </select> <br>
 
-        while( $row = mysqli_fetch_array($result2)){
+        <select class="skillsdropdown3" name="skills">
+            <?php
 
-            echo "<option value='".$row['levelID']."'>".$row['Level']."</option>";
+            $query3 = "SELECT * FROM skill_level";
+            $result2=mysqli_query($conn, $query3);
 
-        }
-        ?>
-    </select><br><br>
+            while( $row = mysqli_fetch_array($result2)){
+
+                echo "<option value='".$row['levelID']."'>".$row['Level']."</option>";
+
+            }
+            ?>
+        </select><br><br>
     </div>
+
     <div class="sport4">
-    <label for="skill4">Sport 4 skill:</label>
-    <select class="sportsdropdown" name="sports">
-        <?php
+        <label for="skill4">Sport 4 skill:</label>
+        <select class="sportsdropdown" name="sports">
 
-        $query2 = "SELECT * FROM sports";
-        $result=mysqli_query($conn, $query2);
+            <?php
 
-        while( $row = mysqli_fetch_array($result)){
+            $query2 = "SELECT * FROM sports";
+            $result=mysqli_query($conn, $query2);
 
-            echo "<option value='".$row['s_ID']."'>".$row['s_name']."</option>";
+            while( $row = mysqli_fetch_array($result)){
 
-        }
-        ?>
-    </select>
-    <label for="level4">Skill Level</label><br>
-    <select class="skillsdropdown" name="skills">
-        <?php
+                echo "<option value='".$row['s_ID']."'>".$row['s_name']."</option>";
 
-        $query3 = "SELECT * FROM skill_level";
-        $result2=mysqli_query($conn, $query3);
+            }
+            ?>
+        </select> <br>
 
-        while( $row = mysqli_fetch_array($result2)){
+        <select class="skillsdropdown4" name="skills">
+            <?php
 
-            echo "<option value='".$row['levelID']."'>".$row['Level']."</option>";
+            $query3 = "SELECT * FROM skill_level";
+            $result2=mysqli_query($conn, $query3);
 
-        }
-        ?>
-    </select><br> <br>
+            while( $row = mysqli_fetch_array($result2)){
+
+                echo "<option value='".$row['levelID']."'>".$row['Level']."</option>";
+
+            }
+            ?>
+        </select><br><br>
     </div>
-    <label for="skill5">Sport 5 skill:</label>
-    <select class="sportsdropdown" name="sports">
-        <?php
 
-        $query2 = "SELECT * FROM sports";
-        $result=mysqli_query($conn, $query2);
+    <div class="sport5">
+        <label for="skill5">Sport 5 skill:</label>
+        <select class="sportsdropdown" name="sports">
 
-        while( $row = mysqli_fetch_array($result)){
+            <?php
 
-            echo "<option value='".$row['s_ID']."'>".$row['s_name']."</option>";
+            $query2 = "SELECT * FROM sports";
+            $result=mysqli_query($conn, $query2);
 
-        }
-        ?>
-    </select>
-    <label for="level5">Skill Level</label><br>
-    <select class="skillsdropdown" name="skills">
-        <?php
+            while( $row = mysqli_fetch_array($result)){
 
-        $query3 = "SELECT * FROM skill_level";
-        $result2=mysqli_query($conn, $query3);
+                echo "<option value='".$row['s_ID']."'>".$row['s_name']."</option>";
 
-        while( $row = mysqli_fetch_array($result2)){
+            }
+            ?>
+        </select> <br>
 
-            echo "<option value='".$row['levelID']."'>".$row['Level']."</option>";
+        <select class="skillsdropdown5" name="skills">
+            <?php
 
-        }
-        ?>
-    </select><br>
+            $query3 = "SELECT * FROM skill_level";
+            $result2=mysqli_query($conn, $query3);
 
+            while( $row = mysqli_fetch_array($result2)){
 
+                echo "<option value='".$row['levelID']."'>".$row['Level']."</option>";
+
+            }
+            ?>
+        </select><br><br>
+    </div>
  </div>
 
 <div class="profilebtn">
