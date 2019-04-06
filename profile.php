@@ -77,7 +77,7 @@ require "HeaderLoggedin.php";
     <input type="date" placeholder="Enter Date Of Birth" name="datebirth" class="inputbox"><br>
     <label for="mobile">Mobile Number:</label><br>
     <Input type="tel" placeholder="Enter Mobile Number" name="mobilenumber" class="inputbox"><br>
-    <label for="skill1">Sport skills:</label><br>
+    <label for="skill1">Sport 1 skill:</label>
     <select class="sportsdropdown" name="sports">
         <?php
 
@@ -86,7 +86,62 @@ require "HeaderLoggedin.php";
 
         while( $row = mysqli_fetch_array($result)){
 
-        echo "<option value='".$row['s_ID']."'>".$row['s_name']."</option>";
+            echo "<option value='".$row['s_ID']."'>".$row['s_name']."</option>";
+
+        }
+        ?>
+    </select>
+    <label for="level">Skill Level</label><br>
+    <select class="skillsdropdown" name="skills">
+        <?php
+
+        $query3 = "SELECT * FROM skill_level";
+        $result2=mysqli_query($conn, $query3);
+
+        while( $row = mysqli_fetch_array($result2)){
+
+            echo "<option value='".$row['levelID']."'>".$row['Level']."</option>";
+
+        }
+        ?>
+    </select><br>
+
+    <select class="sportsdropdown" name="sports">
+        <?php
+
+        $query2 = "SELECT * FROM sports";
+        $result=mysqli_query($conn, $query2);
+
+        while( $row = mysqli_fetch_array($result)){
+
+            echo "<option value='".$row['s_ID']."'>".$row['s_name']."</option>";
+
+        }
+        ?>
+    </select>
+    <label for="level">Skill Level</label><br>
+    <select class="skillsdropdown" name="skills">
+        <?php
+
+        $query3 = "SELECT * FROM skill_level";
+        $result2=mysqli_query($conn, $query3);
+
+        while( $row = mysqli_fetch_array($result2)){
+
+            echo "<option value='".$row['levelID']."'>".$row['Level']."</option>";
+
+        }
+        ?>
+    </select><br>
+    <select class="sportsdropdown" name="sports">
+        <?php
+
+        $query2 = "SELECT * FROM sports";
+        $result=mysqli_query($conn, $query2);
+
+        while( $row = mysqli_fetch_array($result)){
+
+            echo "<option value='".$row['s_ID']."'>".$row['s_name']."</option>";
 
         }
         ?>
