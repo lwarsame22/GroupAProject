@@ -10,7 +10,9 @@ session_start();
 
     $password = strip_tags($_POST['password']);
 
-    // $pass= md5($password);
+    //$pass= md5($password);
+
+    $password = md5($pasword);
 
 
         $query = "INSERT INTO user_profile(u_mail, u_username, password) 
