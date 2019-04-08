@@ -50,7 +50,7 @@ require "Header.php";
  <!--<img id="Sportbanner" src="images/sports.jpg" alt="Sports Home">-->
     <section class="boxregister">
 <!--Section 1 DESCRIPTION-->
-    <section id="AppDescription" class="grid-100">
+    <!--<section id="AppDescription" class="grid-100">
        <h2> Making it easier to find people around you to organize and play your sport </h2>
         <p> QUICK PLAYs
             Smart way to find members willing to play a sport and arrange activities with each other
@@ -61,7 +61,7 @@ require "Header.php";
             Organize one-off or recurring activities, event or training sessions
             Accept new entries
         </p> </section><br><br>
-    </section>
+    </section> -->
             <form id="register" method="post" action="register.php" >
 
 <section  class="grid-60">
