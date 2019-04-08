@@ -127,7 +127,7 @@ require "HeaderLoggedin.php";
            ?>
     </div>
 
-
+<!-- Leave a comment -->
     <div class="postreply">
         <form action="postreply.php" method="post">
             <h3 style="color: #dddddd"> <?php echo $cmmt; ?></h3>
