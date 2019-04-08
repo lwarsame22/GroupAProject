@@ -53,7 +53,7 @@
 
 ?>
 
-<!-- Events I am creating  class="grid-container"-->
+<!-- Events fgI am creating  class="grid-container"-->
 
 <main >
     <section  class="grid-container2">
