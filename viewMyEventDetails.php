@@ -5,17 +5,27 @@
     <title>Event</title>
     <link rel="stylesheet" href="css/leestemplate.css">
     <style>
+        body{
+            background: url("Images/americanfo.jpg") scroll no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
         main{
-        <!--background: url("images/updateprofile.jpg"); -->
+            width: 1200px;
+            background-color: white;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
     <style>
         .viewEventTable{
-            color: white;
+            color: black;
             font-size: 20px;
             font-family: Arial, sans-serif;
             font-weight: bold;
         }
+
         a{
             text-decoration: none;
             color: turquoise;
@@ -55,6 +65,7 @@ require "HeaderLoggedin.php";
 
 ?>
 <main>
+    <section>
     <?php
 
 
@@ -114,17 +125,21 @@ require "HeaderLoggedin.php";
 
     <div class="viewEventTable">
         <form >
-            <h1><?php echo $eventname; ?></h1>
-            <p style="color: #dddddd">This event will take place on <font color="#00ced1"><?php echo $edate; ?></font> </p>
-            <p style="color: #dddddd">Location: <font color="#00ced1"><?php echo $eventloc; ?></font></p>
-            <h3 style="color: #dddddd"> <?php echo $eventdes; ?></h3>
+            <h1 style="color: black"><?php echo $eventname; ?></h1>
+            <p style="color: black">This event will take place on <color="#00ced1"><?php echo $edate; ?></font> </p>
+            <p style="color: black">Location: <color="#00ced1"><?php echo $eventloc; ?></font></p>
+            <h3 style="color: black"> <?php echo $eventdes; ?></h3>
+
+            <?php
+
+            echo "<a href='editEvent.php?eid=$e_ID'>Edit Event</a>";
+
+            ?>
         </form>
 
-       <?php
 
-           echo "<a href='editEvent.php?eid=$e_ID'>Edit Event</a>";
-
-           ?>
+    </section>
+    <section>
     </div>
 
 
@@ -140,7 +155,7 @@ require "HeaderLoggedin.php";
         </form>
 
 
-
+    </section>
 
 
 

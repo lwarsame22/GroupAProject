@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
+    footer{
+        width: 1200px;
+        border: 1px solid black;
+        background-color: black;
+        margin-right: auto;
+        margin-left: auto;
+    }
     .control{
         text-align: center;
         color: white;

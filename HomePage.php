@@ -30,9 +30,10 @@
         .form{
             float: left;
             position: relative;
-            right: 1000px;
+            right: 1200px;
             top: -100px;
             background-color: turquoise;
+            /*left: 5px;*/
         }
 
 

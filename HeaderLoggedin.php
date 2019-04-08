@@ -14,11 +14,14 @@ if(isset($_SESSION['username'])) {
     <title>Sign Up</title>
     <link rel="stylesheet" href="css/pstyle.css">
     <style>
-        body{
-            background: black;
-            width: 1000px;
+        header{
+            /*background: black;*/
+            width: 1200px;
+            height: 170px;
+            border: 1px solid black;
             margin-right: auto;
             margin-left: auto;
+            background-color: black;
         }
         .navbar {
             overflow: hidden;
