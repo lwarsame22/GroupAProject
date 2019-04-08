@@ -5,9 +5,14 @@
     <title>Event</title>
     <link rel="stylesheet" href="css/leestemplate.css">
     <style>
-        main{
-        <!--background: url("images/updateprofile.jpg"); -->
+        body{
+            background: url("images/americanfo.jpg");
         }
+        
+        main{
+        background-color: white; 
+        }
+        
     </style>
     <style>
         .viewEventTable{
