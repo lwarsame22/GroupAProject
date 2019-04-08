@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="css/leestemplate.css">
     <style>
         body{
-            background: url("images/americanfo.jpg");
+            background: url("Images/americanfo.jpg");
         }
         
         main{
+            
         background-color: white; 
         }
         
