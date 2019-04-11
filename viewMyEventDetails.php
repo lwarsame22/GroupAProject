@@ -130,9 +130,9 @@ require "HeaderLoggedin.php";
             <h3 style="color: black"> <?php echo $eventdes; ?></h3>
 
             <?php
-
-            echo "<a href='editEvent.php?eid=$e_ID'>Edit Event</a>";
-
+            if($Creator==$username) {
+                echo "<a href='editEvent.php?eid=$e_ID'>Edit Event</a>";
+            }
             ?>
         </form>
 

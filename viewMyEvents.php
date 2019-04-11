@@ -87,7 +87,7 @@
     <?php
     $query3="SELECT * 
             FROM join_event j, events e 
-            WHERE j.j_username='$username'AND e.e_ID =j.j_event";
+            WHERE j.j_username='$username'AND e.e_ID =j.j_event AND events.e_date>=CURDATE()";
             $result2=mysqli_query($conn, $query3);
 
     $attendingevents="";

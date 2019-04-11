@@ -138,9 +138,9 @@
         <h4><?php echo $profile ?></h4>
          <div>
             <?php
-
-            echo "<a href='createNewMessage.php?user=$profile'>Message User</a>";
-
+            if($profile!=$username) {
+                echo "<a href='createNewMessage.php?user=$profile'>Message User</a>";
+            }
             ?>
         </div>
     </div>
