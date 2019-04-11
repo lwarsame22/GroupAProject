@@ -125,8 +125,8 @@ require "HeaderLoggedin.php";
     <div class="viewEventTable">
         <form >
             <h1 style="color: black"><?php echo $eventname; ?></h1>
-            <p style="color: black">This event will take place on <color="#00ced1"><?php echo $edate; ?></font> </p>
-            <p style="color: black">Location: <color="#00ced1"><?php echo $eventloc; ?></font></p>
+            <p style="color: black">This event will take place on <color="black"><?php echo $edate; ?></font> </p>
+            <p style="color: black">Location: <color="black"><?php echo $eventloc; ?></font></p>
             <h3 style="color: black"> <?php echo $eventdes; ?></h3>
 
             <?php
@@ -144,8 +144,8 @@ require "HeaderLoggedin.php";
 
     <div class="postreply">
         <form action="postreply.php" method="post">
-            <h3 style="color: #dddddd"> <?php echo $cmmt; ?></h3>
-            <p style="color: #f9f9f9">Leave A Comment</p>
+            <h3 style="color: black"> <?php echo $cmmt; ?></h3>
+            <p style="color: black">Leave A Comment</p>
             <textarea name="reply_content" cols="75" rows="5"></textarea>
             <br>
             <input type="hidden" name="eid" value="<?php echo $e_ID; ?>">
