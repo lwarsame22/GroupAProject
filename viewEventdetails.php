@@ -145,9 +145,15 @@
         </div>
     </div>
 <?php
+
+
 // create query to check if user has joined an event
 $query4="SELECT * FROM join_event WHERE j_username='$username' AND j_event='$e_ID'";
 $result4=mysqli_query($conn, $query4);
+
+
+    //--Event details part
+
 
 if(mysqli_num_rows($result4)>0){
     echo "<div class='viewEventTable'>
@@ -182,6 +188,8 @@ if(mysqli_num_rows($result4)>0){
 
 ?>
 
+
+    <!--Commments part   -->
 <div class="postreply">
     <form action="postreply.php" method="post">
         <h3 style="color: #dddddd"> <?php echo $cmmt; ?></h3>
