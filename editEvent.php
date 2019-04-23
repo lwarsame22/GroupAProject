@@ -12,6 +12,16 @@
         .profilebakground h2{
             color: black;
         }
+        .viewEvent{
+            color: white;
+            font-size: 20px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+
+            width: 400px;
+            background-color: rgba(0, 0, 255, 0.2);
+            transparency: .80;
+        }
         main{
             background: url("Images/updateprofile.jpg") no-repeat ;
             background-position: center;
@@ -41,7 +51,7 @@ require "HeaderLoggedin.php";
     }
 ?>
 <main class="">
-    <div class="">
+    <div class="viewEvent">
         <form name="updateEvent" method="post" action="UpdateEvent.php" enctype="multipart/form-data">
             <h2>Edit Event</h2>
             <label for="Title">Title:</label><br>

@@ -46,7 +46,7 @@ require "HeaderLoggedin.php";
 
 <main class="profilebakground">    
  <div class="profileform">
-<form name="updatesskills" method="post" action="UpdateSkills.php" enctype="multipart/form-data">
+<form name="updatesskills" method="post" action="UpdateSkills.php" >
     <h2>Edit Sport Skills </h2>
     <div class="sport1">
     <label for="skill1">Sport 1 skill:</label><br>
