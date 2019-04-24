@@ -114,8 +114,6 @@ require "HeaderLoggedin.php";
 
         }
         // echo $cmmt;
-    }  else {
-        echo "<p>nada.</p>";
     }
 
     ?>

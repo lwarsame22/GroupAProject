@@ -127,8 +127,6 @@
 
         }
         // echo $cmmt;
-    }  else {
-        echo "<p>nada.</p>";
     }
 
     ?>
@@ -188,7 +186,7 @@ if(mysqli_num_rows($result4)>0){
 
 ?>
 
-<div>
+<div class="attendeesList">
     <?php
     $username=$_SESSION['username'];
     $sql = "SELECT * FROM join_event WHERE j_event = '$e_ID'";
@@ -196,11 +194,12 @@ if(mysqli_num_rows($result4)>0){
     $row = mysqli_fetch_array($result);
     if (mysqli_num_rows($result) > 0) {
         echo "<p>" . "People attending event " . var_dump($e_ID). "</p>";
+        $userList="";
         while ($row = mysqli_fetch_assoc($result)) {
-            echo "<p>" . $row['j_username'] . "</p>";
-
+            $profile=$row['j_username'];
+            $userList .="<a href='createNewMessage.php?user=".$profile."' class ='cat_links'>".$profile." <br> </a>";
         }
-
+        echo $userList;
     } else {
         echo "<p>No other person is attending this event</p>";
     }
