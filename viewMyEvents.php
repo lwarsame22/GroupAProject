@@ -79,7 +79,6 @@
         ?>
 </div>
 
-
     <!-- Events I am creating  </section> <section >class="grid-container"-->
 
         <div  class="grid-45">
@@ -91,18 +90,21 @@
             $result2=mysqli_query($conn, $query3);
 
     $attendingevents="";
-    if (mysqli_num_rows($result2) > 0) {
+   // if (mysqli_num_rows($result2) > 0) {
+        if(!$result || mysqli_num_rows($result)== 0){
+            echo "<p>You are not attending any Event yet</p>";
+        }else{
         while ($row = mysqli_fetch_assoc($result2)) {
             $e_ID = $row['e_ID'];
             $e_title = $row['e_title'];
             $location = $row['e_location'];
             $e_date = $row['e_date'];
-            $attendingevents .="<a href='viewEventDetails.php?eid=".$e_ID."' class = 'cat_links'>".$e_title." -<br> <font size='-3', color='#778899'>".$location."-</font><font class='edate' >.$e_date</font></a>";
+            $attendingevents .= "<a href='viewEventDetails.php?eid=" . $e_ID . "' class = 'cat_links'>" . $e_title . " -<br> <font size='-3', color='#778899'>" . $location . "-</font><font class='edate' >.$e_date</font></a>";
         }
+
         echo $attendingevents;
-    } else {
-        echo "<p>You are not attending any Event yet</p>";
     }
+
 
 
         ?>

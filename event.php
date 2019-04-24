@@ -71,15 +71,16 @@
     <label for="title">Event Title:</label><br>
     <Input type="text" placeholder="Enter Event Title" name="title" class="inputbox"><br>
     <label for="date">Event date:</label><br>
-    <input type="date" value="2019-03-30"  name="date" class="inputbox"><br>
+    <input type="date" value="2019-04-30"  name="date" class="inputbox"><br>
     <label for="description">Description: </label><br>
     <input type="text" placeholder="Enter Description" name="description" class="inputbox"><br>
     <label for="location">Location : </label><br>
     <input type="text" placeholder="Enter location" name="location" class="inputbox"><br><br>
-    <label for="attendees">Limit Attendees? : </label><br>
+    <label for="attendees">Limit attendees?: </label><br>
     <input type="text" placeholder="Enter attendees" name="attendees" class="inputbox"><br><br>
-    <label for="gender">Restrict Gender? </label><br>
+    <label for="gender">Gender restricted? </label><br>
     <select class="sportdropdown" name="genderName">
+        <option value="no">NO</option>
         <?php
         $query2 = "SELECT * FROM gender";
         $result=mysqli_query($conn, $query2);

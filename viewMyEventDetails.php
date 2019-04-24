@@ -131,7 +131,8 @@ require "HeaderLoggedin.php";
 
             <?php
             if($Creator==$username) {
-                echo "<a href='editEvent.php?eid=$e_ID'>Edit Event</a>";
+                echo "<a href='editEvent.php?eid=$e_ID'>Edit Event</a><br><br>";
+                echo "<a href='deleteEvent.php?eid=$e_ID'>Cancel Event</a><br><br>";
             }
             ?>
         </form>
