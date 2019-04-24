@@ -90,7 +90,10 @@
             $result2=mysqli_query($conn, $query3);
 
     $attendingevents="";
-    if (mysqli_num_rows($result2) > 0) {
+   // if (mysqli_num_rows($result2) > 0) {
+        if(!$result || mysqli_num_rows($result)== 0){
+            echo "<p>You are not attending any Event yet</p>";
+        }else{
         while ($row = mysqli_fetch_assoc($result2)) {
             $e_ID = $row['e_ID'];
             $e_title = $row['e_title'];
@@ -100,9 +103,8 @@
         }
 
         echo $attendingevents;
-    } else {
-        echo "<p>You are not attending any Event yet</p>";
     }
+
 
 
         ?>
