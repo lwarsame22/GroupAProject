@@ -188,6 +188,25 @@ if(mysqli_num_rows($result4)>0){
 
 ?>
 
+<div>
+    <?php
+    $username=$_SESSION['username'];
+    $sql = "SELECT * FROM join_event WHERE j_event = '$e_ID'";
+    $result=mysqli_query($conn, $sql);
+    $row = mysqli_fetch_array($result);
+    if (mysqli_num_rows($result) > 0) {
+        echo "<p>" . "People attending event " . var_dump($e_ID). "</p>";
+        while ($row = mysqli_fetch_assoc($result)) {
+            echo "<p>" . $row['j_username'] . "</p>";
+
+        }
+
+    } else {
+        echo "<p>No other person is attending this event</p>";
+    }
+    ?>
+
+</div>
 
     <!--Commments part   -->
 <div class="postreply">
