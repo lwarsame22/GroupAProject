@@ -102,6 +102,7 @@ if(isset($_SESSION['username'])) {
                         <a href="viewallEvents.php">All Events</a><br>
                         <a href="viewMyEvents.php">My Events </a><br>
                         <a href="event.php">Create Event</a><br>
+                        <a href="review.php">Review Event</a><br>
                     </div>
                 </li>
             </div>
