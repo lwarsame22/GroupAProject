@@ -77,7 +77,7 @@ $level= "";
 
 while( $row2 = mysqli_fetch_array($result2)){
 
-    echo $level.="<option value='".$row2['levelID']."'>".$row2['Level']."</option>";
+    $level.="<option value='".$row2['levelID']."'>".$row2['Level']."</option>";
 
 }
 
@@ -90,7 +90,7 @@ while( $row2 = mysqli_fetch_array($result2)){
 
            $myArray[$i] = $row['s_name'];
 
-            echo $myArray[$i]."<select>;".$level."</select><br>";
+            echo "<input type='text' name='s_name' value='$myArray[$i]' readonly>   <select name='level'>;'.$level.'</select><br>";
 
        }
 

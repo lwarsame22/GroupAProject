@@ -97,6 +97,9 @@ require "HeaderLoggedin.php";
             $eventloc=$row['e_location'];
             $edate=$row['e_date'];
 
+            $spaces=$row['e_spaces'];
+            $gender=$row['e_gender'];
+
         }
 
     }
@@ -114,8 +117,6 @@ require "HeaderLoggedin.php";
 
         }
         // echo $cmmt;
-    }  else {
-        echo "<p>nada.</p>";
     }
 
     ?>

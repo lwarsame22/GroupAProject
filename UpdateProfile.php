@@ -49,14 +49,14 @@ if(isset($_POST["profileButton"]) && !empty($_FILES["file"]["name"])){
             $query = "UPDATE  user_profile
           SET u_name= '$uname',
           u_lastname ='$ulname',
-          genderID ='$gender',
           address ='$address',
           city ='$city',
           country ='$country',
           datebirth='$datebirth',
           mobilenum='$mobilenumber',
           active='1',
-          u_img = '$fileName' 
+          u_img = '$fileName', 
+          genderID ='$gender'
           WHERE u_username = '$username'";
 
             $result1 = mysqli_query($conn, $query);
@@ -65,6 +65,7 @@ if(isset($_POST["profileButton"]) && !empty($_FILES["file"]["name"])){
             if($result1){
 
                 $statusMsg = "The file ".$fileName. " has been uploaded successfully.";
+                header('Location: viewProfile.php ');
             }else{
                 $statusMsg = "File upload failed, please try again.";
             }
