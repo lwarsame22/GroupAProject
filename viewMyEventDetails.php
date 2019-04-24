@@ -97,6 +97,9 @@ require "HeaderLoggedin.php";
             $eventloc=$row['e_location'];
             $edate=$row['e_date'];
 
+            $spaces=$row['e_spaces'];
+            $gender=$row['e_gender'];
+
         }
 
     }

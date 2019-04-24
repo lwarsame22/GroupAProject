@@ -2,31 +2,26 @@
 session_start();
 
 include_once('DBConnect.php');
-if ($_POST['SkillsButton']) {
+$sport="";
+$skills1="";
+for($i=0; $i<9; $i++) {
+    $sport[$i] = $_POST['s_name'];
 
-    $sport1=strip_tags($_POST['sports1']);
+    $skills1[$i] = $_POST['level'];
 
-    $skills1 = strip_tags($_POST['skills1']);
+    //    echo "sport name is: " .$sport[$k]. " and level was: " . $skills1[$k];
+    //}
 
+    echo "$sport . $skills1";
+
+}
     $query2 = "SELECT s_name FROM sports";
 
 
-for(i=1, i<){
-
-
-
-}
-
-
-
-// Display status message
-echo $sport1;
-    echo $skills1;
-
-
-
-}
-
 
 ?>
+
+
+
+
 
