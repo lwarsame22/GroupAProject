@@ -48,7 +48,7 @@
 <main>
 <?php
 
-$query2 = "SELECT * FROM user_profile WHERE u_username='$username'";
+$query2 = "SELECT * FROM user_profile u, gender g WHERE g.g_ID=u.genderID AND u_username='$username'";
 $query3 = "SELECT img_name FROM images WHERE u_username='$username'";
 $result3=mysqli_query($conn, $query3);
 $result=mysqli_query($conn, $query2);
@@ -56,10 +56,11 @@ if(mysqli_num_rows($result)==1){
     while ($row= mysqli_fetch_assoc($result)){
 
         $username=$row['u_username'];
+        $email=$row['u_mail'];
         $firstname=$row['u_name'];
         $lastname=$row['u_lastname'];
-        $email=$row['u_mail'];
-        $gender=$row['gender'];
+
+        $gender=$row['g_option'];
         $address=$row['address'];
         $city=$row['city'];
         $country=$row['country'];
@@ -69,24 +70,25 @@ if(mysqli_num_rows($result)==1){
 
         $upload = "UploadImg/".$image;
     }
+   echo" <div class='viewProfileTable''>
+    <img src='$upload'' height='100px' width='100 px'>
+<table>
+    <tr><td >Username:</td><td class='label'>$username</td></tr>
+    <tr><td>Firstname:</td><td  class='label'>$firstname</td></tr>
+    <tr><td >Lastname:</td><td class='label'>$lastname</td></tr>
+    <tr><td>Email:</td><td class='label'>$email</td></tr>
+    <tr><td>Gender:</td><td class='label'>$gender</td></tr>
+    <tr><td>Address:</td><td class='label'>$address</td></tr>
+    <tr><td>City:</td><td class='label'>$city</td></tr>
+    <tr><td>Country:</td><td class='label'>$country</td></tr>
+    <tr><td>Birth:</td><td class='label'>$birth</td></tr>
+    <tr><td>Mobile:</td><td class='label'>$mobile</td></tr>
+    </table>
+    </div> ";
 }
 ?>
 
-<div class="viewProfileTable">
-    <img src="<?php echo $upload; ?>" height="100px" width="100 px">
-<table>
-    <tr><td >Username:</td><td class="label"><?php echo $username; ?></td></tr>
-    <tr><td>Firstname:</td><td  class="label"><?php echo $firstname; ?></td></tr>
-    <tr><td >Lastname:</td><td class="label"><?php echo $lastname; ?></td></tr>
-    <tr><td>Email:</td><td class="label"><?php echo $email; ?></td></tr>
-    <tr><td>Gender:</td><td class="label"><?php echo $gender; ?></td></tr>
-    <tr><td>Address:</td><td class="label"><?php echo $address; ?></td></tr>
-    <tr><td>City:</td><td class="label"><?php echo $city; ?></td></tr>
-    <tr><td>Country:</td><td class="label"><?php echo $country; ?></td></tr>
-    <tr><td>Birth:</td><td class="label"><?php echo $birth; ?></td></tr>
-    <tr><td>Mobile:</td><td class="label"><?php echo $mobile; ?></td></tr>
-</table>
-</div>
+
 <a href="profile.php">Edit Profile</a>
 </main>
 <!--Main Ends -->
