@@ -142,14 +142,14 @@ if(isset($_SESSION['username'])) {
         $result=mysqli_query($conn, $query2);
 
         $events="";
+
         if (mysqli_num_rows($result) > 0) {
-            while ($row = mysqli_fetch_assoc($result)) {
+            $row = mysqli_fetch_assoc($result);
                 $e_ID = $row['e_ID'];
                 $e_title = $row['e_title'];
                 $location = $row['e_location'];
                 $e_date = $row['e_date'];
                 $events .="<a href='viewMyEventDetails.php?eid=".$e_ID."' class = 'cat_links'>".$e_title." -<br> <font size='-3', color='#778899'>".$location."-</font><font class='edate' >.$e_date</font></a>";
-            }
             echo $events;
         } else {
             echo "<p>You have not created an Event yet</p>";
@@ -164,21 +164,21 @@ if(isset($_SESSION['username'])) {
         <?php
         $query3="SELECT * 
             FROM join_event j, events e 
-            WHERE j.j_username='$username'AND e.e_ID =j.j_event AND events.e_date>=CURDATE()";
+            WHERE j.j_username='$username' AND e.e_ID =j.j_event AND events.e_date>=CURDATE()";
         $result2=mysqli_query($conn, $query3);
 
         $attendingevents="";
-        // if (mysqli_num_rows($result2) > 0) {
-        if(!$result || mysqli_num_rows($result)== 0){
+
+        if(!mysqli_query($conn, $query3) || mysqli_num_rows(mysqli_query($conn, $query3))== 0){
             echo "<p>You are not attending any Event yet</p>";
         }else{
-            while ($row = mysqli_fetch_assoc($result2)) {
-                $e_ID = $row['e_ID'];
-                $e_title = $row['e_title'];
-                $location = $row['e_location'];
-                $e_date = $row['e_date'];
+            $row2 = mysqli_fetch_assoc(mysqli_query($conn, $query3));
+                $e_ID = $row2['e_ID'];
+                $e_title = $row2['e_title'];
+                $location = $row2['e_location'];
+                $e_date = $row2['e_date'];
                 $attendingevents .= "<a href='viewEventDetails.php?eid=" . $e_ID . "' class = 'cat_links'>" . $e_title . " -<br> <font size='-3', color='#778899'>" . $location . "-</font><font class='edate' >.$e_date</font></a>";
-            }
+
 
             echo $attendingevents;
         }
