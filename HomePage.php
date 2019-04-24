@@ -88,8 +88,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto">
-                <h2 class="text-white mb-4">PlayMate</h2>
-                <p class="text-white-50">is for you, just give it a try</p>
+                <h2 class="text-white mb-4">This is for you, just give it a try</h2>
             </div>
         </div>
        </div>

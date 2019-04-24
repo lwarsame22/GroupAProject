@@ -22,12 +22,12 @@
 
 #mainNav .navbar-brand {
   color: #161616;
-  font-weight: 700;
+  font-weight: 800;
   padding: .9rem 0;
 }
 
 #mainNav .navbar-nav .nav-item:hover {
-  color: fade(white, 80%);
+  color: fade(white, 90%);
   outline: none;
   background-color: transparent;
 }
@@ -99,6 +99,19 @@
   background-attachment: scroll;
   background-size: cover;
 }
+.masthead2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.3)), color-stop(75%, rgba(22, 22, 22, 0.7)), to(#161616)), url("../img/bg-masthead3.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/bg-masthead3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
 
 .masthead h1 {
   font-family: 'Varela Round';
@@ -111,6 +124,20 @@
 }
 
 .masthead h2 {
+  max-width: 20rem;
+  font-size: 5rem;
+}
+.masthead2 h1 {
+  font-family: 'Varela Round';
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.masthead2 h2 {
   max-width: 20rem;
   font-size: 5rem;
 }
@@ -133,6 +160,22 @@
     letter-spacing: 0.8rem;
   }
   .masthead h2 {
+    max-width: 30rem;
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead2 {
+    height: 100vh;
+    padding: 0;
+  }
+  .masthead2 h1 {
+    font-size: 6.5rem;
+    line-height: 6.5rem;
+    letter-spacing: 0.8rem;
+  }
+  .masthead2 h2 {
     max-width: 30rem;
     font-size: 1.25rem;
   }
@@ -280,6 +323,7 @@ body {
 
 a {
   color: #64a19d;
+  font-size: 2.5rem;
 }
 
 a:focus, a:hover {
@@ -301,4 +345,106 @@ a:focus, a:hover {
 
 footer {
   padding: 5rem 0;
+}
+
+/* IFE part */
+
+.image-slider{
+  overflow: hidden;
+}
+
+.image-slider figure{
+  position: relative;
+  width: 900%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+  -webkit-animation: 20s slider infinite;
+  -moz-animation: 20s slider infinite;
+}
+
+.image-slider figure img{
+  width: 20%;
+  float: left;
+}
+.fourcolumn{
+  width: 1000px;
+  position: relative;
+  top: 70%;
+  float: left;
+  /*transform: translate(-50%,-50%);*/
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.fourcolumn img{
+  margin-right: 10px;
+  margin-bottom: 5px;
+  flex-wrap: nowrap;
+}
+
+.available-sports h2{
+  background: black;
+  text-align: center;
+  color: white;
+  border: 1px solid black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.playmatetitle{
+  background-color: black;
+  font-size: 30px;
+  font-family: Arial, sans-serif;
+
+}
+.dropdown-content a {
+  float: none;
+  font-family: Arial, sans-serif;
+  color: black;
+  padding: 18px 22px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: turquoise;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  font-weight: bold;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: gray;
 }
