@@ -1,76 +1,165 @@
+
+<?php
+session_start();
+include_once('DBConnect.php');
+if(isset($_SESSION['username'])) {
+    $username=$_SESSION['username'];
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Profile</title>
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        main{
-            background: url("images/updateprofile.jpg");
-        }
-    </style>
-    <style>
-        .viewProfileTable{
-            color: white;
-            font-size: 20px;
-            font-family: Arial, sans-serif;
-            font-weight: bold;
 
-            width: 400px;
-            background-color: rgba(0, 0, 255, 0.2);
-            transparency: .80;
-        }
-        a{
-            text-decoration: none;
-            color: turquoise;
-        }
-        table, td{
-            text-align: right;
-        }
-        .label{
-            text-align: left;
-            padding: 20px;
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>User</title>
+
+    <!--  core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+    <!--   <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/unsemantic-grid-responsive-tablet.css">
+
+
+    <style>
+         .wrap{
+     width: 800px;
+     height: 400px;
+     margin-left: auto;
+     margin-right:auto;
+     background: white;
+     padding: 20px 50px;
+ }
+     </style>
+ -->
 </head>
-<body>
-<?php
-//include_once('DBconnect.php');
-//session_start();
-//if ( isset($_SESSION['username'] )){
- //   $username=$_SESSION['username'];
-    require "HeaderLoggedin.php";
-//}
-//else {
- //   header('Location: HomePage.php');
-//}
-?>
-<main>
-<?php
 
-$query2 = "SELECT * FROM user_profile u, gender g WHERE g.g_ID=u.genderID AND u_username='$username'";
-$query3 = "SELECT img_name FROM images WHERE u_username='$username'";
-$result3=mysqli_query($conn, $query3);
-$result=mysqli_query($conn, $query2);
-if(mysqli_num_rows($result)==1){
-    while ($row= mysqli_fetch_assoc($result)){
+<body id="page-top">
 
-        $username=$row['u_username'];
-        $email=$row['u_mail'];
-        $firstname=$row['u_name'];
-        $lastname=$row['u_lastname'];
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <section class="echo"> <!-- This class name will enable the styling of output after logging in -->
+                <h4>Welcome <?php echo $username; ?></h4>
+            </section></a>
 
-        $gender=$row['g_option'];
-        $address=$row['address'];
-        $city=$row['city'];
-        $country=$row['country'];
-        $birth=$row['datebirth'];
-        $mobile=$row['mobilenum'];
-        $image =$row['u_img'];
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
 
-        $upload = "UploadImg/".$image;
-    }
-   echo" <div class='viewProfileTable''>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+
+            <div class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="user.php">Home</a>
+                    <div class="dropdown-content">
+                        <a href="#"></a><br>
+                        <a href="#"> </a><br>
+                        <a href="#"></a><br>
+                    </div>
+                </li>
+            </div>
+
+            <div class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="viewProfile.php">Profile</a>
+                    <div class="dropdown-content">
+                        <a href="profile.php">Edit Profile</a><br>
+                        <a href="Skills.php">Edit Skills</a><br>
+                        <a href="#"></a><br>
+                    </div>
+                </li>
+            </div>
+
+
+            <div class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="Inbox.php">Messages</a>
+                    <div class="dropdown-content">
+                        <a href="Inbox.php">My Inbox</a><br>
+                        <a href="outbox.php">My Outbox</a><br>
+                        <a href="#"></a><br>
+                    </div>
+                </li>
+            </div>
+
+            <div class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="event.php">Event</a>
+                    <div class="dropdown-content">
+                        <a href="viewallEvents.php">All Events</a><br>
+                        <a href="viewMyEvents.php">My Events </a><br>
+                        <a href="event.php">Create Event</a><br>
+                    </div>
+                </li>
+            </div>
+            <div class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="searchBySport.php">Search</a>
+                    <div class="dropdown-content">
+                        <a href="searchForUser.php">By user</a><br>
+                        <a href="searchByLocation.php">By location</a><br>
+                        <a href="searchBySport.php">By sport</a><br>
+                    </div>
+                </li>
+            </div>
+
+
+            <section class="right">
+                <form id = "logout"  method="post" action="logout.php">
+                    <button type="submit" value="Logout" name="logOutButton" class="btn-primary"> Log out <br>
+                </form>
+            </section>
+        </div>
+
+    </div>
+</nav>
+
+<!--This PHP IF logic is using a choosing a different header depending if the user is logged in or not -->
+<!-- Header content-control -->
+<header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+            <h1 class="mx-auto my-0 text-uppercase">My Profile</h1>
+            <<br>
+
+                <?php
+
+                $query2 = "SELECT * FROM user_profile u, gender g WHERE g.g_ID=u.genderID AND u_username='$username'";
+                $query3 = "SELECT img_name FROM images WHERE u_username='$username'";
+                $result3=mysqli_query($conn, $query3);
+                $result=mysqli_query($conn, $query2);
+                if(mysqli_num_rows($result)==1){
+                    while ($row= mysqli_fetch_assoc($result)){
+
+                        $username=$row['u_username'];
+                        $email=$row['u_mail'];
+                        $firstname=$row['u_name'];
+                        $lastname=$row['u_lastname'];
+
+                        $gender=$row['g_option'];
+                        $address=$row['address'];
+                        $city=$row['city'];
+                        $country=$row['country'];
+                        $birth=$row['datebirth'];
+                        $mobile=$row['mobilenum'];
+                        $image =$row['u_img'];
+
+                        $upload = "UploadImg/".$image;
+                    }
+                    echo" <div class='viewProfileTable''>
     <img src='$upload'' height='100px' width='100 px'>
 <table>
     <tr><td >Username:</td><td class='label'>$username</td></tr>
@@ -85,11 +174,23 @@ if(mysqli_num_rows($result)==1){
     <tr><td>Mobile:</td><td class='label'>$mobile</td></tr>
     </table>
     </div> ";
-}
-?>
+                }
+                ?>
 
 
-<a href="profile.php">Edit Profile</a>
+                <a href="profile.php">Edit Profile</a>
+
+
+
+
+        </div>
+
+
+
+    </div>
+</header>
+<main>
+
 </main>
 <!--Main Ends -->
 <!-- Footer -->
