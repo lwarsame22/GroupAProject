@@ -87,11 +87,6 @@ if(isset($_SESSION['username'])) {
                 <h6 class="dropdown-header"></h6>
                 <a class="dropdown-item" href="viewProfile.php">View Profile</a>
                 <a class="dropdown-item" href="profile.php">Edit Profile</a>
-                <a class="dropdown-item" href="forgot-password.html">Forgot Password</a>
-                <div class="dropdown-divider"></div>
-                <h6 class="dropdown-header">Other Pages:</h6>
-                <a class="dropdown-item" href="404.html">404 Page</a>
-                <a class="dropdown-item" href="blank.html">Blank Page</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -113,6 +108,17 @@ if(isset($_SESSION['username'])) {
                 <a class="dropdown-item" href="viewallEvents.php">View All Events</a>
                 <a class="dropdown-item" href="viewMyEvents.php">View My Events</a>
                 <a class="dropdown-item" href="event.php">Create an Event</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+                <span>Search</span></a>
+            <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                <h6 class="dropdown-header"></h6>
+                <a class="dropdown-item" href="searchByLocation.php">Search By Location</a>
+                <a class="dropdown-item" href="searchBySport.php">Search By Sport</a>
+                <a class="dropdown-item" href="searchForUser.php">SearchByUser</a>
             </div>
         </li>
     </ul>
@@ -179,7 +185,6 @@ if(isset($_SESSION['username'])) {
                         <button type="submit" value="cancelprofile" name="cancelButton" class="btn-danger">Cancel</button></div>
                 </form>
             </div>
-
             <!-- /.container-fluid -->
 
             <!-- Sticky Footer -->

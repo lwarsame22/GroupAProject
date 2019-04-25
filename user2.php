@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 include_once('DBConnect.php');
@@ -87,12 +86,7 @@ if(isset($_SESSION['username'])) {
             <div class="dropdown-menu" aria-labelledby="pagesDropdown">
                 <h6 class="dropdown-header"></h6>
                 <a class="dropdown-item" href="viewProfile.php">View Profile</a>
-                <a class="dropdown-item" href="">Edit Profile</a>
-                <a class="dropdown-item" href="forgot-password.html">Forgot Password</a>
-                <div class="dropdown-divider"></div>
-                <h6 class="dropdown-header">Other Pages:</h6>
-                <a class="dropdown-item" href="404.html">404 Page</a>
-                <a class="dropdown-item" href="blank.html">Blank Page</a>
+                <a class="dropdown-item" href="profile.php">Edit Profile</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -101,8 +95,8 @@ if(isset($_SESSION['username'])) {
                 <span>Messages</span></a>
             <div class="dropdown-menu" aria-labelledby="pagesDropdown">
                 <h6 class="dropdown-header"></h6>
-                <a class="dropdown-item" href="login.html">Inbox</a>
-                <a class="dropdown-item" href="register.html">Outbox</a>
+                <a class="dropdown-item" href="Inbox.php">Inbox</a>
+                <a class="dropdown-item" href="outBox.php">Outbox</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -111,9 +105,20 @@ if(isset($_SESSION['username'])) {
                 <span>Events</span></a>
             <div class="dropdown-menu" aria-labelledby="pagesDropdown">
                 <h6 class="dropdown-header"></h6>
-                <a class="dropdown-item" href="login.html">View All Events</a>
-                <a class="dropdown-item" href="register.html">View My Events</a>
-                <a class="dropdown-item" href="register.html">Create an Event</a>
+                <a class="dropdown-item" href="viewallEvents.php">View All Events</a>
+                <a class="dropdown-item" href="viewMyEvents.php">View My Events</a>
+                <a class="dropdown-item" href="event.php">Create an Event</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+                <span>Search</span></a>
+            <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                <h6 class="dropdown-header"></h6>
+                <a class="dropdown-item" href="searchByLocation.php">Search By Location</a>
+                <a class="dropdown-item" href="searchBySport.php">Search By Sport</a>
+                <a class="dropdown-item" href="searchForUser.php">SearchByUser</a>
             </div>
         </li>
     </ul>
@@ -177,65 +182,65 @@ if(isset($_SESSION['username'])) {
                     </div>
                 </div>
             </section>
-        <!-- /.container-fluid -->
+            <!-- /.container-fluid -->
 
-        <!-- Sticky Footer -->
-        <footer class="sticky-footer">
-            <div class="container my-auto">
-                <div class="copyright text-center my-auto">
-                    <span>Copyright © Your Website 2019</span>
+            <!-- Sticky Footer -->
+            <footer class="sticky-footer">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright © Playmate 2019</span>
+                    </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
+
+        </div>
+        <!-- /.content-wrapper -->
 
     </div>
-    <!-- /.content-wrapper -->
+    <!-- /#wrapper -->
 
-</div>
-<!-- /#wrapper -->
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
 
-<!-- Scroll to Top Button-->
-<a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-</a>
-
-<!-- Logout Modal-->
-<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </button>
-            </div>
-            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-            <div class="modal-footer">
-                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-primary" href="login.html">Logout</a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="logout.php">Logout</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- Bootstrap core JavaScript-->
-<script src="startbootstrap-sb-admin-gh-pages/vendor/jquery/jquery.min.js"></script>
-<script src="startbootstrap-sb-admin-gh-pages/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="startbootstrap-sb-admin-gh-pages/vendor/jquery/jquery.min.js"></script>
+    <script src="startbootstrap-sb-admin-gh-pages/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<!-- Core plugin JavaScript-->
-<script src="startbootstrap-sb-admin-gh-pages/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="startbootstrap-sb-admin-gh-pages/vendor/jquery-easing/jquery.easing.min.js"></script>
 
-<!-- Page level plugin JavaScript-->
-<script src="startbootstrap-sb-admin-gh-pages/vendor/chart.js/Chart.min.js"></script>
-<script src="startbootstrap-sb-admin-gh-pages/vendor/datatables/jquery.dataTables.js"></script>
-<script src="startbootstrap-sb-admin-gh-pages/vendor/datatables/dataTables.bootstrap4.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="startbootstrap-sb-admin-gh-pages/vendor/chart.js/Chart.min.js"></script>
+    <script src="startbootstrap-sb-admin-gh-pages/vendor/datatables/jquery.dataTables.js"></script>
+    <script src="startbootstrap-sb-admin-gh-pages/vendor/datatables/dataTables.bootstrap4.js"></script>
 
-<!-- Custom scripts for all pages-->
-<script src="startbootstrap-sb-admin-gh-pages/js/sb-admin.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="startbootstrap-sb-admin-gh-pages/js/sb-admin.min.js"></script>
 
-<!-- Demo scripts for this page-->
-<script src="startbootstrap-sb-admin-gh-pages/js/demo/datatables-demo.js"></script>
-<script src="startbootstrap-sb-admin-gh-pages/js/demo/chart-area-demo.js"></script>
+    <!-- Demo scripts for this page-->
+    <script src="startbootstrap-sb-admin-gh-pages/js/demo/datatables-demo.js"></script>
+    <script src="startbootstrap-sb-admin-gh-pages/js/demo/chart-area-demo.js"></script>
 
 </body>
 

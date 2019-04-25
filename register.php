@@ -19,7 +19,7 @@ session_start();
         if ($result) {
 
             $_SESSION['username'] = $username;
-           header('Location: user.php');
+           header('Location: user2.php');
         } else {
 
             echo "Failed to register";
