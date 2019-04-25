@@ -7,7 +7,7 @@
  */
 
 
-$servername = "CSDM-WEBDEV/RGU.AC.UK";
+$servername = "CSDM-WEBDEV";
 $dbname="db1810356_qvan";
 $userdb = "1810356";
 $passdb = "1810356";
