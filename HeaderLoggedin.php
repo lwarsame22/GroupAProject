@@ -17,7 +17,6 @@ if(isset($_SESSION['username'])) {
         header{
             /*background: black;*/
             width: 1200px;
-            height: 170px;
             border: 1px solid black;
             margin-right: auto;
             margin-left: auto;
@@ -109,10 +108,10 @@ if(isset($_SESSION['username'])) {
 </head>
     <!--class="control"    <nav class="grid-container"> -->
 <body>
-
- <header >
      <div class="playmatetitle">
+      <header>
          <h1>Playmate</h1>
+      </header>
      </div>
      <!-- Main Section Be  gins -->
      <section class="echo"> <!-- This class name will enable the styling of output after logging in -->

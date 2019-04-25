@@ -14,7 +14,7 @@
                 session_start();
                 $_SESSION['username'] = $username;
 
-                header('Location: user.php');//NEED TO EDIT THIS LOCATION LATER
+                header('Location: user2.php');//NEED TO EDIT THIS LOCATION LATER
             } else {
                 echo "<b><i>Incorrect credentials</i><b>";
             }

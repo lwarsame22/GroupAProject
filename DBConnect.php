@@ -7,10 +7,10 @@
  */
 
 
-$servername = "CSDM-WEBDEV";
-$dbname="db1810356_qvan";
-$userdb = "1810356";
-$passdb = "1810356";
+$servername = "127.0.0.1";
+$dbname="unip";
+$userdb = "root";
+$passdb = "";
 
 // Create connection
 $conn = new mysqli($servername, $userdb, $passdb, $dbname);
