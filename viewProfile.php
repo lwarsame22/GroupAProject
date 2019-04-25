@@ -179,7 +179,7 @@ if(isset($_SESSION['username'])) {
 
 
 
-                    <button class="btn-success"><a style="color: black" href="profile.php">Edit Profile</a></button>
+                    <button class="btn-success"><a style="color: white" href="profile.php">Edit Profile</a></button>
 
 
 
