@@ -17,7 +17,10 @@ session_start();
         $result = mysqli_query($conn, $query);
 
         if ($result) {
+$query2 = "INSERT INTO ratings(username) 
+          VALUES('$username')";
 
+        $result2 = mysqli_query($conn, $query2);
             $_SESSION['username'] = $username;
            header('Location: user2.php');
         } else {
